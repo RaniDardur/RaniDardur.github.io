@@ -1,0 +1,121 @@
+@media screen and (max-width:1200px){
+	header .menu__item a {
+	    padding: 15px 20px 15px 20px;
+	}
+	.block__title {
+    	font-size: 21px;
+	}
+	.block_search  .block_search__select,
+	.block_search input{
+	    width:250px;
+	}
+	.block_search .block_search__btn {
+    	padding: 18px 98px;
+	}
+	.care .care__item h3 {
+    	font-size: 17px;
+	}
+	
+	#construction .construction .construction__item,
+	#care-of-graves .care .care__item{
+    	margin-bottom: 40px;
+	}
+	#construction .construction .construction__item-last h3 {
+    	font-size: 18px;
+   		padding: 27px 0px;
+	}
+	footer .block-navigation {
+    	padding-left:60px;
+	}
+}
+
+@media screen and (max-width:992px){
+	header .information,
+	header .menu{
+    	display:none;
+	}
+	header .burger-menu{
+		display:block
+	}
+	header .logo img{
+		margin-bottom:20px;
+		width:200px;
+	}
+	header .menu__item a {
+	    padding: 14px;
+	    font-size: 11px;
+	}
+	.block_search  .block_search__select,
+	.block_search input,
+	.block_search .block_search__btn{
+	    width:100%;
+	}
+	#construction .construction .construction__item-last h3 {
+    	padding: 16px 0px;
+	}
+	footer .block-navigation .navigation-left {
+    	margin-right:35px;
+	}
+	footer .block-navigation {
+    	padding-left: 75px;
+	}
+}
+
+@media screen and (max-width:768px){
+	header .logo{
+    	display: block;
+	}
+	header .menu__item a {
+    	padding: 5px;
+   		font-size: 10px;
+	}
+	.care-of-graves_mobile,
+	.construction_mobile{
+		display:block;
+	}
+	.care-of-graves_desktop,
+	.construction_desktop{
+		display:none;
+	}
+	footer .block-navigation{
+   	 	padding: 20px 0px;
+	}
+	footer .block-payment{
+		padding-top: 20px;
+	}
+	.block-navigation,
+	.block-contacts,
+	.contacts{
+		display:none;
+	}
+	.footer-logo,
+	.block-payment,
+	.payment{
+		display: block;
+		text-align:center;
+	}
+}
+@media screen and (max-width:450px){
+	.block__text {
+		padding: 0;
+	}
+	.section-name {
+	    font-size: 25px;
+	    font-weight: 700;
+	}
+}
+
+@media screen and (max-width:768px){
+	.form__inputs {
+    	display: inline-block;
+    	width:100%;
+	}
+	.form__inputs p{
+		margin-right: 0px;
+	}
+	table tbody tr td{
+		float:left;
+		padding: 6px 30px;
+	}
+}
+

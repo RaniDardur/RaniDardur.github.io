@@ -1,0 +1,68 @@
+.block_burialcard{
+	margin-top:50px;
+}
+.block_burialcard__img{
+	border:1px solid #c6d9eb;
+	padding:5px;
+	border-radius:5px;
+}
+.block_burialcard__img img{
+	width: 100%;
+}
+.block_burialcard__name{
+	padding-top:31px;
+	font-size:24px;
+	text-transform:none;
+}
+.block_burialcard__date{
+	font-size:21px;
+	margin:18px 0;
+	font-weight:500;
+	color:#003374;
+}
+.block_burialcard__adress{
+	font-size:18px;
+	font-weight:300;
+}
+.choose_services{
+
+}
+.services__item input{
+	width:auto !important;
+}
+input[type="checkbox"]{
+	display:none;
+}
+.services .services__item label:nth-child(2)::before{
+	content:'';
+	display:inline-block;
+	width: 27px;
+	height: 27px;
+	background-color:white;
+	border:1px solid #c6d9eb;
+	margin:0 20px;
+	vertical-align:middle;
+}
+input[type="checkbox"]:checked + label:nth-child(2)::before{
+	background:#ffa000 url(../img/burialcard/checkmark.png) no-repeat center center;
+	line-height:5px;
+	border:none;
+}
+.services{
+	font-weight:500;
+}
+.services .services__item{
+	background-color:#edf3f9;
+}
+.services .services__item:nth-child(2n){
+	background-color:transparent;
+}
+.services .services__item label:nth-child(2){
+	padding:20px 0;
+	font-size:16px;
+}
+.services .services__item label:nth-child(3){
+	float:right;
+	padding:20px 25px 0px 0px;
+	font-size:20px;
+}

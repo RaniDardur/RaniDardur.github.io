@@ -1,0 +1,29 @@
+
+
+.about_company__text{
+	font-size:16px;
+	margin:20px auto 0px auto;
+}
+.about_company__text span{
+	font-weight:500;
+}
+
+table {
+  border-collapse: collapse;
+  color: #686461;
+}
+td {
+  padding:20px 30px;
+}
+table tr td:first-child{
+	font-weight:700;
+}
+table tr td:nth-child(2){
+	font-weight:300;
+}
+tr:nth-child(odd) {
+  background: white;
+}
+tr:nth-child(even) {
+  background:#eef3f9;
+}

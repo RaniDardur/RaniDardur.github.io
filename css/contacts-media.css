@@ -1,0 +1,10 @@
+@media screen and (max-width:992px){
+	.form__inputs p {
+   		margin-right: 10px;
+	}
+}
+@media screen and (max-width:576px){
+	#our_requisites .col-12{
+		padding:0;
+	}
+}

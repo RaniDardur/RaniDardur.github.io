@@ -1,0 +1,19 @@
+@media screen and (max-width:550px){
+	.question-answer .question-answer__item .more {
+	    font-size: 13px;
+	    float:none;
+	    padding: 30px 60px 30px 10px;
+	}
+
+	.question-answer .question-answer__item h3 {
+	    font-size: 13px;
+	    float: left;
+	    padding: 30px 60px 30px 10px;
+	}
+}
+
+@media screen and (max-width:450px){
+	.question-answer .question-answer__item .arrow-more {
+    	margin-top: -90px;
+	}
+]

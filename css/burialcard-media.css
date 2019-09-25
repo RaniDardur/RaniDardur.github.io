@@ -1,0 +1,37 @@
+@media screen and (max-width:1200px){
+	.services .services__item label:nth-child(2) {
+	   	font-size:14px;
+	}
+}
+@media screen and (max-width:992px){
+	.services .services__item label:nth-child(2)::before {
+	    position: absolute;
+	    left: 15px;
+	}
+	.services .services__item label:nth-child(2) {
+	    padding: 20px 0 20px 60px;
+	    width: 500px;
+	}
+}
+@media screen and (max-width:768px){
+	.services .services__item label:nth-child(2) {
+	    width:60%;
+	}
+	.block_burialcard__img {
+    	width: 300px;
+	}
+}
+@media screen and (max-width:350px){
+	.services .services__item label:nth-child(2) {
+    	width: 80%;
+	}
+	.services .services__item label:nth-child(3){
+		float:none;
+		padding: 0px 0px 0px 60px;
+	}
+	.fields__btn-order {
+	    float: none;
+	    display: block;
+	    margin: 0 auto;
+	}
+}

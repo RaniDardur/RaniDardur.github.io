@@ -1,0 +1,15 @@
+@media screen and (max-width:992px){
+	.get_information .block_get_information {
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	.description_service__img-laptop img {
+    	margin-top: 50px;
+	}
+}
+@media screen and (max-width:576px){
+	.description_service__img-mobile{
+		width:auto;
+		text-align:center;
+	}
+}

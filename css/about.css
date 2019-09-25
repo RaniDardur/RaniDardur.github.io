@@ -1,0 +1,17 @@
+p{
+	font-weight:300;
+}
+.about-project__img{
+	padding:5px;
+	border:1px solid #c6d9eb;
+	border-radius:5px;
+}
+.about-project__img img{
+	width:100%;
+}
+.about-project{
+	margin-top:20px;
+}
+.about_project__text{
+	margin-top:28px;
+}

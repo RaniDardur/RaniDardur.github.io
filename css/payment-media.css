@@ -1,0 +1,10 @@
+@media screen and (max-width:550px){
+	.payment-description .payment-description__item p {
+	    padding: 51px 10px 31px 30px;
+	    margin: 0;
+	}
+
+	.payment-description .payment-description__item .number {
+	    top: 30px;
+	}
+}

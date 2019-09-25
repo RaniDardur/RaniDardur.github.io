@@ -1,0 +1,5 @@
+@media screen (max-width:1200px){
+	header .menu__item a {
+	    padding: 15px 20px 15px 20px;
+	}
+}
