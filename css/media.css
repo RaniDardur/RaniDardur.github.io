@@ -79,6 +79,9 @@
 }
 
 @media screen and (max-width:768px){
+	#where-buy .block-want-buy .block-want-buy__img-boy{
+		display:none;
+	}
 	header{
 		height: 100%;
 	}
