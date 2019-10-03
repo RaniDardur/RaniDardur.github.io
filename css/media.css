@@ -1,0 +1,338 @@
+@media screen and (max-width:1190px) {
+		.block-want-buy {
+    	margin: 190px auto 120px 150px;
+    	height: 470px;
+	    width: 470px;
+	}
+	#opportunities .block-want-buy,
+	#where-buy .block-want-buy{
+	    height: 350px;
+    	width: 350px;
+	}
+	#opportunities .block-want-buy .block-want-buy__img-girl {
+	    width: 450px;
+	    left: -90px;
+	    top: 110px;
+	}
+	.block-section__opportunities li {
+    	width: 500px;
+	}
+	#where-buy .block-want-buy{
+    	margin: 0;
+	}
+	#where-buy .block-want-buy .block-want-buy__img-boy {
+	    left: -140px;
+	    top: 84px;
+	    width: 540px;
+	}
+}
+@media screen and (max-width:992px) {
+	.parents{
+		display: none;
+	}
+	.block-main__circles li:nth-child(2){
+	    float: right;
+	}
+	.block-section__opportunities li {
+    	width:300px;
+	}
+	#opportunities .block-want-buy{
+		margin-top: 0;
+		margin-bottom: 100px;
+	    left: 50%;
+	    margin-left: -175px;
+	}
+	#opportunities .block-want-buy .block-want-buy__img-girl{
+		width: 240px;
+    	left: 50%;
+    	margin-left: -140px;
+	}
+	#opportunities .block-want-buy .block-want-buy__btn{
+		bottom: -120px;
+	}
+	.question-answer .question-answer__item h3 {
+   	 	padding: 19px 50px 19px 40px;
+	}
+	.block-section__where-buy li{
+		float:none;
+		width:100%
+	}
+	.block-section__where-buy li:nth-child(2),
+	.block-section__where-buy li:nth-child(2) img{
+		float:none;
+	}
+	.block-section__where-buy li:nth-child(3) {
+   		text-align:none !important;
+	}
+	.block-section__where-buy li:nth-child(3) img{
+		float: left;
+	}
+	#where-buy .block-want-buy{
+		width: 300px;
+	    height: 300px;
+	    margin-top: 100px;
+	}
+	#where-buy .block-want-buy .block-want-buy__img-boy {
+	    left: -140px;
+	    width: 450px;
+	}
+}
+
+@media screen and (max-width:768px){
+	header{
+		height: 100%;
+	}
+	.block-main__btn{
+		    margin-bottom: 30px;
+	}
+	.block-main__circles li{
+		margin-right: 0;
+	}
+	.block-want-buy{
+	    height: 400px;
+	    width: 400px;
+    	margin: 100px auto 120px 150px;
+	}
+	.black-want-buy__img-hang {
+	    left: -35%;
+	    top: 70px;
+	    width: 400px;
+	}
+	.block-section__opportunities li {
+    	width:480px;
+	}
+	.block-download .block-download__img {
+	    margin-top: -65px;
+	    width: 150px;
+	    right: 45px;
+	}
+	.block-download .block-download__text {
+    	font-size: 21px;
+	}
+	.block-section__where-buy li:nth-child(3) img{
+		float:none;
+	}
+	.block-section__where-buy{
+		text-align: center;
+	}
+	#where-buy .block-want-buy {
+    	margin: 0 auto;
+    	margin-bottom: 280px;
+    }
+    footer p {
+    	margin-top: 40px;
+	}
+	.modal-dialog {
+      	width: 500px !important;
+      	margin:0 auto;
+  	}
+  	.modal_img-blue{
+  		position: absolute;
+  	    right: -50px;
+  	}
+  	.fields .form input[type="text"] {
+    	width: 100%;
+	}
+	.modal-body {
+   		padding: 36px 100px 0px 100px;
+	}
+	.modal_img-pink {
+   		left: -120px;
+	}
+	.modal-title {
+    	line-height: 0.9;
+	}
+}
+@media screen and (max-width:600px){
+	.modal_img-pink,
+	.modal_img-blue{
+		display:none;
+	}
+}
+@media screen and (max-width:576px){
+	.modal-dialog {
+      	width:300px !important;
+      	margin:0 auto;
+  	}
+  	.modal-body{
+  		padding: 36px 25px 0px 25px;
+  	}
+	.block-main .block-main__title {
+	    font-size: 52px;
+	    line-height: 45px;
+	}
+	.block-main__circles li {
+    	margin: 10px auto 10px auto;
+	}
+	.block-main__circles li:nth-child(2),
+	.block-main__circles li{
+    	float:none;
+	}
+	.block-want-buy{
+		margin: 20px auto;
+	    width: 300px;
+	    height: 300px;
+	}
+	#no-game .block-want-buy{
+		margin-top: 200px;
+	}
+	.block-section .block-section__title {
+    	font-size: 45px;
+	}
+	.block-want-buy__img{
+    	width: 150px;
+	}
+	.black-want-buy__img-hang {
+	    left: -15%;
+	    width: 250px;
+	}
+	.block-want-buy__img-doggirl{
+		top: -130px;
+    	left: 0px;
+	}
+	.block-want-buy__img-dogboy{
+	    left: -50px;
+    	top: -150px;
+	}
+	.block-want-buy__img-monster {
+	    z-index: 1;
+	    left: 0;
+	    width: 160px;
+    	top: 5px;
+	}
+	.black-want-buy__img-pink {
+	    bottom: -100px;
+	    width: 230px;
+	    left: -10px;
+	}
+	#good-battery .block-want-buy .black-want-buy__img-pink {
+	    width: 150px;
+	    top: 60px;
+	    left: -10px;
+	}
+	#good-battery .block-want-buy .black-want-buy__img-battery2 {
+	    left: 10px;
+	    top: -70px;
+	}
+	#contacts .block-want-buy .black-want-buy__img-blue {
+	    width: 200px;
+	    margin-left: 100px;
+	}
+	#contacts .block-want-buy .black-want-buy__img-pink {
+	    width: 105px;
+	    top: -50px;
+	    left: 0px;
+	}
+	#contacts .block-want-buy .black-want-buy__img-notebook {
+	    left: 10px;
+	    width: 200px;
+	    top: 140px;
+	    z-index: 0;
+	}
+	#location-search .black-want-buy__img-blue {
+	    width: 150px;
+	    margin-left: 100px;
+	}
+	#location-search .black-want-buy__img-pink {
+	    top: 100px;
+	    width: 80px;
+	    left: 40px;
+	}
+	#location-search .black-want-buy__img-radiotower {
+	    width: 250px;
+	    left: -50px;
+	    bottom: -160px;
+	}
+	#load .block-want-buy .black-want-buy__img-pink{
+	    width: 200px;
+	}
+	#load .block-want-buy .black-want-buy__img-blue {
+	    width: 100px;
+	    left: 0;
+	    top: 140px;
+	}
+	#load .block-want-buy .black-want-buy__img-magnet {
+	    left: -20px;
+	    width: 100px;
+	    top: 60px;
+	}
+	#load .block-want-buy .black-want-buy__img-usb {
+	    left: 0px;
+	    width: 100px;
+	    bottom: -120px;
+	}
+	
+	.block-section__opportunities li {
+		width: 100%;
+    	margin: 30px 0px;
+	}
+	#opportunities .block-want-buy{
+	    height: 300px;
+	    width: 300px;
+	    margin-left: -150px;
+	}
+	#where-buy .block-want-buy .block-want-buy__img-boy {
+	    left: -140px;
+	    width: 430px;
+	    top: 105px;
+	    
+	}
+}
+
+
+@media screen and (max-width:500px){
+	.block-download {
+	    padding: 30px 40px;
+	}
+	.block-download .block-download__text {
+    	font-size: 21px;
+    	padding-left: 50px;
+	}
+	.block-download .block-download__img {
+ 	    margin-top: -50px;
+	    width: 100px;
+	    right: 75px;
+	}
+	.block-download .block-download__btn {
+    	margin-left: 50px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.block-download {
+	    padding: 30px 40px;
+	}
+	.block-download .block-download__text {
+    	font-size: 21px;
+    	padding-left:10px;
+	}
+	.block-download .block-download__img {
+ 	    margin-top: -50px;
+	    width: 100px;
+	    right:30px;
+	}
+	.block-download .block-download__btn {
+    	margin-left:10px;
+	}
+}
+
+@media screen and (max-width:400px){
+	.block-download {
+	     padding: 30px 15px;
+	}
+	.block-download .block-download__text {
+    	font-size: 18px;
+    	padding-left: 20px;
+	}
+	.block-download .block-download__img {
+ 	    margin-top: -50px;
+	    width: 100px;
+	    right:30px;
+	}
+	.block-download .block-download__btn {
+    	margin-left:10px;
+	}
+}
+
+
+

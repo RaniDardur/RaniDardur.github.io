@@ -1,0 +1,724 @@
+@font-face {
+font-family: 'fontb925f75f38e20aab0e872ba84d1d0b27';
+    
+    src:    url('https://nomail.com.ua/files/eot/b925f75f38e20aab0e872ba84d1d0b27.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/b925f75f38e20aab0e872ba84d1d0b27.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/b925f75f38e20aab0e872ba84d1d0b27.woff2') format('woff2');
+}
+
+@font-face { font-family: 'PFDinTextCompPro-Bold';  src: local('PFDinTextCompPro-Bold'), url('https://nomail.com.ua/files/woff/b925f75f38e20aab0e872ba84d1d0b27.woff') format('woff'); }
+
+@font-face {
+font-family: 'fontc379922c7a1e1baf3dd95d4fc61899a8';
+    
+    src:    url('https://nomail.com.ua/files/eot/c379922c7a1e1baf3dd95d4fc61899a8.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/c379922c7a1e1baf3dd95d4fc61899a8.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/c379922c7a1e1baf3dd95d4fc61899a8.woff2') format('woff2');
+}
+
+@font-face { font-family: 'PFDinTextCompPro-Regular';  src: local('PFDinTextCompPro-Regular'), url('https://nomail.com.ua/files/woff/c379922c7a1e1baf3dd95d4fc61899a8.woff') format('woff'); }
+
+
+@font-face {
+font-family: 'font97529197ffd36b9e38617afd7dd66c81';
+    
+    src:    url('https://nomail.com.ua/files/eot/97529197ffd36b9e38617afd7dd66c81.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/97529197ffd36b9e38617afd7dd66c81.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/97529197ffd36b9e38617afd7dd66c81.woff2') format('woff2');
+}
+
+@font-face { font-family: 'PFDinTextCompPro-Medium';  src: local('PFDinTextCompPro-Medium'), url('https://nomail.com.ua/files/woff/97529197ffd36b9e38617afd7dd66c81.woff') format('woff'); }
+
+/* Спецификации */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	--def: #96B7C4;     
+  --inv: #fff;
+	font-family: 'PFDinTextCompPro-Regular';
+	font-weight:400;
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+section{
+
+}
+ul,li{
+	display:block;
+	margin:0;
+	padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'PFDinTextCompPro-Medium';
+  text-transform:uppercase;
+}
+a{
+	color:white;
+}
+a:hover{
+	text-decoration:none;
+	color:white;
+}
+.btn{
+  border-radius: 60px;
+  font-size: 24px;
+  background-color: #ff6d00;
+  padding: 10px 40px;
+  font-family: 'PFDinTextCompPro-Bold';
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  letter-spacing:1px;
+}
+.btn:hover{
+  box-shadow: -0.0625rem 0.5rem 0.8125rem rgba(255,111,0,.7);
+  color:white;
+}
+.black{
+  color:black;
+}
+.orange{
+  color:#ffa100;
+}
+
+/* --- Главный экран --- */
+header{
+  background: #FFFFFF;
+background: -webkit-linear-gradient(bottom left, #FFFFFF, #7DDAE3);
+background: -moz-linear-gradient(bottom left, #FFFFFF, #7DDAE3);
+background: linear-gradient(to top right, #FFFFFF, #7DDAE3);
+  height:100vh;
+  overflow:hidden;
+}
+.block-main{
+  margin-top:100px;
+}
+.block-main .block-main__title{
+  font-size:72px;
+  line-height:65px;
+}
+
+.block-main__circles li{
+    float: left;
+    width: 230px;
+    height: 230px;
+    background-color: #b3e8ef;
+    text-align: center;
+    padding-top:21px;
+    border-radius: 50%;
+    margin:40px 35px 40px auto;
+    border:10px solid #ffffff;
+}
+
+.block-main__circles li:last-child{
+  margin-right:0px;
+   margin-left:0px;
+}
+
+.block-main__circles li:hover{
+  box-shadow: 0px 0px 10px 10px #b3e8ef;
+}
+
+.block-main__circles li a img{
+    width:auto;
+}
+.block-main__btn i{
+    font-size: 30px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.parents{
+  overflow:hidden;
+}
+.parents .parents__father,
+.parents .parents__mother{
+    float: left;
+    top: 107px;
+    width: 400px;
+    height: 100%;
+    position: absolute;
+}
+.parents .parents__father img,
+.parents .parents__mother img{
+  width:100%;
+}
+.parents .parents__father{
+  top: 149px;
+  left: -30px;
+}
+.parents .parents__mother{
+  left: 150px;
+}
+
+
+/* --- Вторая секция(Не потеряются.Всегда на связи) --- */
+.block-section{
+  margin-top:154px;
+}
+
+.block-section .block-section__img{
+  width: 164px;
+}
+.block-section .block-section__img img{
+  width:100%;
+}
+.block-section .block-section__title{
+  font-size:52px;
+  padding:30px auto;
+  margin-top:30px;
+}
+.block-section .block-section__text{
+  font-size:24px;
+}
+
+.block-want-buy{
+  position:relative;
+  margin-top:100px;
+  margin:100px auto 120px 200px;
+  height:500px;
+  width: 500px;
+  background-color:#ecebed;
+  border-radius:50%;
+}
+.block-want-buy__btn{
+  position:absolute;
+  bottom:0;
+  left: 50%;
+  margin-left:-99px;
+}
+.block-want-buy__img{
+    width: 250px;
+}
+.black-want-buy__img-hang{
+  position:absolute;
+  left: -50%;
+}
+
+/* --- Третья секция(Нет игрушек) --- */
+#no-game .block-want-buy__img{
+  width: 150px;
+  margin-top: -50px;
+}
+#no-game .block-want-buy,
+#water-resistant .block-want-buy,
+#load .block-want-buy,
+#opportunities .block-want-buy,
+#question .block-download{
+  background-image: linear-gradient(to bottom, #c6eef2, #b8eaef, #aae6ec, #9be1ea, #8bdde7);
+}
+.black-want-buy__img-pink{
+     position: absolute;
+    width: 400px;
+    left: -110px;
+    bottom: -100px;
+}
+.block-want-buy__img-doggirl,
+.block-want-buy__img-dogboy,
+.block-want-buy__img-monster
+{
+    position: absolute;
+    left: -60px;
+    z-index: -10;
+}
+.block-want-buy__img-doggirl{
+
+}
+
+.block-want-buy__img-dogboy{
+    left: -120px;
+}
+.block-want-buy__img-monster{
+    left: -260px;
+    top: 150px;
+}
+
+
+
+/* --- Четвертая секция(Хорошая автономная работа) --- */
+#good-battery{
+
+}
+
+#good-battery .block-want-buy .black-want-buy__img-pink,
+#good-battery .block-want-buy .black-want-buy__img-battery,
+#good-battery .block-want-buy .black-want-buy__img-clock,
+#good-battery .block-want-buy .black-want-buy__img-battery2{
+  position:absolute;
+}
+#good-battery .block-want-buy .black-want-buy__img-pink{
+  width: 250px;
+  top: 40px;
+  left: -70px;
+}
+#good-battery .block-want-buy .black-want-buy__img-battery2{
+  left: 70px;
+  top: -40px;
+}
+#good-battery .block-want-buy .black-want-buy__img-clock{
+  left: -210px;
+  top: 220px;
+  height: 200px;
+}
+#good-battery .block-want-buy .black-want-buy__img-battery{
+  bottom: -140px;
+  left: -50px;
+  width: 130px;
+}
+
+/* --- Пятая секция(Водостойкие) --- */
+.black-want-buy__img-water{
+  position:absolute;
+  bottom: -130px;
+  left: -230px;
+  width: 120%;
+}
+/* --- Шестая секция(Список контактов) --- */
+#contacts .block-want-buy .black-want-buy__img-pink,
+#contacts .block-want-buy .black-want-buy__img-notebook{
+  position:absolute;
+
+}
+#contacts .block-want-buy .black-want-buy__img-blue{
+  width:300px;
+}
+#contacts .block-want-buy .black-want-buy__img-pink{
+  width: 125px;
+  top: 90px;
+  left: 0px;
+  z-index:10;
+}
+#contacts .block-want-buy .black-want-buy__img-notebook{
+  left: -200px;
+  width: 280px;
+  top: 140px;
+  z-index: 1;
+}
+
+
+/* --- Седьмая секция(Магнитная зарядка) --- */
+#load .block-want-buy .black-want-buy__img-pink{
+  position:static;
+  width:300px;
+}
+#load .block-want-buy .black-want-buy__img-blue,
+#load .block-want-buy .black-want-buy__img-usb,
+#load .block-want-buy .black-want-buy__img-magnet{
+  position:absolute;
+}
+
+#load .block-want-buy .black-want-buy__img-blue{
+  left: -100px;
+  top: 160px;
+  z-index:10;
+}
+#load .block-want-buy .black-want-buy__img-pink{
+  z-index:10;
+}
+#load .block-want-buy .black-want-buy__img-magnet{
+  left: -50px;
+  width: 200px;
+  top: 30px;
+  z-index: 1;
+}
+
+#load .block-want-buy .black-want-buy__img-usb{
+  left: -170px;
+  width: 200px;
+  bottom: -120px;
+}
+
+
+/* --- Восьмая секция(Поиск местоположения) --- */
+#location-search{
+
+}
+#location-search .black-want-buy__img-pink,
+#location-search .black-want-buy__img-radiotower{
+  position:absolute;
+}
+#location-search .black-want-buy__img-blue{
+  width: 300px;
+}
+#location-search .black-want-buy__img-pink{
+  top: 50px;
+  width: 170px;
+  left: -40px;
+}
+#location-search .black-want-buy__img-radiotower{
+    width: 410px;
+    left: -280px;
+    bottom: -120px;
+}
+/* --- Девятая секция(Дополнительные возможности) --- */
+.block-section__opportunities{
+  margin-top:100px;
+}
+
+.block-section__opportunities li{
+    float: left;
+    width: 300px;
+    background-color:#edf9fb;
+    font-size:24px;
+    padding:74px 40px 60px 40px;
+    margin: 0px 0px 80px 31px;
+    position: relative;
+
+}
+.block-section__opportunities li:hover{
+  box-shadow: -10px 10px 15px 0px #aae6ec;
+}
+.block-section__opportunities li:hover span{
+  box-shadow: -10px 10px 15px 0px #ffac72;
+}
+.block-section__opportunities li h3{
+  font-size: 
+}
+.block-section__opportunities li p{
+
+}
+.block-section__opportunities li span{
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  padding: 15px 0 19px 0;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #fff;
+  top: -50px;
+}
+.block-section__opportunities li span img{
+  
+}
+
+#opportunities .block-want-buy {
+  position: relative;
+  margin:0px;
+  height: 400px;
+  margin-left: -50px;
+  margin-top: 180px;
+  width: 400px;
+  background-color: #ecebed;
+  border-radius: 50%;
+}
+
+
+#opportunities .block-want-buy .block-want-buy__btn {
+  bottom: -120%;
+}
+
+#opportunities .block-want-buy .block-want-buy__img-girl{
+  position:absolute;
+  width: 450px;
+  left: -30px;
+  top: 200px;
+}
+/* --- Десятая секция(Частые вопросы) --- */
+p{
+  font-weight:300;
+}
+.question-answer{
+  margin-top:50px;
+}
+.question-answer__item{
+  position:relative;
+  margin-bottom:10px;
+}
+.question-answer .question-answer__item h3{
+  font-size: 24px;
+  float: left;
+  width: 100%;
+  padding: 19px 0px 19px 40px;
+  margin: 0;
+  text-transform: none;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  background-color:#f2f2f2;
+}
+.question-answer .question-answer__item .more{
+  font-size:21px;
+    padding: 90px 50px 10px 50px;
+    font-weight:300;
+}
+.more-display-none{
+  display:none;
+}
+.more-display-block{
+  display:block;
+}
+.question-answer .question-answer__item .arrow-more{
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  margin-right: 30px;
+  right: 0;
+}
+.question-answer .question-answer__item .arrow-more i{
+  font-size:30px;
+  color:#ffa100;
+}
+
+.question-answer .question-answer__item .arrow-more::after{
+  display:block;
+  content:' ';
+  width:1px;
+  height:100%;
+  background-color:#003f85;
+}
+
+.rotate{
+ transform: rotate(180deg);
+ transition: .7s ease-out;
+ transition-delay: 0.1s;
+ bottom: 20px;
+}
+.rotate .question-answer__item h3{
+  color: #ffa101;
+}
+li{
+ list-style-type: none;
+}
+ul{
+  padding: 0;
+}
+
+.question_answer {
+    padding: 1vw 1vw;
+}
+.question_list{
+  padding-bottom: 2vw;
+  padding-top: 1vw;
+}
+.arrow i{
+  transition: transform 1s;
+}
+.arrow .active i {
+  transform: rotate(90deg);
+}
+
+.block-download{
+  width: 100%;
+  padding: 30px 100px;
+  border-radius: 550px;
+  margin-top: 57px;
+}
+
+.block-download .block-download__text{
+  font-size: 30px;
+  font-weight: 900
+}
+.block-download .block-download__text span{
+  text-decoration: underline;
+}
+.block-download .block-download__btn{
+  background-color: #ffffff;
+  color: #ff8130;
+  border: 1px solid #ff8130;
+}
+.block-download .block-download__btn:hover{
+ box-shadow: -0.0625rem 0.5rem 0.8125rem rgba(255,111,0,.7);
+}
+.block-download .block-download__img{
+  position: absolute;
+  float: right;
+  top: 50%;
+  margin-top: -80px;
+  width: 200px;
+  right: 130px;
+}
+/* --- Одиннадцатая секция(Где можно купить?) --- */
+#where-buy{
+
+}
+#where-buy .block-section{
+  margin: 100px 0px 130px;
+}
+#where-buy .block-want-buy{
+  margin:0;
+  height: 450px;
+  width: 450px;
+}
+#where-buy .block-want-buy .block-want-buy__img-boy{
+  left: -100px;
+  top:20px;
+  position: absolute;
+  width: 600px;
+}
+
+.block-section__where-buy{
+
+}
+.block-section__where-buy li{
+  float: left;
+}
+.block-section__where-buy li:nth-child(2){
+  float: right;
+}
+.block-section__where-buy li:nth-child(2) img{
+  float: right;
+}
+.block-section__where-buy li:nth-child(3){
+   width: 100%;
+}
+.block-section__where-buy li img{
+}
+
+
+
+
+footer{
+  padding:57px 0;
+  background-image: linear-gradient(to bottom, #c6eef2, #b8eaef, #aae6ec, #9be1ea, #8bdde7);
+}
+footer img{
+  margin-top:15px;
+}
+footer p{
+  font-weight:300;
+  font-size:19px;
+}
+
+
+/* --- Модальное окно --- */
+.modal-dialog {
+    max-width: 750px !important;
+}
+.modal-body {
+    padding: 36px 150px 0px 150px;
+}
+.modal-header{
+  border:none;
+}
+.close{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.modal-title{
+  font-size:72px;
+  line-height: 0.7;
+}
+.modal-description{
+  font-size:18px;
+}
+.btn{
+  color:white !important;
+}
+.block-download .block-download__btn{
+    color: #ff8130 !important;
+}
+/* --- Форма отправки --- */
+.form-container{
+}
+
+.form input,
+.form textarea{
+  width: 100%;
+  background-color:#f9fbfe;
+  border: 1px solid #cdced1;
+  border-radius: 5px;
+  padding: 10px 25px;
+  outline: none;
+}
+.form textarea{
+  width:100%;
+  height:114px;
+  float: left;
+  background-color: #e4e8e8;
+  border: none;
+  border-radius: 40px;
+}
+.fields .form input[type="text"]{
+  width: 300px;
+  float: left;
+  background-color: #e4e8e8;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+.fields .form button {
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ff6d00;
+    outline: none;
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+.fields .form button:hover {
+    box-shadow: 0px 0px 10px 1px rgb(255, 109, 0.8);
+}
+.fields_none{
+  display:none !important;
+}
+.note{
+  padding: 30px;
+  color: #626262;
+  display:none;
+}
+.note i{
+  color: green;
+  font-size: 100px;
+}
+
+.popup {
+  position: relative;
+  padding: 40px;
+  background-color: #FFF;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+}
+
+.modal_img-pink{
+  top: 70px;
+  position: absolute;
+  left: -80px;
+}
+.modal_img-blue{
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
