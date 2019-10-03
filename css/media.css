@@ -79,7 +79,8 @@
 }
 
 @media screen and (max-width:768px){
-	#where-buy .block-want-buy{
+	#where-buy .block-want-buy,
+	#good-battery .block-want-buy .black-want-buy__img-clock{
 		display:none;
 	}
 	header{
