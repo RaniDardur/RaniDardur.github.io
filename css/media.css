@@ -296,6 +296,9 @@
 	.strawberry-structure{
 		display: none;
 	}
+	.contact__phone{
+	  	color:black;
+	}
 	.contact__img2,
 	.fails2,
 	.block-howtouse__text-2,
