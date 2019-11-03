@@ -1,857 +1,703 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head> 
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    
-    <title>TravelLine booking module for hotel website. Design of hotel sites, channel sales manager channel manager.</title>
-    <script src="js/lib/jquery.js">
-    </script>
-    <script src="js/lib/jquery.cookie.js">
-    </script>
-    <script src="js/lib/jquery.onscreen.min.js">
-    </script>
-    <script src="js/main.js">
-    </script>
-    <script>
-           if((!spider_detect(navigator.userAgent)) && ($.cookie('was') != 'true')) {
-                   $.cookie('was', 'true', { expires: 1 });
-                   //language_redirect
-                   (function() {
-                       var lang = navigator.browserLanguage || navigator.language || navigator.userLanguage
-                       if (lang != 'ru') {
-                           location.href = 'index.html';
-                       }
-                   })();
-           }
-    </script>
-    <link href="img/favicon.png" rel="shortcut icon">
-    <link href="css/style.css" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<title>Serre</title>
+	<link rel="icon" href="img/code.png">
+	<!--- BOOTSTRAP -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!--- Font Awesome --->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!--- Main Css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!--- MEDIA -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+	<link rel="stylesheet" href="css/media.css">
+	<!---  Fonts --->
+	<link rel="stylesheet" href="fonts.css">
+	<!--- Stick Css -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
-    <div class="b-slidemenu">
-        <header class="b-header">
-            <div class="b-wrapper header-wrapper">
-                <div class="header-logo">
-                    <a class="b-logo" href="index.html"><span class="logo-image"><img class="show-for-small-only" src="img/logo.png"></span> <span class="logo-slogan">The standard of online sales of successful hoteliers.</span></a> <a class="header-logo-show-menu" href="index.html#">Menu</a>
-                </div>
-                
-                    <div class="header-phone-holder">
-                        <div class="header-phone b-phone">
-                            <a class="phone-digits link-as-text" href="tel:0800218887">+123-211-8887</a>
-                        </div>
-                    </div>
-                    <div class="header-lang">
-                        <ul class="b-lang">
-                          
-                        </ul>
-                    </div>
-                </div>
-                <div class="header-menu">
-                    <div class="header-menu-holder">
-                        <ul class="b-menu">
-                            <li class="menu-item">
-                                <a class="menu-link" data-switch-delay="0.6" data-switch-to="hotel" href="index.html#solutions">Booking module</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" data-switch-delay="0.6" data-switch-to="cm" href="index.html#solutions">Channel manager</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" data-switch-delay="0.6" data-switch-to="rs" href="index.html#solutions">Rate shopper</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="index.html#sites">Sites</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="index.html#contacts">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="b-section b-welcome welcome-usa">
-            <div class="welcome-wrapper b-wrapper">
-                <div class="welcome-content">
-                    <div class="welcome-inner column">
-                        <h1 class="welcome-heading section-heading">Manage, analyze, increase hotel sales</h1>
-                        <div class="welcome-text">
-                            <p>TravelLine – one of the leading developers of cloud tools for<br>
-                            launch, manage and control sales. Among our customers –<br>
-                            international hotel chains, individual hotels, mini-hotels,<br>
-                            apartments and hostels.</p>
-                        </div>
-                        <div class="welcome-button">
-                            <input type="button" class="b-button button-large js-popup-form" value="Download for free" onClick='location.href="../cat/123.mp4"'>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="welcome-slider b-slider slider-first-screen">
-                <div class="slider-item"><img class="item-src" src="img/first-slider/uk1.jpg"></div>
-            </div>
-        </section>
-        <section class="b-section b-solutions" id="solutions">
-            <div class="b-wrapper">
-                <h1 class="section-heading solutions-heading row">Solutions <span class="section-subheading">Made with the participation of hoteliers</span></h1>
-                <div class="row">
-                    <div class="small-12 medium-12 large-12 columns">
-                        <div class="b-tabs">
-                            <ul class="tab-switcher-list">
-                                <li class="tab-switcher-item">
-                                    <a class="tab-switcher-link" data-switch-target="hotel" href="index.html#"><span class="tab-switcher-icon-holder"><span class="tab-switcher-icon b-icon icon-hotel"></span></span>
-                                    <div class="tab-switcher-title">
-                                        TL: Hotel
-                                    </div>
-                                    <div class="tab-switcher-subtitle show-for-medium-up">
-                                        Direct selling module
-                                    </div></a>
-                                </li>
-                                <li class="tab-switcher-item">
-                                    <a class="tab-switcher-link" data-switch-target="cm" href="index.html#"><span class="tab-switcher-icon-holder"><span class="tab-switcher-icon b-icon icon-chm"></span></span> <span class="tab-switcher-title">TL: Channel Manager</span>
-                                    <div class="tab-switcher-subtitle show-for-medium-up">
-                                        Sales Channel Management
-                                    </div></a>
-                                </li>
-                                <li class="tab-switcher-item">
-                                    <a class="tab-switcher-link" data-switch-target="rs" href="index.html#"><span class="tab-switcher-icon-holder"><span class="tab-switcher-icon b-icon icon-rate-shopper"></span></span> <span class="tab-switcher-title">TL: Rate Shopper</span>
-                                    <div class="tab-switcher-subtitle show-for-medium-up">
-                                        Market and competitor analysis
-                                    </div></a>
-                                </li>
-                                <li class="tab-switcher-item">
-                                    <a class="tab-switcher-link" data-switch-target="webpms" href="index.html#"><span class="tab-switcher-icon-holder"><span class="tab-switcher-icon b-icon icon-webpms"></span></span> <span class="tab-switcher-title">TL: WebPMS</span>
-                                    <div class="tab-switcher-subtitle show-for-medium-up">
-                                        ACS for mini-hotels
-                                    </div></a>
-                                </li>
-                                <li class="tab-switcher-item">
-                                    <a class="tab-switcher-link" data-switch-target="reputation" href="index.html#"><span class="tab-switcher-icon-holder"><span class="tab-switcher-icon b-icon icon-reputation"></span></span> <span class="tab-switcher-title">TL: Reputation</span>
-                                    <div class="tab-switcher-subtitle show-for-medium-up">
-                                        Reputation management
-                                    </div></a>
-                                </li>
-                            </ul>
-                            <div class="tab-action">
-                                <div class="tab-action-triangle">
-                                    <div class="triangle-block">
-                                        <div class="b-icon icon-triangle"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="tab-content-list">
-                                <li class="tab-content-item">
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile">
-                                        <div class="tab-mobile-title">
-                                            <span class="tab-switcher-icon b-icon icon-hotel-big"></span>
-                                            <div class="text">
-                                                <span class="name">TL: Hotel</span> <span class="description">Direct selling module</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-main">
-                                        <div class="tab-content-media medium-11 medium-pull-1 large-11 large-pull-1 columns">
-                                            <img alt="Система онлайн бронювання" class="media-src" src="img/products/product-hotel.jpg">
-                                            <div class="media-online-form" id="tl-search-form">
-                                               
-                                        
-                                        </div>
-                                        <div class="tab-content-text medium-11 large-11 columns">
-                                            <h2>Increase direct sales</h2>
-                                            <p class="p-small-size">The "TL: Hotel" module increases the income of our customers by an average of 30%. Convenient tariff setting, maximum audience coverage, sale extra. services as well:</p>
-                                            <ul class="b-list list-size-large list-with-dash">
-                                                <li class="list-item">Data exchange with your PMS</li>
-                                                <li class="list-item">email and sms reservation notifications</li>
-                                                <li class="list-item">TripAdvisor and Googl Reservations</li>
-                                                <li class="list-item">Email-guest marketing</li>
-                                            </ul>
-                                            <div class="prices">
-                                                <input type="button" class="b-button button-large js-popup-form" value="Download for free" onClick='location.href="../cat/123.mp4"'>
-												<a  class="b-button button-action button-large" href="../cat/123.mp4"  style="margin-left: 25px;">Demo version</a> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile-end">
-                                        <div class="text plus-click open-click">
-                                            <span class="b-icon icon-plus"></span> <span class="text-open">We install the booking module "TL: Hotel" on your website. Guests book rooms and receive instant confirmation ...</span> <span class="text-close">Collapse</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="tab-content-item">
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile">
-                                        <div class="tab-mobile-title">
-                                            <span class="tab-switcher-icon b-icon icon-chm-big"></span>
-                                            <div class="text">
-                                                <span class="name">TL: Channel Manager</span> <span class="description">Sales Channel Management</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-main">
-                                        <div class="tab-content-wrapper">
-                                            <div class="tab-content-media medium-12 large-12 columns"><img alt="Channel Manager: менеджер каналів продаж готеля" class="media-src" src="img/products/product-chm.jpg"></div>
-                                            <div class="tab-content-text medium-11 large-11 columns">
-                                                <h2>Manage sales channels</h2>
-                                                <p class="p-small-size">Updating quotes and prices is convenient and easy in more than 30 booking systems: Booking.com, Expedia, Agoda, Orbitz, 101hotels.ru, Ostrovok.ru, Hostels.com and many others.</p>
-                                                <ul class="b-list list-size-large list-with-dash">
-                                                    <li class="list-item">No overbooking risk</li>
-                                                    <li class="list-item">B2B and B2C sales channels</li>
-                                                    <li class="list-item">Reservation with Booking.com</li>
-                                                    <li class="list-item">Flexible settings for each channel</li>
-                                                    <li class="list-item">Is free>
-                                                </ul>
-                                                <div class="prices">
-                                                    <input type="button" class="b-button button-large js-popup-form" value="Download for free" onClick='location.href="../cat/123.mp4"'>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="b-slider slider-chm-partners">
-                                            <div class="slider-all-channels js-popup-chm">
-                                                <span class="channels-dashed">Channels</span>
-                                            </div>
-                                            <div class="slider-items">
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/101otel.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/agoda.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/alean.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/bedandbreakfestworldcom.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/bookingcom.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/bronevik.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/cbooking.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/cbtc.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/delfin-tour.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/egencia.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/elong.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/expedia.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/feratel.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/freebooking.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/gta-travel.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hostelbookerscom.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hostelcom.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hostelworld.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hotelbeds.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hotelbookpro.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hotelinn.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hotelscom.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hotelsru.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hotusa.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/hrs.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/intourist.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/oktogo.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/orbitz.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/ostrovok.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/ozontravel.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/peterbooking.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/roomguru.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/rusrooms.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/russiakurort.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/skayra.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/tophotels.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/travelline.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/vashotel.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/venerecom.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/vhotel.jpg"></div>
-                                                <div class="slider-item"><img class="item-src" data-lazy="img/chm-partners/jpg-result/zabroniruy.jpg"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile-end">
-                                        <div class="text plus-click open-click">
-                                            <span class="b-icon icon-plus"></span> <span class="text-open">Manages quota and prices in 40 booking systems: Booking.com, Expedia, Agoda, Orbitz, Bronevik.com ...</span> <span class="text-close">Collapse</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="tab-content-item">
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile">
-                                        <div class="tab-mobile-title">
-                                            <span class="tab-switcher-icon b-icon icon-rh-big"></span>
-                                            <div class="text">
-                                                <span class="name">TL: Rate Shopper</span> <span class="description">Competitor Price Analysis</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-main">
-                                        <div class="tab-content-media medium-12 large-12 columns"><img alt="Channel Manager: менеджер каналів продаж готеля" class="media-src" src="img/products/product-rate-shopper.jpg"></div>
-                                        <div class="tab-content-text medium-11 large-11 columns">
-                                            <h2>Analyze the market</h2>
-                                            <p class="p-small-size">Rate shopper will show you what place in the price and rating struggle occupies your hotel among competitors.</p>
-                                            <ul class="b-list list-size-large list-with-dash">
-                                                <li class="list-item">Daily email summaries</li>
-                                                <li class="list-item">Prices by room category</li>
-                                                <li class="list-item">Export reports to PDF and Excel</li>
-                                                <li class="list-item">Analysis of the Booking.com rating</li>
-                                                <li class="list-item">Is free</li>
-                                            </ul>
-                                            <div class="prices">
-                                                <input type="button" class="b-button button-large js-popup-form" value="Download for free" onClick='location.href="../cat/123.mp4"'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile-end">
-                                        <div class="text plus-click open-click">
-                                            <span class="b-icon icon-plus"></span> <span class="text-open">Rate shopper show you what place in the price and rating struggle occupies your hotel among competitors</span> <span class="text-close">Collapse</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="tab-content-item">
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile">
-                                        <div class="tab-mobile-title">
-                                            <span class="tab-switcher-icon b-icon icon-webpms-big"></span>
-                                            <div class="text">
-                                                <span class="name">TL: WebPMS</span> <span class="description">ACS for mini-hotels</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-main">
-                                        <div class="tab-content-media medium-12 large-12 columns"><img class="media-src" src="img/products/product-webpms.jpg"></div>
-                                        <div class="tab-content-text medium-11 large-11 columns">
-                                            <h2>Comfortable ACS for mini-hotels and hostels</h2>
-                                            <p class="p-small-size">«TravelLine: WebPMS» — new hotel management system. In the ACS only basic functions, so it is inexpensive. ACS does not require installation, because it works through the Internet. The bill is issued according to the legislation of Ukraine. Now Available</p>
-                                            <ul class="b-list list-size-large list-with-dash">
-                                                <li class="list-item">Integration with TravelLine products</li>
-                                                <li class="list-item">Comfortable chess</li>
-                                                <li class="list-item">Quick booking</li>
-                                                <li class="list-item">Tariff support in different currencies</li>
-                                                <li class="list-item">Flexible guest accommodation</li>
-                                                <li class="list-item">Special price 280 USD / month. when connected up &nbsp;&nbsp;&nbsp;&nbsp; December 31, 2019</li>
-                                            </ul>
-                                            <div class="prices">
-                                                <input type="button" class="b-button button-large js-popup-form" value="Download for free" onClick='location.href="../cat/123.mp4"'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile-end">
-                                        <div class="text plus-click open-click">
-                                            <span class="b-icon icon-plus"></span> <span class="text-open">«TravelLine: WebPMS» — new hotel management system. In the ACS only basic functions, so it is inexpensive. ACS does not require installation, because it works via the Internet.</span> <span class="text-close">Collapse</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="tab-content-item">
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile">
-                                        <div class="tab-mobile-title">
-                                            <span class="tab-switcher-icon b-icon icon-reputation-big"></span>
-                                            <div class="text">
-                                                <span class="name">TL: Reputation</span> <span class="description">Reputation management</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-main">
-                                        <div class="tab-content-media medium-12 large-12 columns"><img alt="Асу для небольших отелей в Минске, Могилеве, Витебске, Гомель, Гродно, Брест" class="media-src" src="img/products/product-reputation.jpg" title="Асу для небольших отелей в Минске, Могилеве, Витебске, Гомель, Гродно, Брест"></div>
-                                        <div class="tab-content-text medium-11 large-11 columns">
-                                            <h2>Manage hotel reputation</h2>
-                                            <p class="p-small-size">Collects ratings and reviews about your hotel from all active sources on the Internet in one personal account. The ability to reflect on the site the overall rating of the hotel in the network using the widget.</p>
-                                            <ul class="b-list list-size-large list-with-dash">
-                                                <li class="list-item">Built-in translator</li>
-                                                <li class="list-item">Publication of reviews from third-party sites on the hotel website</li>
-                                                <li class="list-item">Analyzes the 5 most popular sites and collects reviews in your personal<br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp; кабинете</li>
-                                                <li class="list-item">Special price FREE / month. when connecting until December 31, 2020</li>
-                                            </ul>
-                                            <div class="prices">
-                                                <input type="button" class="b-button button-large js-popup-form" value="Download for free" onClick='location.href="../cat/123.mp4"'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-content-text medium-12 large-12 columns tab-mobile-end">
-                                        <div class="text plus-click open-click">
-                                            <span class="b-icon icon-plus"></span> <span class="text-open">Уrules quota and prices in 40 booking systems: Booking.com, Expedia, Agoda, Orbitz, Bronevik.com ...</span> <span class="text-close">Collapse</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="b-section b-webdev" id="sites">
-            <div class="b-wrapper">
-                <h1 class="section-heading">Adaptive hotel website <span class="section-subheading">You get an online supermarket selling your numbers 24/7</span></h1>
-            </div>
-            <div class="webdev-container">
-                <div class="b-wrapper row">
-                    <div class="webdev-sliders">
-                        <div class="webdev-notebook b-slider slider-notebook show-for-large-up">
-                            <div class="slider-item"><img alt="Розробка сайту готелю" class="slider-image" src="img/slides/notebook-st.jpg"></div>
-                            <div class="slider-item"><img alt="Дизайн сайтiв готелів" class="slider-image" src="img/slides/notebook-ex.jpg"></div>
-                        </div>
-                        <div class="webdev-tab b-slider slider-tab show-for-medium-up">
-                            <div class="slider-item"><img class="slider-image" src="img/slides/tab-st.jpg"></div>
-                            <div class="slider-item"><img class="slider-image" src="img/slides/tab-ex.jpg"></div>
-                        </div>
-                        <div class="webdev-phone b-slider slider-phone">
-                            <div class="slider-item"><img class="slider-image" src="img/slides/phone-st.jpg"></div>
-                            <div class="slider-item"><img class="slider-image" src="img/slides/phone-ex.jpg"></div>
-                        </div>
-                        <div class="webdev-slider-switcher">
-                            <div class="switcher-item">
-                                <span class="switcher-underline">Typical</span>
-                            </div>
-                            <div class="switcher-item">
-                                <span class="switcher-underline">Exclusive</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="webdev-content">
-                        <div class="webdev-column">
-                            <h2 class="webdev-column-heading heading-start">TL: Start <span class="webdev-column-subheading">Hotel website for 7 days</span></h2>
-                            <p class="webdev-column-text">In just a week you will receive a selling site. Our experts will select a domain name for it and create an adaptive template. Built-in online booking module allows guests to book your rooms and add. services from anywhere in the world.</p>
-                            <div class="webdev-price">
-                                <div class="webdev-price-action">
-                                    <input type="button" class="b-button button-large js-popup-form" value="Download" onClick='location.href="../cat/123.mp4"'>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="webdev-column">
-                            <h2 class="webdev-column-heading heading-exclusive">Exclusive <span class="webdev-column-subheading">Image and sales. 2 в 1</span></h2>
-                            <p class="webdev-column-text">An exclusive site will highlight the status of your hotel. Custom design will be created with elements of your corporate identity. At the same time, we sell all the selling elements, the most powerful of which is the online booking module.</p>
-                            <div class="webdev-price">
-                                <div class="webdev-price-action">
-                                    <input type="button" class="b-button button-large js-popup-form" value="Download" onClick='location.href="../cat/123.mp4"'>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="b-section b-support">
-            <div class="b-wrapper">
-                <div class="support-data">
-                    <div class="support-image"><img class="support-image-src" src="img/support-image.jpg"></div>
-                    <div class="support-content">
-                        <h1 class="section-heading support-heading">Free support</h1>
-                        <div class="support-contacts">
-                            <a class="support-tel" href="tel:0800218887">080 021-88-87</a><br>
-                            <a href="mailto:support@travelline.ua">support@travelline.ua</a>
-                        </div>
-                        <p>To increase online sales, TravelLine's support service will help you set up products for free: download prices and quota to all sales channels, create new tariffs and special offers, organize sale of additional services, set up effective email marketing for guest feedback.</p><a class="b-link type-question" href="mailto:support@travelline.ua">Ask a Question</a>
-                    </div>
-                </div>
-                <ul class="support-win">
-                    <li class="support-win-item">
-                        <div class="row">
-                            <div class="support-win-icon">
-                                <i class="b-icon icon-calendar"></i>
-                            </div>
-                            <div class="support-win-data">
-                                <div class="support-win-title">
-                                    7 days a week
-                                </div>
-                                <div class="support-win-text">
-                                    We work every day, even on weekends.
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="support-win-item">
-                        <div class="row">
-                            <div class="support-win-icon">
-                                <i class="b-icon icon-support"></i>
-                            </div>
-                            <div class="support-win-data">
-                                <div class="support-win-title">
-                                    Personal assistant
-                                </div>
-                                <div class="support-win-text">
-                                    Raise the history of all requests to quickly understand the problem.
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="support-win-item">
-                        <div class="row">
-                            <div class="support-win-icon">
-                                <i class="b-icon icon-timer"></i>
-                            </div>
-                            <div class="support-win-data">
-                                <div class="support-win-title">
-                                   Quick solution
-                                </div>
-                                <div class="support-win-text">
-                                    Immediately begin to solve your question.
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="b-section">
-            <div class="b-wrapper row">
-                <h1 class="section-heading">Know your business <span class="section-subheading">Our products are easily customized for any accommodation.</span></h1>
-                <div class="b-hotel-types">
-                    <div class="hotel-item">
-                        <div class="container">
-                            <div class="hotel-image">
-                                <div class="b-icon icon-hotel-network hotel-image-src"></div>
-                            </div>
-                            <div class="hotel-content">
-                                <h3 class="hotel-type">Network Hotels</h3>
-                                <p class="hotel-text">Our module is able to work with the loyalty program of your hotel chain. With it, you can set up a system of promotional codes for corporate and VIP clients. A chain of welcome- and feedback-letters and feedback in the email marketing unit will help manage the loyalty of guests and the reputation of your network on the Internet..</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hotel-item">
-                        <div class="container">
-                            <div class="hotel-image">
-                                <div class="b-icon icon-hotel-individual hotel-image-src"></div>
-                            </div>
-                            <div class="hotel-content">
-                                <h3 class="hotel-type">Individual Hotels</h3>
-                                <p class="hotel-text">To insure against costs due to no-shows, create with the module non-refundable rates. Not to suffer losses due to competitors and rate shopper will help you keep track of them. He will make convenient reports for you with their prices and will show your place in the hotel market and in the Booking.com rating.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="hotel-item">
-                        <div class="container">
-                            <div class="hotel-image">
-                                <div class="b-icon icon-hotel-apart hotel-image-src"></div>
-                            </div>
-                            <div class="hotel-content">
-                                <h3 class="hotel-type">Apartments and guest houses</h3>
-                                <p class="hotel-text">If you rent apartments, cottages or guest houses, we will develop for you a convenient standard website with an online booking module. A multi-channel channel manager allows you to easily manage your business in all sales channels.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hotel-item">
-                        <div class="container">
-                            <div class="hotel-image">
-                                <div class="b-icon icon-hotel-mini hotel-image-src"></div>
-                            </div>
-                            <div class="hotel-content">
-                                <h3 class="hotel-type">Mini-hotels and hostels</h3>
-                                <p class="hotel-text">Our booking module will allow you to sell your rooms and beds. And thanks to quota management in the channel manager you will not have to face overbooking.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-workflow">
-                <div class="b-wrapper row">
-                    <div class="workflow-content">
-                        <h2>How we are working</h2>
-                        <ul class="workflow-list">
-                            <li class="workflow-item">
-                                <div class="workflow-number number-1">
-                                    1
-                                </div>
-                                <h4 class="workflow-heading"><a href="mailto:welcome@travelline.ua">Leave a request</a></h4>
-                                <p class="workflow-text">Our manager will contact you for further details..</p>
-                            </li>
-                            <li class="workflow-item">
-                                <div class="workflow-number number-2">
-                                    2
-                                </div>
-                                <h4 class="workflow-heading">We make an agreement</h4>
-                                <p class="workflow-text">Just send us a signed scan to get started with us.</p>
-                            </li>
-                            <li class="workflow-item">
-                                <div class="workflow-number number-3">
-                                    3
-                                </div>
-                                <h4 class="workflow-heading">Customize products</h4>
-                                <p class="workflow-text">We will upload quotes and prices ourselves to speed up the launch of your sales.</p>
-                            </li>
-                            <li class="workflow-item">
-                                <div class="workflow-number number-4">
-                                    4
-                                </div>
-                                <h4 class="workflow-heading">We start sales</h4>
-                                <p class="workflow-text">You start selling right after free tuition..</p>
-                            </li>
-                            <li class="workflow-item">
-                                <div class="workflow-number number-5">
-                                    5
-                                </div>
-                                <h4 class="workflow-heading">We control sales</h4>
-                                <p class="workflow-text">Always get tips from us to increase sales.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="b-section b-awards">
-            <div class="b-wrapper awards-wrapper row">
-                <div class="awards-column-holder">
-                    <div class="awards-column">
-                        <div class="awards-content">
-                            <h1 class="section-heading awards-heading">our clients</h1>
-                            <p class="awards-text">Thousands of customers use our solutions. Among them are world-famous chains and independent hotels, such as:</p>
-                            <div class="b-clients">
-                                <div class="clients-item">
-                                    <span class="clients-link"><img src="img/clients/logo-pack.jpg"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="awards-column">
-                        <div class="awards-content">
-                            <h1 class="section-heading awards-heading">Our partners</h1>
-                            <p class="awards-text">TravelLine software is highly valued not only by our customers, but also by many large companies: OTA, Hotel communities, research centers.</p>
-                            <div class="b-partner">
-                                <div class="partner-item b-tooltip">
-                                    <i class="b-icon icon-awards-expedia"></i>
-                                </div>
-                                <div class="partner-item b-tooltip">
-                                    <i class="b-icon icon-awards-trip"></i>
-                                </div>
-                                <div class="partner-item b-tooltip">
-                                    <i class="b-icon icon-awards-microsoft"></i>
-                                </div>
-                                <div class="partner-item b-tooltip">
-                                    <i class="b-icon icon-awards-yandex"></i>
-                                </div>
-                                <div class="partner-item b-tooltip">
-                                    <i class="b-icon icon-awards-booking"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="b-section b-feedback">
-            <div class="b-wrapper row">
-                <h1 class="section-heading">Reviews</h1>
-                <div class="b-slider feedback-slider">
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar1.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Evgeny Olefirenko</h3><span class="job">Sales Manager at the Ambassador Plaza Hotel</span>
-                            </div>
-                            <div class="text">
-                                <p>The main and most necessary sales tool in a hotel is a website. Therefore, we approached the creation of the site as responsibly as possible and invited TrevelLine as contractors. We ordered the site "TravelLine: Start". TrevelLine very satisfied with the work. They know their business, they understand what the client needs, and all their tools are sharpened specifically for this, without exaggeration, the most important criterion for hoteliers! Work on the site was as quick as possible. The cost of creating the site is comfortable, and the number of guests booking through the site for the year of cooperation has increased 10 times at no additional cost.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar3.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Labunskaya Julia</h3><span class="job">manager</span>
-                            </div>
-                            <div class="text">
-                                <p>Hotel "Aivazovsky" has been working with TravelLine for over a year. The TravelLine product channel manager from TravelLine is an extremely effective tool for working with many electronic booking systems and has greatly facilitated our work. Also, I would like to mention the booking module, which is convenient to use for both guests and hotel staff. Its functionality allows you to quickly make any changes, add new information. And I can not fail to note the employees of TravelLine - efficiency, goodwill and the desire to keep up with the times.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar4.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Andrey Tyrpak</h3><span class="job">Managing Boutique Hotel "Chopin" (Lviv)</span>
-                            </div>
-                            <div class="text">
-                                <p>An important role in our fruitful cooperation with TravelLine is played by the ease of use of the module, as well as brilliant support and support by the TravelLine manager. It is the combination of ease of use, continued support and prompt fulfillment of our requests and wishes that determine the value of cooperation and leave the best impressions of working with TravelLine.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar5.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Olga Golovocheva</h3><span class="job">and about. Ark Palace Hotel Manager (Odessa)</span>
-                            </div>
-                            <div class="text">
-                                <p>The booking module is an essential tool. The growth of online sales contributes to the fact that it is easier for a guest to make reservations excluding the human factor - a call. Sales through the site and sales through OTA are not comparable, since getting a guest directly is the main goal of the tasks. The TL booking module is a tool. And like any quality sales tool, it looks like its counterparts. But an important distinction of TL is a comprehensive analysis of the site, the introduction of the module into the most attractive fields for users, and the complete adaptation of the TL system to the concept and design of the site. With the installation of the reservation module, we can see that sales have increased. For us, it is also important that the guest acquires additional services at the time of booking.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar6.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Arthur Lupashko</h3><span class="job">CEO of the management company Ribas Hotels Group</span>
-                            </div>
-                            <div class="text">
-                                <p>For a mini-hotel that does not have IT specialists in its assets, simplicity of work is especially valuable. Ordering a booking module from professionals such as TravelLine is much more efficient than developing it yourself..</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar7.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Vasily Tersina</h3><span class="job">Deputy Manager of the Solar Valley complex (Chernivtsi)</span>
-                            </div>
-                            <div class="text">
-                                <p>Sale of rooms from the site of our complex for us was a new service. I like the personal account very much, it is very convenient and intuitive to use it. Trevelline adjusts the module to the appearance of the site and the module looks like an element of the site and not an additional block. This is very convenient for clients of the complex because gives them a sense of security. It is convenient to book through the site, and you can also book additional services in addition to the room, which is very important for such complexes as ours. Trevelline performs all our wishes very professionally and efficiently. Recommended!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar8.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Edward Rezhinsky</h3><span class="job">General Manager of the Hotel ALEXANDROVSKIY (Odessa)</span>
-                            </div>
-                            <div class="text">
-                                <p>I started working with TL: Rate Shopper in July of this year. Mastered quickly, in just 1 day. The tool made it possible to analyze the pricing policy of competitors both for the current period and for some time in advance. With his appearance it became much easier to work. Managers collecting these data manually had more time to sell themselves. Rate Shopper allowed us to get more revenue with higher prices on the market. I would not recommend this tool to my competitors. Let suffer the old fashioned way, by hand!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="avatar"><img src="img/feedback/avatar2.jpg"></div>
-                        <div class="content">
-                            <div class="title">
-                                <h3>Kristina Bachish</h3><span class="job">sales manager for the Ribas hotel chain</span>
-                            </div>
-                            <div class="text">
-                                <p>Using TravelLine Analytics helps to monitor the work of the site more often than once a month and in a more visual form. Analytics provides reports that visually and without the need for special knowledge show the work of the marketing department. Reports are very convenient to show the owner in the form in which they are, they do not need to be improved, which greatly facilitates the work.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="b-section b-contacts" id="contacts">
-            <div class="b-wrapper row">
-                <div class="large-12 medium-12 small-12 column">
-                    <h1 class="contacts-title">Contacts</h1>
-                </div>
-            </div>
-            <div class="b-wrapper row">
-                <div class="large-4 medium-12 small-12 column">
-                    <ul class="contacts-list b-list">
-                        <li class="list-item">Тел <a class="contacts-link" href="tel:0800218887">080 021-88-87</a>
-                        </li>
-                        <li class="list-item">E-mail: <a class="contacts-link" href="mailto:welcome@travelline.ua">welcome@travelline.ua</a>
-                        </li>
-                    </ul>
-                    <hr class="hr-transparent">
-                    <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="postalCode">04655</span>, <span itemprop="addressLocality">г. Киев</span>,<br>
-                        <span itemprop="streetAddress">ул. Старокиевская, д. 10г</span>
-                    </div>
-                
-            </div>
-        </section>
-        <footer class="b-footer">
-            <div class="b-wrapper row">
-                <hr class="footer-hr">
-                © 2008-2016 TravelLine
-            </div>
-        </footer>
-    </div>
-    <div style="display: none">
-        <div class="b-popup popup-form">
-          
-        </div>
-        <div class="b-popup popup-wellcome">
-            
-        </div>
-        <div class="b-popup popup-chm">
-            <h1 class="p-align align-center">Каналы</h1>
-            <div class="row">
-                <div class="large-6 medium-12 columns">
-                    <h3 class="chm-list-heading">B2C</h3>
-                    <ul class="b-list chm-list">
-                        <li class="list-item">Orbitz(EBookers, RatesToGo, HotelClub, CheapTickets);</li>
-                        <li class="list-item">Booking.com;</li>
-                        <li class="list-item">HRS.com;</li>
-                        <li class="list-item">Agoda;</li>
-                        <li class="list-item">Expedia;</li>
-                        <li class="list-item">Bronevik;</li>
-                        <li class="list-item">HotelsCombined/RoomGuru/Revato;</li>
-                        <li class="list-item">Hostels.com;</li>
-                        <li class="list-item">Hostelworld.com;</li>
-                        <li class="list-item">Hotel-inn.ru;</li>
-                        <li class="list-item">Ostrovok.ru;</li>
-                        <li class="list-item">Oktogo.ru;</li>
-                        <li class="list-item">Hotels.com;</li>
-                        <li class="list-item">Hotel.de;</li>
-                        <li class="list-item">OzonTravel;</li>
-                        <li class="list-item">Vashotel.ru;</li>
-                    </ul>
-                </div>
-                <div class="large-6 medium-12 columns">
-                    <ul class="b-list chm-list">
-                        <li class="list-item">Hotels.ru;</li>
-                        <li class="list-item">Hostelbookers.com;</li>
-                        <li class="list-item">RusRooms;</li>
-                        <li class="list-item">New Sochi;</li>
-                        <li class="list-item">Skyra (RGB-tour);</li>
-                        <li class="list-item">TopHotels.</li>
-                    </ul>
-                    <h3 class="chm-list-heading">B2B</h3>
-                    <ul class="b-list chm-list">
-                        <li class="list-item">HotelBeds;</li>
-                        <li class="list-item">HOTUSA (Keytel);</li>
-                        <li class="list-item">GTA Travel;</li>
-                        <li class="list-item">Egencia;</li>
-                        <li class="list-item">«A&amp;A» Business Travel Services Holding;</li>
-                        <li class="list-item">CBooking;</li>
-                        <li class="list-item">101 Hotel</li>
-                        <li class="list-item">Alean</li>
-                        <li class="list-item">Intourist</li>
-                        <li class="list-item">CBTC (TravelClick)</li>
-                        <li class="list-item">UTS (HotelBook.pro).</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/lib/slick.min.js">
-    </script>
-    <script src="js/lib/TweenLite.min.js">
-    </script>
-    <script src="js/lib/ScrollToPlugin.min.js">
-    </script>
-    <script src="js/lib/foundation.js">
-    </script>
-    <script src="js/lib/jquery.magnific-popup.min.js">
-    </script>
-    <script type="text/javascript">
-       (function (d, w, c) {
-           (w[c] = w[c] || []).push(function() {
-               try {
-                   w.yaCounter33804459 = new Ya.Metrika({id:33804459,
-                       webvisor:true,
-                       clickmap:true,
-                       trackLinks:true,
-                       params: (typeof yaParams == 'undefined') ? null : yaParams,
-                       accurateTrackBounce:true});
-               } catch(e) { }
-           });
-
-           var n = d.getElementsByTagName("script")[0],
-                   s = d.createElement("script"),
-                   f = function () { n.parentNode.insertBefore(s, n); };
-           s.type = "text/javascript";
-           s.async = true;
-           s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-           if (w.opera == "[object Opera]") {
-               d.addEventListener("DOMContentLoaded", f, false);
-           } else { f(); }
-       })(document, window, "yandex_metrika_callbacks");
-    </script><noscript>
-    <div><img src="https://mc.yandex.ru/watch/33804459" style="position:absolute; left:-9999px;"></div></noscript>
-    <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-70685923-1', 'auto');
-       ga('send', 'pageview');
-
-    </script>
-    <script>
-       $('.media-online-form').onScreen({
-           container: window,
-           direction: 'vertical',
-           doIn: function() {
-               $(this).addClass('onScreen')
-           },
-           tolerance: 0,
-           throttle: 50,
-           toggleClass: 'onVisible animate fadeInUp',
-           lazyAttr: null,
-           debug: false
-       });
-    </script>
-</body>
-</html>
+	<header id="ordernow" class="ordernow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="contact">
+						<img src="img/call-phone.png" alt="" class="contact__img">
+						<img src="img/phone-red.png" alt="" class="contact__img2">
+						<div class="contact__phone">
+							<span>8 (800) 550-83-83</span><br>
+							Телефон горячей линии
+						</div>
+						<div class="strawberry strawberry-ordernow5">
+							<img src="img/strawberry-ordernow5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="strawberry strawberry-ordernow4">
+					<img src="img/strawberry-ordernow4.png" alt="">
+				</div>
+				<div class="col-md-0 col-lg-4">
+					<img src="img/aesthetic.png" class="aesthetic" alt="">
+				</div>
+				<div class="col-md-12 col-lg-8">
+					<div class="main-block clearfix">
+						<div class="main-block__logo clearfix">
+							<img src="img/logo.png" alt="">
+							<p>
+								Прорыв в<br>
+								снижении веса
+							</p>
+						</div>
+						<ul class="main-block__advantages text-center">
+							<img src="img/kapsuly-dlya-pohudeniya.jpg" alt="" class="kapsuly-dlya-pohudeniya">
+							<li>
+								<img src="img/success.png" alt="">
+								Мощное жиросжигание!
+							</li>
+							<li>
+								<img src="img/success.png" alt="">
+								Тонус и энергия!
+							</li>
+							<li>
+								<img src="img/success.png" alt="">
+								Контроль аппетита!
+							</li>
+							<li>
+								<img src="img/success.png" alt="">
+								Ускорение матаболизма
+							</li>
+						</ul>
+						<p class="main-block__order-p"><span class="do">до</span><span> 70% </span></p>
+						<p class="main-block__order-p2">скидки при по-<br>купке курса</p>
+						<div class="main-block__order text-center">
+							<h2>Оформить заказ</h2>
+							<p class="old-price">Старая цена: 1400 руб.</p>
+							<p>
+								<span>Новая цена:</span><span class="new-price"> 953 </span><span class="new-price-rub">руб.</span>
+							</p>
+							<div class="strawberry strawberry-ordernow2">
+								<img src="img/strawberry-ordernow2.png" alt="">
+							</div>
+							<div class="form-container">
+								<div class="note text-center">
+									<i class="fas fa-check"></i>
+									<h2>Спасибо за заявку</h2>
+									<p>Ожидайте!В течение нескольких часов вам прийдет ответ на почту</p>
+								</div>
+								<div class="fields text-center">
+									<form class="form" id="form" name="form">
+										<input type="text" class="form-field" name="name" placeholder="Ваше имя">
+										<input type="text" class="form-field" name="user_email" placeholder="Email">
+										<input type="text" class="form-field" name="user_phone" placeholder="+7 (___) ___-__-__">
+										<button class="form-button"><span class="text-button">Заказать сейчас</span></button>
+									</form>
+								</div>
+							</div>
+							<div class="strawberry strawberry-ordernow3">
+								<img src="img/strawberry-ordernow3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</header>
+	<section id="fail"  class="fail">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-lg-5">
+					<img src="img/fails.png" class="fails" alt="">
+				</div>
+				<div class="col-md-7 col-lg-7">
+					<p>
+						Вы еще никогда не худели так
+						<span class="red">быстро и эффективно!</span>
+					</p>
+				</div>
+				<div class="col-sm-12">
+					<img src="img/fails.png" class="fails2" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about-serre"  class="about-serre">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block-about text-center">
+						<img src="img/whatserre.png" alt="">
+						<h2 class="block-about__title section-name">
+							Что такое <span>Serre?</span>
+						</h2>
+						<p>
+							Капсулы для похудения «Serre» <span>запускают в организме естественные процессы снижения и контроля массы тела, нормализуют аппетит и регулируют процессы анаболизма и катаболизма.</span>Специальная формула препарата гармонично распределяет питательные вещества по всем клеткам организма, не только запуская расходование жиров из проблемных зон, но и улучшая тонус мышц, а также жизнедеятельность органов пищеварения и сосудов.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="strawberry">
+			<img src="img/strawberry-aboutserre.png" alt="">
+		</div>
+	</section>
+	<section id="why-serre"  class="why-serre">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-name text-center">
+						Почему <span>Serre?</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-lg-4 text-center">
+					<img class="why-serre-img" src="img/why-serre.png" alt="">
+				</div>
+				<div class="col-md-12 col-lg-8">
+					<div class="strawberry2">
+						<img src="img/strawberry-why-serre2.png" alt="">
+					</div>
+					<div class="advantages">
+						<div class="advantages__item">
+							Запускают в организме естественные процессы снижения и контроля массы тела 
+						</div>
+						<div class="advantages__item">
+							Регулируют аппетит
+						</div>
+						<div class="advantages__item">
+							Регулируют аппетит
+						</div>
+						<div class="advantages__item">
+							Ускоряют метаболизм
+						</div>
+						<div class="advantages__item">
+							Регулируют аппетит
+						</div>
+						<div class="advantages__item">
+							Созданы на основе активных структур растений и натуральных компонентов
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="circle text-center">
+						<img src="img/lose-weight.png" alt="" class="circle__img">
+					</div>
+					<div class="strawberry">
+						<img src="img/strawberry-why-serre.png" alt="">
+					</div>
+					<p class="text-center">
+						В современном ритме жизни далеко не все могут найти время на посещение спортзала, поэтому на помощь приходят 
+						БАДы – биологически активные добавки, которые восполняют недостаток полезных веществ в 
+						организме, усиливающих обменные процессы.
+						<br><br>
+						<span>Капсулы для похудения «Serre» – это отличный способ избавиться от лишних килограммов 
+						естественным путем и получить такую фигуру, о которой вы всегда мечтали</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="no-analogues"  class="no-analogues">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-7">
+					<p>
+						<span>Внимание!</span> Не имеет аналогов
+						в России и странах СНГ!
+					</p>
+				</div>
+				<div class="col-sm-12 col-md-5">
+					<a href="" class="btn-order btn">
+						Заказать
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="capsule" class="capsule">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-name text-center">
+						Капсулы для похудения <span>Serre</span> - это:
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-lg-6">
+					<ul class="advantages-capsule">
+						<li class="advantages-capsule__item">
+							<img src="img/lose-weight-2.png" alt="">
+							Гарантированное избавление от лишнего веса
+						</li>
+						<li class="advantages-capsule__item">
+							<img src="img/restaurant.png" alt="">
+							Контроль аппетита
+						</li>
+						<li class="advantages-capsule__item">
+							<img src="img/clean.png" alt="">
+							Омоложение и очищение всего организма
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-lg-6">
+					<ul class="advantages-capsule">
+						<li class="advantages-capsule__item">
+							<img src="img/metabolism.png" alt="">
+							Ускорение обмена веществ
+						</li>
+						<li class="advantages-capsule__item">
+							<img src="img/charity.png" alt="">
+							Нормализация гормонального фона
+						</li>
+						<li class="advantages-capsule__item">
+							<img src="img/intestine.png" alt="">
+							Оптимизация пищеварения и улучшение работы кишечника
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<img class="hand" src="img/hand.png" alt="">
+				</div>
+				<div class="strawberry"><img src="img/strawberry-capsule.png" alt="" class="strawberry-capsule"></div>
+			</div>
+		</div>
+	</section>
+	<section id="satisfied"  class="satisfied">
+		<div class="strawberry">
+			<img src="img/strawberry-satisfied.png" alt="" class="strawberry__satisfied">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-md-10">
+					<p>
+						<span>Более <span class="white">250 000</span> довольных похудевших</span>
+						женщин и мужчин во всем мире!
+					</p>
+					<p class="satisfied-text">
+						<span>Вместе с <span class="white">Serre</span><br>
+						Вы можете легко сбросить</span>
+					</p>
+				</div>
+				<div class="col-sm-2 col-md-2">
+					<img src="img/satisfied.png" alt="" class="satisfied-img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="no-hunger" class="no-hunger">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>
+						<span class="red">Никаких мук голода!<br>
+						Никаких изнуряющих физических нагрузок!<br>
+						Природа сделает все за вас!
+						</span>
+					</p>
+					<div class="strawberry"><img src="img/strawberry-no-hungry.png" alt="" class="strawberry-no-hungry"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="howtouse" class="howtouse">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="section-name text-center">
+						Как принимать <span>Serre</span>, чтобы похудеть?
+						<p>
+							В комплекс входят два вида капсул: для дневного и вечернего применения
+						</p>
+						<div class="strawberry strawberry-howtouse4"><img src="img/strawberry-howtouse4.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+			<div class="block-howtouse">
+				<div class="row">
+					<div class="col-md-6">
+						<img src="img/morning.png" alt="" class="block-howtouse__img">
+					</div>
+					<div class="col-md-6">
+						<p class="block-howtouse__text">
+							По 2 капсулы утром за 30 минут до еды, 
+							на голодный желудок,запивая не менее 100 мл воды. Курс 30 дней.
+						</p>
+						<div class="strawberry strawberry-howtouse3"><img src="img/strawberry-howtouse3.png" alt=""></div>
+					</div>
+				</div>	
+			</div>
+			<div class="block-howtouse">
+				<div class="row">
+					<div class="col-sm-0 col-md-6">
+						<div class="strawberry strawberry-howtouse"><img src="img/strawberry-howtouse.png" alt=""></div>
+						<p class="block-howtouse__text block-howtouse__text-evening">
+							По 2 капсулы вечером за 30 минут до еды, на голодный желудок, запивая не менее 100 мл воды. Курс 30 дней.
+						</p>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<img src="img/evening.png" alt="" class="block-howtouse__img">
+						<div class="strawberry strawberry-howtouse2"><img src="img/strawberry-howtouse2.png" alt=""></div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="strawberry strawberry-howtouse"><img src="img/strawberry-howtouse.png" alt=""></div>
+						<p class="block-howtouse__text block-howtouse__text-2">
+							По 2 капсулы вечером за 30 минут до еды, на голодный желудок, запивая не менее 100 мл воды. Курс 30 дней.
+						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<section id="research" class="research">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-name text-center">
+							Исследования показали:
+						<p>
+							<span class="red">Serre эффективнее всех известных способов похудения</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-lg-5 text-center">
+					<div class="block-research">
+						<div class="block-research__item">
+							<img src="img/schedule.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-7">
+					<div class="block-plus">
+						<div class="block-plus__item">
+							<span>Вы не будете срываться и переедать</span>
+						</div>
+						<div class="block-plus__item">
+							<span>Вы не будете испытывать стресс</span>
+						</div>
+						<div class="block-plus__item">
+							<span>Вы будете худеть естественным путем</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="decline" class="decline">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="strawberry strawberry-decline"><img src="img/strawberry-decline.png" alt=""></div>
+					<img src="img/libra.png" alt="" class="libra">
+					<p><span>Активное снижение веса до 5 кг 
+					в неделю и стабильный положительный результат!</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="structure" class="structure">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-name text-center">
+						Состав капсул <span>абсолютно натуральный</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="strawberry strawberry-structure"><img src="img/strawberry-howtouse2.png" alt=""></div>
+					<ul class="composition">
+						<div class="strawberry strawberry-structure-mobile"><img src="img/strawberry-structure-mobile.png" alt=""></div>
+						<li class="composition__item">
+							<p>Лиственница</p>
+						</li>
+						<li class="composition__item">
+							<p>Лещина</p>
+						</li>
+						<li class="composition__item">
+							<p>Лапчатка</p>
+						</li>
+						<li class="composition__item">
+							<p>Падуб</p>
+						</li>
+						<li class="composition__item">
+							<p>Османтус</p>
+						</li>
+						<li class="composition__item">
+							<p>Лист гречихи горькой</p>
+						</li>
+						<li class="composition__item">
+							<p>Кордицепс</p>
+						</li>
+						<li class="composition__item">
+							<p>Галлерия мелонелла</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="composition">
+						<div class="strawberry strawberry-structure-mobile2"><img src="img/strawberry-structure-mobile2.png" alt=""></div>
+						<li class="composition__item">
+							<p>Арабиногалактан</p>
+						</li>
+						<li class="composition__item">
+							<p>Порошок кальмаров</p>
+						</li>
+						<li class="composition__item">
+							<p>ДНК лососевых</p>
+						</li>
+						<li class="composition__item">
+							<p>Перец черный</p>
+						</li>
+						<li class="composition__item">
+							<p>Артемия</p>
+						</li>
+						<li class="composition__item">
+							<p>Аланин</p>
+						</li>
+						<li class="composition__item">
+							<p>Прополис</p>
+						</li>
+						<li class="composition__item">
+							<p>Шикша</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="composition">
+						<div class="strawberry strawberry-structure-mobile3"><img src="img/strawberry-structure-mobile3.png" alt=""></div>
+						<li class="composition__item">
+							<p>Ресвератол</p>
+						</li>
+						<li class="composition__item">
+							<p>Куркума</p>
+						</li>
+						<li class="composition__item">
+							<p>Шафран</p>
+						</li>
+						<li class="composition__item">
+							<p>Спирулина</p>
+						</li>
+						<li class="composition__item">
+							<p>Хлорелла</p>
+						</li>
+						<li class="composition__item">
+							<p>Матча</p>
+						</li>
+						<li class="composition__item">
+							<p>Хитозан</p>
+						</li>
+						<li class="composition__item">
+							<p>Коэнзим</p>
+						</li>
+						<li class="composition__item">
+							<p>Чия</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<img src="img/why-serre.png" alt="" class="why-serre">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="reviews" class="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="strawberry strawberry-reviews"><img src="img/strawberry-reviews.png" alt=""></div>
+					<div class="section-name text-center">
+						Мы спросили тех, кто <span>уже похудел</span>
+						<p>Эффект от капсул Serre превзошел их ожидания!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="slider-reviews">
+						<div class="block-reviews">
+							<div class="strawberry strawberry-reviews2"><img src="img/strawberry-reviews2.png" alt=""></div>
+							<div class="block-reviews__img">
+								<img src="img/girl.png" alt="">
+							</div>
+							<div class="block-reviews__name">
+								<span>Елена Сергеевна</span>(26 лет, Воронеж)
+							</div>
+							<div class="block-reviews__title">
+								<span>Долго не могла прийти в форму
+								после рождения ребёнка</span>
+							</div>
+							<div class="block-reviews__text">
+								Похоже, что самого Бахтина удивила эта всеобщая порабощенность тайной "чужого" слова, тем не менее силлабо-тоника семантически аллитерирует мифологический дискурс. Кульминация, чтобы уловить хореический ритм или аллитерацию на "л", откровенна. Первое полустишие многопланово представляет собой лирический полифонический роман, таким образом, очевидно, что в нашем языке царит дух карнавала, пародийного отстранения. Наш современник стал особенно чутко относиться к слову, однако стиль отражает мелодический ямб.
+							</div>
+						</div>
+						<div class="block-reviews">
+							<div class="strawberry strawberry-reviews2"><img src="img/strawberry-reviews2.png" alt=""></div>
+							<div class="block-reviews__img">
+								<img src="img/girl.png" alt="">
+							</div>
+							<div class="block-reviews__name">
+								<span>Елена Сергеевна</span>(26 лет, Воронеж)
+							</div>
+							<div class="block-reviews__title">
+								<span>Долго не могла прийти в форму
+								после рождения ребёнка</span>
+							</div>
+							<div class="block-reviews__text">
+								Похоже, что самого Бахтина удивила эта всеобщая порабощенность тайной "чужого" слова, тем не менее силлабо-тоника семантически аллитерирует мифологический дискурс. Кульминация, чтобы уловить хореический ритм или аллитерацию на "л", откровенна. Первое полустишие многопланово представляет собой лирический полифонический роман, таким образом, очевидно, что в нашем языке царит дух карнавала, пародийного отстранения. Наш современник стал особенно чутко относиться к слову, однако стиль отражает мелодический ямб.
+							</div>
+						</div>
+						<div class="block-reviews">
+							<div class="strawberry strawberry-reviews2"><img src="img/strawberry-reviews2.png" alt=""></div>
+							<div class="block-reviews__img">
+								<img src="img/girl.png" alt="">
+							</div>
+							<div class="block-reviews__name">
+								<span>Елена Сергеевна</span>(26 лет, Воронеж)
+							</div>
+							<div class="block-reviews__title">
+								<span>Долго не могла прийти в форму
+								после рождения ребёнка</span>
+							</div>
+							<div class="block-reviews__text">
+								Похоже, что самого Бахтина удивила эта всеобщая порабощенность тайной "чужого" слова, тем не менее силлабо-тоника семантически аллитерирует мифологический дискурс. Кульминация, чтобы уловить хореический ритм или аллитерацию на "л", откровенна. Первое полустишие многопланово представляет собой лирический полифонический роман, таким образом, очевидно, что в нашем языке царит дух карнавала, пародийного отстранения. Наш современник стал особенно чутко относиться к слову, однако стиль отражает мелодический ямб.
+							</div>
+						</div>
+					</div>
+					<div class="arrows clearfix">
+						<div class="arrows__left">
+							<img src="img/left.png" alt="">
+						</div>
+						<div class="arrows__right">
+							<img src="img/right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="ordernow" class="ordernow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="contact">
+						<img src="img/call-phone.png" alt="" class="contact__img">
+						<img src="img/phone-red.png" alt="" class="contact__img2">
+						<div class="contact__phone">
+							<span>8 (800) 550-83-83</span><br>
+							Телефон горячей линии
+						</div>
+						<div class="strawberry strawberry-ordernow5">
+							<img src="img/strawberry-ordernow5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="strawberry strawberry-ordernow4">
+					<img src="img/strawberry-ordernow4.png" alt="">
+				</div>
+				<div class="col-md-0 col-lg-4">
+					<img src="img/aesthetic.png" class="aesthetic" alt="">
+				</div>
+				<div class="col-md-12 col-lg-8">
+					<div class="main-block clearfix">
+						<div class="main-block__logo clearfix">
+							<img src="img/logo.png" alt="">
+							<p>
+								Прорыв в<br>
+								снижении веса
+							</p>
+						</div>
+						<ul class="main-block__advantages text-center">
+							<img src="img/kapsuly-dlya-pohudeniya.jpg" alt="" class="kapsuly-dlya-pohudeniya">
+							<li>
+								<img src="img/success.png" alt="">
+								Мощное жиросжигание!
+							</li>
+							<li>
+								<img src="img/success.png" alt="">
+								Тонус и энергия!
+							</li>
+							<li>
+								<img src="img/success.png" alt="">
+								Контроль аппетита!
+							</li>
+							<li>
+								<img src="img/success.png" alt="">
+								Ускорение матаболизма
+							</li>
+						</ul>
+						<p class="main-block__order-p"><span class="do">до</span><span> 70% </span></p>
+						<p class="main-block__order-p2">скидки при по-<br>купке курса</p>
+						<div class="main-block__order text-center">
+							<h2>Оформить заказ</h2>
+							<p class="old-price">Старая цена: 1400 руб.</p>
+							<p>
+								<span>Новая цена:</span><span class="new-price"> 953 </span><span class="new-price-rub">руб.</span>
+							</p>
+							<div class="strawberry strawberry-ordernow2">
+								<img src="img/strawberry-ordernow2.png" alt="">
+							</div>
+							<div class="form-container">
+								<div class="note text-center">
+									<i class="fas fa-check"></i>
+									<h2>Спасибо за заявку</h2>
+									<p>Ожидайте!В течение нескольких часов вам прийдет ответ на почту</p>
+								</div>
+								<div class="fields text-center">
+									<form class="form" id="form" name="form">
+										<input type="text" class="form-field" name="name" placeholder="Ваше имя">
+										<input type="text" class="form-field" name="user_email" placeholder="Email">
+										<input type="text" class="form-field" name="user_phone" placeholder="+7 (___) ___-__-__">
+										<button class="form-button"><span class="text-button">Заказать сейчас</span></button>
+									</form>
+								</div>
+							</div>
+							<div class="strawberry strawberry-ordernow3">
+								<img src="img/strawberry-ordernow3.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>ООО «ЛЕНДАРИ»</p>
+					<p>ИНН: 7813613126</p>
+					<p>ОГРН: 1187847153163</p>
+					<p class="copyright">© 2018 Лендари. Все права защищены</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('.slider-reviews').slick({
+		  	prevArrow: $('.arrows__left'),
+			nextArrow: $('.arrows__right')
+		  });
+		});
+	</script>
+</body>	

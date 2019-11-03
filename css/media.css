@@ -1,0 +1,792 @@
+@media screen and (max-width:1270px) {
+	.strawberry-ordernow5 img, .strawberry-ordernow4 img, .strawberry-ordernow3 img, .strawberry-ordernow2 img {
+    	width:55px;
+	}
+	.strawberry-ordernow5 {
+    	right: -1%;
+	}
+	.strawberry-ordernow2 {
+    	right: -15%;
+	}
+	.strawberry-ordernow3 {
+	    right: -10%;
+    	bottom: -13%;
+	}
+	.strawberry img, .strawberry2 img {
+    	width: 80px;
+	}
+	#why-serre .strawberry2 {
+    	right: -3%;
+	}
+	#no-hunger .strawberry {
+    	right: -2%;
+	}
+	.strawberry-howtouse3 {
+    	right: 0%;
+	}
+	.strawberry-howtouse2 {
+    	right: 0%;
+    }
+    .strawberry-decline {
+    	left: -1%;
+	}
+	.strawberry-structure {
+    	left: -13%;
+	}
+	#structure .strawberry-structure img{
+		width: 50px;
+	}
+}
+@media screen and (max-width:1200px){
+	.main-block__logo img {
+    	width: 250px;
+	}
+	.contact__phone {
+	    font-size: 14px;
+	}
+	.main-block__logo p {
+    	font-size: 23px;
+    	line-height: 29px;
+    	padding-top: 15px;
+	    float: left;
+	    margin-left: 70px;
+	}
+	.main-block__advantages {
+	    margin-top:110px;
+    	padding: 0;
+	}
+	#fail p {
+    	font-size: 34px;
+	}
+	.circle {
+    	margin: 30px auto;
+    }
+    #no-analogues p {
+	    font-size: 31px;
+	    margin-top: 5px;
+	    line-height: 42px;
+	}
+	.btn {
+	    color: white;
+	    font-size: 24px;
+	    padding: 22px 94px;
+	    margin-top: 10px;
+	}
+	.advantages-capsule__item {
+    	font-size: 11px;
+	}
+	#satisfied p {
+    	font-size: 25px;
+    	line-height: 41px;
+	}
+	#satisfied span {
+    	font-size: 32px;
+	}
+	.aesthetic {
+	    left: -171px;
+		height: 770px;
+    	top: 0;
+	}
+	.satisfied-img {
+    	width: 278px;
+	}
+	#no-hunger p {
+	    font-size: 29px;
+	    line-height: 67px;
+	}
+	#no-hunger p:after,
+	#no-hunger p:before{
+	    height: 276px;
+	}
+	.block-plus {
+ 		margin-left:0px;
+    	margin-top: 17px;
+	}
+	#decline p {
+	    font-size: 21px;
+	    margin-top: 19px;
+	}
+	.composition__item{
+		position:relative;
+	}
+	.composition__item:before{
+		top: 8px;
+	    left: -22px;
+	    display: block;
+	    position: absolute;
+	    margin-right: 30px;
+	}
+	.composition {
+    	margin-top: 61px;
+	}
+	.composition__item p {
+    	display: table-cell;
+	}
+	#ordernow {
+		height:100%;
+    }
+	.main-block__logo p:before {
+   		top: 11px;
+	}
+	.main-block__order {
+    	max-width: 343px;
+    	margin-bottom: 72px;
+	}
+	.main-block__order-p2 {
+    	margin-top: 8px;
+	}
+	.main-block__order-p {
+    	margin-left: 7px;
+    	padding-top: 0px;
+    }
+    .main-block__order-p span {
+    	font-size: 48px;
+	}
+	.strawberry-ordernow4 {
+    	left: 0;
+    	top: 219px;
+	}
+	#about-serre .strawberry {
+    	bottom: -31px;
+	}
+	.strawberry-ordernow2 {
+    	right: -8%;
+	}
+	.strawberry-ordernow3 {
+    	right: -8%;
+    	bottom: -15%;
+	}
+	.strawberry-structure {
+       left: -14%;
+	}
+}
+@media screen and (max-width:991px){
+	.col-md-0{
+		display: none;
+	}
+	.copyright {
+    	float: left;
+	}
+	.main-block__order-p {
+    	margin-left: 83px;
+	}
+	.advantages__item {
+    	width: 100%;
+	}
+	.why-serre-img {
+    	width: 350px;
+	}
+	.circle {
+    	margin: 60px auto;
+	}
+	#why-serre .strawberry {
+    	top: 28px;
+	}
+	#why-serre .strawberry2 {
+    	top: -107px;
+	}
+	.btn {
+    	font-size: 20px;
+    	padding: 22px 70px;
+    	margin-top: 5px;
+	}
+	#fail p {
+    	font-size: 27px;
+    	margin-top: 48px;
+	}
+	#fail img{
+	    width: 100%;
+	}
+	#no-analogues p {
+    	font-size: 24px;
+    	margin-top: 5px;
+    	line-height: 34px;
+	}
+	.satisfied-img {
+    	width: 214px;
+	}
+	#satisfied p {
+    	font-size: 19px;
+    	line-height: 28px;
+	}
+	#satisfied span {
+    	font-size: 25px;
+	}
+	#satisfied .satisfied-text {
+    	line-height: 33px;
+	}
+	.advantages-capsule {
+     	margin-top:0px;
+	}
+	.advantages-capsule__item {
+    	font-size: 14px;
+	}
+	#capsule .section-name{
+		margin-bottom: 30px;
+	}
+	#capsule .strawberry {
+    	right: 50px;
+	}
+	#no-hunger p {
+    	font-size: 21px;
+    	line-height: 52px;
+	}
+	#no-hunger p:after,
+	#no-hunger p:before {
+    	height: 218px;
+	}
+	#howtouse .block-howtouse__text {
+    	margin-top: 90px;
+	}
+	.block-research__item img {
+    	width: 400px;
+	}
+	.libra {
+    	margin-left: 57px;
+	}
+	#decline p {
+    	font-size: 17px;
+	}
+	.strawberry-decline {
+    	left: -3%;
+	}
+	.strawberry-structure {
+    	left: -13%;
+	}
+	.composition {
+    	margin-top: 48px;
+    	margin-left: 10px;
+	}
+	.composition__item p {
+    	font-size: 14px;
+	}
+	.block-reviews{
+		margin:50px 0px 0px 0px;
+	}
+	.arrows {
+    	margin-left:0px;
+    }
+    .advantages {
+    	margin-top: -60px;
+	}
+	.main-block__order {
+    	max-width: 394px;
+	}
+	.main-block__order-p2 {
+    	margin-right: 20px;
+	}
+	.main-block__order-p {
+    	margin-left: 62px;
+	}
+}
+@media screen and (max-width:768px){
+	.contact,
+	.contact__phone{
+		float:none;
+	}
+	.contact__img,
+	.fails,
+	.strawberry.strawberry-howtouse3,
+	.block-howtouse__text-evening,
+	.strawberry-howtouse2,
+	.main-block__logo p:before,
+	.main-block__logo p br,
+	.strawberry-reviews,
+	.strawberry-howtouse,
+	.strawberry-structure{
+		display: none;
+	}
+	.contact__img2,
+	.fails2,
+	.block-howtouse__text-2,
+	.strawberry-structure-mobile, .strawberry-structure-mobile2, .strawberry-structure-mobile3{
+		display: block;
+	}
+	.contact__img2{
+	    margin-top: 5px;
+		margin-right:0px;
+	    position: absolute;
+	    left:110px;
+	}
+	.contact {
+    	margin-top:20px;
+    	color: black;
+	}
+	.main-block__logo{
+	    margin-left: 90px;
+		margin-top:0px;
+	}
+	.main-block__logo p{
+		margin-left: 16px;
+	}
+	.main-block__advantages {
+	    margin-top: 10px;
+	    padding: 0;
+	    float: right;
+	    margin-right: 10px;
+	}
+	.main-block__advantages .kapsuly-dlya-pohudeniya {
+    	width: 130px;
+    	padding-bottom: 40px;
+    	position: absolute;
+    	left: 90px;
+	}
+	.main-block__order {
+    	max-width: 100%;
+    	margin: 0px 10px;
+    	z-index: 10;
+	}
+	.main-block__order-p {
+    	margin-left: 102px;
+	}
+	.main-block__order-p2 {
+    	margin-right: 75px;
+	}
+	#ordernow {
+    	height: 800px;
+    	overflow:unset;
+	}
+	#fail p {
+    	font-size: 27px;
+    	margin-top: 337px;
+    	text-align: center;
+	}
+	.fails2{
+		display: block;
+	}
+	#no-analogues p{
+		text-align: center;
+	}
+	.btn {
+	    float: none;
+	    margin: 0px 125px;
+	}
+	.advantages-capsule__item {
+	    font-size: 13px
+	}
+	#capsule .strawberry {
+    	top: 70%;
+	}
+	.hand {
+    	margin-top: 16px;
+    	width: 400px;
+	}
+	.satisfied-img {
+    	width: 164px;
+	}
+	#satisfied p {
+    	font-size: 18px;
+    	line-height: 26px;
+	}
+	#satisfied .satisfied-text {
+    	line-height: 24px;
+	}
+	#satisfied span {
+    	font-size: 20px;
+	}
+	#no-hunger p {
+    	font-size: 15px;
+    	line-height: 42px;
+	}
+	#no-hunger p:after, #no-hunger p:before {
+    	height: 181px;
+    	width: 12px;
+	}
+	#howtouse .section-name{
+    	padding-bottom: 10px;
+	}
+	#howtouse p{
+		margin-top:10px;
+	}
+	#howtouse .block-howtouse__text {
+    	margin-top: 0px;
+	    margin-bottom: 50px;
+	}
+	.composition {
+	    margin-top: -16px;
+	}
+	#structure .section-name {
+    	margin-bottom: 30px;
+	}
+	#structure .why-serre{
+	    width:200px;
+    	margin-left: 150px;
+		margin-top: 0;
+	}
+	.strawberry-structure {
+    	left: -19%;
+	}
+	.block-reviews__img {
+	    float:none;
+	    margin: 0 auto;
+	}
+	.block-reviews__name,
+	.block-reviews__title,
+	.block-reviews__text{
+		padding-left:0px;
+		text-align:center;
+	    padding-top: 20px;
+	}
+	.block-reviews__title,
+	.block-reviews__text{
+	    text-align: left;
+	    padding-top:0px;
+	}
+	.arrows{
+		margin: 0 auto;
+	}
+	footer p {
+	    display: block;
+	    margin-right: 0px;
+	    line-height: 10px;
+		font-size: 12px;
+	}
+	footer {
+		background: #f2f2f2;
+		padding-top: 22px;
+		margin-top: 294px;
+	}
+	.copyright {
+    	float: left;
+	}
+	#structure{
+	    padding-bottom: 0px;
+	}
+	.strawberry-structure-mobile,
+	.strawberry-structure-mobile2,
+	.strawberry-structure-mobile3{
+	    right: 50px;
+	}
+	#structure .strawberry-structure-mobile img,
+	#structure .strawberry-structure-mobile2 img,
+	#structure .strawberry-structure-mobile3 img{
+		width: 80px;
+	}
+}
+
+
+@media screen and (max-width:575px){
+	#why-serre p {
+    	padding: 0 10px;
+	}
+	.satisfied-img,
+	.strawberry-ordernow3,
+	.strawberry2,
+	.strawberry .strawberry-capsule,
+	.strawberry .strawberry__satisfied,
+	.strawberry .strawberry-no-hungry,
+	.strawberry-reviews2{
+		display: none;
+	}
+	.strawberry img, .strawberry2 img {
+    	width: 50px;
+	}
+	.strawberry-ordernow2{
+    	transform: rotate(-62deg);
+    	right: 0px;
+	}
+	.strawberry-ordernow5,
+	#why-serre .strawberry2,
+	#why-serre .strawberry{
+    	right: 0px;
+	}
+	.strawberry-ordernow4 {
+    	top: 641px;
+    	z-index: 100;
+    	transform: rotate(210deg);
+	}
+	#satisfied p {
+    	text-align: center;
+	}
+	.strawberry-howtouse4 {;
+    	transform: rotate(87deg);
+	}
+	.block-research__item img {
+    	margin-left: -40px;
+	}
+	.libra{
+		float: none;
+	    margin-bottom: 20px;
+	    margin-left: 40%;
+	}
+	#decline p {
+	    text-align: center;
+	    margin: 0px 30px;
+	}
+	.strawberry-decline {
+        transform: rotate(160deg);
+	    top:-20px;
+	    right: 0;
+	    left:0;
+	}
+	.strawberry-decline img{
+		width: 90px;
+	}
+	.block-reviews {
+    	margin:0px;
+	}
+	.main-block__order-p {
+    	margin-left: 72px;
+	}
+	.main-block__order-p2 {
+    	margin-right: 89px;
+	}
+	#about-serre .strawberry {
+    	bottom: -21px;
+	}
+}
+@media screen and (max-width:525px){
+	#structure .why-serre {
+   		margin-left: 140px;
+	}
+	.main-block__order-p {
+    	margin-left: 43px;
+	}
+	.strawberry-ordernow5, #why-serre .strawberry2, #why-serre .strawberry {
+    	right:20px;
+	}
+	.strawberry-decline {
+	    right: 10px;
+	}
+	.contact__img2 {
+    	left: 96px;
+	}
+	.main-block__advantages li {
+	    font-size: 14px;
+	    padding: 12px 14px;
+	}
+	.btn{
+	    width: 60%;
+    	margin: 0px 0px 0px 90px;
+	}
+	.advantages-capsule__item {
+    	font-size: 12px;
+	}
+	.block-plus__item {
+    	font-size: 18px;
+	}
+	.main-block__order-p {
+    	margin-left: 53px;
+	}
+	.main-block__order-p2 {
+    	margin-right: 74px;
+	}
+}
+@media screen and (max-width:490px){
+	#structure .why-serre {
+   		margin-left: 130px;
+	}
+	.main-block__logo {
+    	margin-left: 61px;
+	}
+	.main-block__order-p {
+    	margin-left: 8%;
+	}
+	.main-block__order-p2 {
+    	margin-right: 16%;
+	}
+	.main-block__advantages .kapsuly-dlya-pohudeniya {
+    	left: 40px;
+	}
+	.contact__img2 {
+    	left: 76px;
+	}
+	.advantages-capsule__item img {
+    	padding-right: 9px;
+    	height: 19px;
+	}
+}
+@media screen and (max-width:470px){
+	#structure .why-serre {
+   		margin-left: 120px;
+	}
+	.main-block__order-p {
+    	margin-left: 6%;
+	}
+	.main-block__order-p2 {
+    	margin-right: 11%;
+	}
+}
+@media screen and (max-width:450px){
+	#structure .why-serre {
+   		margin-left:110px;
+	}
+	.main-block__order-p {
+    	margin-left: 6%;
+	}
+	.main-block__order-p2 {
+    	margin-right: 8%;
+	}
+	.btn {
+    	width: 100%;
+    	margin: 0px;
+	}
+	#no-hunger p {
+    	font-size: 14px;
+    	line-height: 37px;
+	}
+	.block-plus__item {
+    	font-size: 17px;
+	}
+	.block-plus__item {
+    	padding: 19px 26px;
+	}
+	.contact__img2 {
+    	left: 13%;
+	}
+	.main-block__logo {
+    	margin-left: 10%;
+	}
+	.main-block__advantages .kapsuly-dlya-pohudeniya {
+    	left: 21px;
+	}
+	#about-serre .block-about img{
+	    width: 300px;
+	}
+}
+
+@media screen and (max-width:420px){
+	#no-hunger p {
+    	font-size: 13px;
+	}
+}
+@media screen and (max-width:415px){
+	.main-block__logo {
+    	margin-left:7%;
+	}
+	.hand {
+    	width: 350px;
+	}
+	.main-block__advantages .kapsuly-dlya-pohudeniya {
+	    width: 100px;
+	    margin-top: 20px;
+	    left: 20px;
+	}
+	.main-block__order-p{
+    	margin-left: 3%;
+	}
+	.main-block__order-p2{
+		margin-right: 3%;
+	}
+	.fields .form button {
+	    width: 280px;
+	    margin-left: -137px;
+	}
+	.libra {
+    	margin-left: 36%;
+	}
+}
+@media screen and (max-width:392px){
+	.contact__img2 {
+    	left: 9%;
+	}
+	.main-block__logo {
+    	margin-left: 2%;
+	}
+	#no-hunger p {
+    	font-size: 12px;
+	}
+	.main-block__advantages li {
+    	font-size: 14px;
+    	padding: 12px 0px;
+	}
+}
+@media screen and (max-width:375px){
+	#fail p {
+   		margin-top: 198px;
+	}
+	.form input, .form textarea {
+    	padding: 14px 25px;
+	}
+	.fields .form button{
+		padding: 17px;
+		font-size: 14px;
+	}
+	.main-block__order-p {
+    	margin-left: 3%;
+	}
+	.main-block__order h2 {
+    	font-size:23px;
+	}
+	.main-block__order p {
+    	font-size: 16px;
+	}
+	.main-block__order-p span {
+    	font-size: 38px;
+	}
+	.main-block__order-p2 {
+    	margin-right: 3%;
+    	margin-top: 7px;
+    	line-height: 20px;
+	}
+	.main-block__logo {
+    	margin-left: 0px;
+	}
+	.contact__img2 {
+    	left: 6%;
+	}
+	.main-block__advantages .kapsuly-dlya-pohudeniya {
+    	width: 90px;
+    	margin-top: 0px;
+    	left: 20px;
+	}
+	.main-block__advantages li {
+    	font-size: 14px;
+    	padding: 5px 0px;
+	}
+	.fields .form button {
+    	width: 250px;
+    	margin-left: -126px;
+	}
+	.main-block__advantages{
+		margin-right:0px;
+	}
+	.why-serre-img {
+    	width: 279px;
+	}
+	.hand {
+    	width: 295px;
+	}
+	#no-hunger p {
+    	font-size: 11px;
+	}
+	#no-hunger p:after, #no-hunger p:before {
+    	width: 8px;
+	}
+	.block-research__item img {
+    	width: 300px;
+	}
+	.block-plus__item {
+    	padding: 16px 19px;
+	}
+	.block-plus__item {
+    	font-size: 13px;
+	}
+}
+@media screen and (max-width:340px){
+	.main-block__order-p2 {
+	    margin-right: 0%;
+	    margin-top: 2px;
+	    line-height: 20px;
+	}
+	.main-block__order h2 {
+    	font-size: 21px;
+	}
+	.main-block__order-p span {
+    	font-size: 34px;
+	}
+	.main-block__order p {
+    	font-size: 13px;
+	}
+	.main-block__logo img {
+    	margin-left: 5px;
+	}
+	.main-block__logo p {
+    	margin-left: 0px;
+    	font-size: 21px;
+	}
+	.main-block__advantages li {
+    	font-size: 12px;
+	}
+}	
+	
