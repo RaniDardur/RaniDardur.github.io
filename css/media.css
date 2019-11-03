@@ -296,8 +296,8 @@
 	.strawberry-structure{
 		display: none;
 	}
-	.contact__phone{
-	  	color:black;
+	.contact__phone span{
+  		color:black !important;
 	}
 	.contact__img2,
 	.fails2,
