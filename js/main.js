@@ -7,7 +7,7 @@ $(document).ready(function() {
 		}
 		$.ajax({
 			type: "POST",
-			url: "https://ranidardur.github.io/mail.php",
+			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$('.fields').addClass('fields_none');
