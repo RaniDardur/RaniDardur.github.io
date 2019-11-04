@@ -247,11 +247,12 @@ header .main-block__order-p {
 	color:#dc3a3c;
 }
 /* --- Форма отправки  --- */
-.form-container{
-}
-
 .form input,
-.form textarea{
+.form textarea,
+.form1 input,
+.form1 textarea,
+.form2 input,
+.form2 textarea{
   font-family: 'GothamPro-Medium';
   width: 100%;
   background-color:#f9fbfe;
@@ -260,15 +261,19 @@ header .main-block__order-p {
   padding: 18px 25px;
   outline: none;
 }
-.form textarea{
+.form textarea,
+.form1 textarea,
+.form2 textarea{
+  background-color: #f2f2f2;
+  border: 2px solid #e9e9e9;
   width:100%;
   height:114px;
   float: left;
-  background-color: #e4e8e8;
-  border: none;
   border-radius: 40px;
 }
-.fields .form input[type="text"]{
+.fields .form input[type="text"],
+.fields1 .form1 input[type="text"],
+.fields2 .form2 input[type="text"]{
     float: left;
     background-color: #f2f2f2;
     border: none;
@@ -276,7 +281,9 @@ header .main-block__order-p {
     margin-bottom:20px;
     border: 2px solid #e9e9e9;
 }
-.fields .form button {
+.fields .form button,
+.fields1 .form1 button,
+.fields2 .form2 button{
   text-transform: uppercase;
   border: none;
   color: #fff;
@@ -295,22 +302,38 @@ header .main-block__order-p {
   margin-left: -157px;
 }
 
-.fields .form button:hover {
+.fields .form button:hover,
+.fields1 .form1 button:hover,
+.fields2 .form2 button:hover{
     box-shadow: 0px 0px 10px 1px rgb(255, 109, 0.8);
 }
 .fields_none{
   display:none !important;
 }
-.note{
-  padding: 30px;
+.note,
+.note1,
+.note2{
+  padding:0px;
   color: #626262;
   display:none;
 }
-.note i{
+.note i,
+.note1 i,
+.note2 i{
   color: green;
-  font-size: 100px;
+  font-size:100px;
 }
-
+.note h2,
+.note1 h2,
+.note2 h2{
+  font-size: 20px;
+  padding: 4px;
+}
+.note p,
+.note1 p,
+.note2 p{
+  font-size: 17px;
+}
 
 /* --- Вторая секция(Неудачи) --- */
 #fail{
@@ -385,6 +408,7 @@ header .main-block__order-p {
 }
 .btn-order{
   float:right;
+  font-family: 'GothamPro-Bold';
 }
 #no-analogues p{
   font-size:40px;
@@ -726,4 +750,48 @@ footer p{
 }
 .copyright{
   float:right;
+}
+/* --- Модальное окно --- */
+.close{
+  opacity:1;
+}
+.modal-header{
+  border-bottom:none;
+}
+.strawberry-modal{
+  top: -23px;
+}
+.modal-body {
+    padding-top: 0px;
+  }
+.strawberry-modal img{
+  width: 80px;
+}
+.modal-header .close {
+  padding: 1rem 1rem;
+  float: right;
+  position: absolute;
+  right: 30px;
+  top:10px;
+  margin: -1rem -1rem -1rem auto;
+}
+.modal-header {
+    padding: 2rem 1rem;
+}
+.modal-header .close span{
+  font-size: 50px;
+  color: #d2323e;
+}
+.modal-title {
+  text-align: center;
+  padding: 13px 0px 30px 0px;
+}
+.modal-body .form-container2 .fields2 .form2 .form-button2{
+  float:right;
+  position:unset;
+  background: rgb(238,70,58);
+  background: linear-gradient(90deg, rgba(238,70,58,1) 0%, rgba(207,48,62,1) 100%);
+}
+.note2 p{
+  padding: 0px 50px;
 }
