@@ -102,10 +102,44 @@ section{
   background: rgb(238,70,58);
   background: linear-gradient(90deg, rgba(238,70,58,1) 0%, rgba(207,48,62,1) 100%);
 }
-.header-bg{
-	position:absolute;
-  width: 100%;
-  height:900px;
+.main-aesthetic{
+  position: absolute;
+  left: -410px;
+  top: -84px;
+}
+header{
+  background: rgb(255,191,53);
+  background: linear-gradient(180deg, rgba(255,191,53,1) 0%, rgba(246,170,14,1) 100%);
+  height: 870px;
+  overflow:unset;
+  position: relative;
+}
+#ordernow2 .strawberry-ordernow04 {
+    left: -120px;
+    bottom: -40px;
+    z-index: 10;
+}
+header .main-block__order-p2 {
+  font-size: 18px;
+  color: white;
+  float: right;
+  margin-top: 14px;
+}
+header .main-block__order-p span {
+  font-size: 58px;
+}
+header .main-block__advantages {
+    margin-top: 70px;
+    padding-left: 54px;
+}
+header .main-block__order {
+  max-width: 368px;
+  margin-bottom: 60px;
+}
+header .main-block__order-p {
+  float: left;
+  padding-top: 0px;
+  margin-bottom: 0;
 }
 .contact{
 	float: right;
@@ -154,6 +188,7 @@ section{
   position: absolute;
   left: -38px;
 }
+
 .main-block__advantages{
 	margin-top:70px;
 	float:left;
@@ -637,6 +672,7 @@ section{
   left: -189px;
   top: -90px;
 }
+
 .main-block__order-p2{
   font-size: 18px;
   color: white;

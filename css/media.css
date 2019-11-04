@@ -38,6 +38,22 @@
 	}
 }
 @media screen and (max-width:1200px){
+	header .main-block__order-p2 {
+	    font-size: 17px;
+	    margin-top: 11px;
+	}
+	header .main-block__advantages {
+	   	padding-left:0px;
+    }
+	header .main-aesthetic{
+    	left: -490px;
+	}
+	header .main-block__order-p span {
+    	font-size: 51px;
+	}
+	header .main-block__order {
+    	max-width: 343px;
+	}
 	.main-block__logo img {
     	width: 250px;
 	}
@@ -269,7 +285,8 @@
     .advantages {
     	margin-top: -60px;
 	}
-	.main-block__order {
+	.main-block__order,
+	header .main-block__order{
     	max-width: 394px;
 	}
 	.main-block__order-p2 {
@@ -322,24 +339,28 @@
 	.main-block__logo p{
 		margin-left: 16px;
 	}
-	.main-block__advantages {
+	.main-block__advantages,
+	header .main-block__advantages{
 	    margin-top: 10px;
 	    padding: 0;
 	    float: right;
 	    margin-right: 10px;
 	}
-	.main-block__advantages .kapsuly-dlya-pohudeniya {
+	.main-block__advantages .kapsuly-dlya-pohudeniya,
+	header .main-block__advantages .kapsuly-dlya-pohudeniya{
     	width: 130px;
     	padding-bottom: 40px;
     	position: absolute;
     	left: 90px;
 	}
-	.main-block__order {
+	.main-block__order,
+	header .main-block__order{
     	max-width: 100%;
     	margin: 0px 10px;
     	z-index: 10;
 	}
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 102px;
 	}
 	.main-block__order-p2 {
@@ -533,10 +554,12 @@
 	}
 }
 @media screen and (max-width:561px){
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p {
     	margin-left: 72px;
 	}
-	.main-block__order-p2 {
+	.main-block__order-p2,
+	header .main-block__order-p2{
     	margin-right: 89px;
 	}
 }
@@ -544,7 +567,8 @@
 	#structure .why-serre {
    		margin-left: 140px;
 	}
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 43px;
 	}
 	.strawberry-ordernow5, #why-serre .strawberry2, #why-serre .strawberry {
@@ -557,7 +581,8 @@
 	.contact__img2 {
     	left: 96px;
 	}
-	.main-block__advantages li {
+	.main-block__advantages li,
+	header .main-block__advantages li{
 	    font-size: 14px;
 	    padding: 12px 14px;
 	}
@@ -571,10 +596,12 @@
 	.block-plus__item {
     	font-size: 18px;
 	}
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 53px;
 	}
-	.main-block__order-p2 {
+	.main-block__order-p2,
+	header .main-block__order-p2{
     	margin-right: 74px;
 	}
 }
@@ -585,13 +612,16 @@
 	.main-block__logo {
     	margin-left: 61px;
 	}
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 8%;
 	}
-	.main-block__order-p2 {
+	.main-block__order-p2,
+	header .main-block__order-p2{
     	margin-right: 16%;
 	}
-	.main-block__advantages .kapsuly-dlya-pohudeniya {
+	.main-block__advantages .kapsuly-dlya-pohudeniya,
+	header .main-block__advantages .kapsuly-dlya-pohudeniya{
     	left: 40px;
 	}
 	.contact__img2 {
@@ -606,10 +636,12 @@
 	#structure .why-serre {
    		margin-left: 120px;
 	}
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 6%;
 	}
-	.main-block__order-p2 {
+	.main-block__order-p2,
+	header .main-block__order-p2{
     	margin-right: 11%;
 	}
 	.advantages-capsule__item{
@@ -624,10 +656,12 @@
 	#structure .why-serre {
    		margin-left:110px;
 	}
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 6%;
 	}
-	.main-block__order-p2 {
+	.main-block__order-p2,
+	header .main-block__order-p2{
     	margin-right: 8%;
 	}
 	.btn {
@@ -650,7 +684,8 @@
 	.main-block__logo {
     	margin-left: 10%;
 	}
-	.main-block__advantages .kapsuly-dlya-pohudeniya {
+	.main-block__advantages .kapsuly-dlya-pohudeniya,
+	header .main-block__advantages .kapsuly-dlya-pohudeniya{
     	left: 21px;
 	}
 	#about-serre .block-about img{
@@ -677,15 +712,18 @@
 	.hand {
     	width: 350px;
 	}
-	.main-block__advantages .kapsuly-dlya-pohudeniya {
+	.main-block__advantages .kapsuly-dlya-pohudeniya,
+	header .main-block__advantages .kapsuly-dlya-pohudeniya{
 	    width: 100px;
 	    margin-top: 20px;
 	    left: 20px;
 	}
-	.main-block__order-p{
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 3%;
 	}
-	.main-block__order-p2{
+	.main-block__order-p2,
+	header .main-block__order-p2{
 		margin-right: 3%;
 	}
 	.fields .form button {
@@ -709,7 +747,8 @@
 	#no-hunger p {
     	font-size: 12px;
 	}
-	.main-block__advantages li {
+	.main-block__advantages li,
+	header .main-block__advantages li{
     	font-size: 14px;
     	padding: 12px 0px;
 	}
@@ -735,7 +774,8 @@
 		padding: 17px;
 		font-size: 14px;
 	}
-	.main-block__order-p {
+	.main-block__order-p,
+	header .main-block__order-p{
     	margin-left: 3%;
 	}
 	.main-block__order h2 {
@@ -744,10 +784,12 @@
 	.main-block__order p {
     	font-size: 16px;
 	}
-	.main-block__order-p span {
+	.main-block__order-p span,
+	header .main-block__order-p span{
     	font-size: 38px;
 	}
-	.main-block__order-p2 {
+	.main-block__order-p2,
+	header .main-block__order-p2{
     	margin-right: 3%;
     	margin-top: 7px;
     	line-height: 20px;
@@ -758,12 +800,14 @@
 	.contact__img2 {
     	left: 6%;
 	}
-	.main-block__advantages .kapsuly-dlya-pohudeniya {
+	.main-block__advantages .kapsuly-dlya-pohudeniya,
+	header .main-block__advantages .kapsuly-dlya-pohudeniya{
     	width: 90px;
     	margin-top: 0px;
     	left: 20px;
 	}
-	.main-block__advantages li {
+	.main-block__advantages li,
+	header .main-block__advantages li{
     	font-size: 14px;
     	padding: 5px 0px;
 	}
@@ -815,12 +859,13 @@
 	#structure .why-serre {
     	margin-left: 15%;
 	}
-	.main-block__order-p2 {
+	.main-block__order-p2,
+	header .main-block__order-p2{
 	    margin-right: 0%;
 	    margin-top: 2px;
 	    line-height: 20px;
 	}
-	.main-block__order h2 {
+	.main-block__order h2{
     	font-size: 21px;
 	}
 	.main-block__order-p span {
@@ -836,8 +881,11 @@
     	margin-left: 0px;
     	font-size: 21px;
 	}
-	.main-block__advantages li {
+	.main-block__advantages li{
     	font-size: 12px;
+	}
+	#ordernow2 .main-block__advantages li{
+		font-size: 12px;
 	}
 }	
 	
