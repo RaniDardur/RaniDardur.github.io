@@ -279,7 +279,7 @@
     	margin-left: 62px;
 	}
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
 	.contact,
 	.contact__phone{
 		float:none;
@@ -528,14 +528,16 @@
 	.block-reviews {
     	margin:0px;
 	}
+	#about-serre .strawberry {
+    	bottom: -21px;
+	}
+}
+@media screen and (max-width:561px){
 	.main-block__order-p {
     	margin-left: 72px;
 	}
 	.main-block__order-p2 {
     	margin-right: 89px;
-	}
-	#about-serre .strawberry {
-    	bottom: -21px;
 	}
 }
 @media screen and (max-width:525px){
@@ -548,6 +550,7 @@
 	.strawberry-ordernow5, #why-serre .strawberry2, #why-serre .strawberry {
     	right:20px;
 	}
+	
 	.strawberry-decline {
 	    right: 10px;
 	}
@@ -609,6 +612,13 @@
 	.main-block__order-p2 {
     	margin-right: 11%;
 	}
+	.advantages-capsule__item{
+    	padding: 15px 10px 15px 9px;
+    	font-size: 11px;
+	}
+	.advantages-capsule__item img {
+    	padding-right: 5px;
+	}
 }
 @media screen and (max-width:450px){
 	#structure .why-serre {
@@ -646,8 +656,15 @@
 	#about-serre .block-about img{
 	    width: 300px;
 	}
+	#structure .why-serre {
+    	margin-left:27%;
+	}
 }
-
+@media screen and (max-width:425px){
+	.advantages-capsule__item{
+    	font-size:10px;
+	}
+}
 @media screen and (max-width:420px){
 	#no-hunger p {
     	font-size: 13px;
@@ -680,6 +697,9 @@
 	}
 }
 @media screen and (max-width:392px){
+	.advantages-capsule__item{
+    	font-size:9px;
+	}
 	.contact__img2 {
     	left: 9%;
 	}
@@ -693,8 +713,18 @@
     	font-size: 14px;
     	padding: 12px 0px;
 	}
+	#structure .why-serre {
+    	margin-left: 20%;
+	}
 }
 @media screen and (max-width:375px){
+	.advantages-capsule__item{
+    	padding: 15px 5px 15px 6px;
+    	font-size: 9px;
+	}
+	.advantages-capsule__item img {
+    	padding-right: 2px;
+	}
 	#fail p {
    		margin-top: 198px;
 	}
@@ -765,8 +795,26 @@
 	.block-plus__item {
     	font-size: 13px;
 	}
+	.strawberry-structure-mobile, .strawberry-structure-mobile2, .strawberry-structure-mobile3 {
+    	right: 5px;
+	}
+}
+@media screen and (max-width:350px){
+	.advantages-capsule__item {
+    	padding: 10px 5px 10px 6px;
+    	font-size: 8px;
+	}
+	.block-plus__item {
+    	font-size: 12px;
+	}
 }
 @media screen and (max-width:340px){
+	#no-hunger p {
+    	font-size: 10px;
+	}
+	#structure .why-serre {
+    	margin-left: 15%;
+	}
 	.main-block__order-p2 {
 	    margin-right: 0%;
 	    margin-top: 2px;
