@@ -1,0 +1,49 @@
+@media screen and (max-width:768px){
+	.menu{
+		display:none;
+	}
+	.navbar,
+	.navbar-menu_active{
+		display:block;
+	}
+	.main{
+		margin-top: 5vh;
+	}
+	.about-us .about-us__block,
+	.safeguard__block{
+		 height : auto;
+		 margin: 30px auto;
+	}
+
+}
+
+@media screen and (max-width:992px){
+	header{
+		height:100%;
+	}
+	.pudge-img{
+		display:none;
+	}
+	.safeguard__block{
+		 margin:30px auto;
+		 height : auto;
+	}
+	.main__title {
+    	font-size: 35px;
+	}
+	.main__adv {
+	    margin-top:0px;
+	    font-size: 15px;
+	}
+	.main__btn {
+    	margin-top: 10px;
+    	margin-bottom: 50px;
+	}
+
+	.main__btn a {
+	    font-size: 14px;
+	    padding: 10px 25px;
+	}
+}
+
+
