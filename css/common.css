@@ -999,5 +999,11 @@ h2 {
   .owl-lazy{
     height: 100% !important;
   }
+  .owl-dots{
+      margin-top: 20px;
+  }
+  .examples-carousel .owl-prev, .examples-carousel .owl-next {
+    top: 41%;
+  }
 }
 
