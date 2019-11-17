@@ -40,7 +40,7 @@ font-family: 'font62eba988a1f81214f9334b407164fad9';
 
 
 body {
-  font-family: 'SFUIDisplayRegular';
+  font-family: 'SFUIDisplay-Regular';
   color: #3b3b3b;
 }
 img.wp-smiley,
@@ -75,7 +75,7 @@ textarea {
 
 select {
   width: 100%;
-  font-family: 'SFUIDisplayBold';
+  font-family: 'SFUIDisplay-Bold';
   color: #2085e1;
   font-size: 16px;
   border: none;
@@ -98,13 +98,13 @@ h2 {
 }
 
 .ff-sfsm {
-  font-family: 'SFUIDisplaySemiBold'; }
+  font-family: 'SFUIDisplay-Semibold'; }
 
 .ff-sfb {
-  font-family: 'SFUIDisplayBold'; }
+  font-family: 'SFUIDisplay-Bold'; }
 
 .ff-sfh {
-  font-family: 'SFUIDisplayHeavy'; }
+  font-family: 'SFUIDisplay-Heavy'; }
 
 .fs-12 {
   font-size: 12px; }
@@ -151,7 +151,7 @@ h2 {
 .button-blue, .button-line, .button-white {
   text-align: center;
   display: inline-block;
-  font-family: 'SFUIDisplaySemiBold'; }
+  font-family: 'SFUIDisplay-Semibold'; }
 
 .button-blue {
   padding: 15px 20px;
@@ -164,11 +164,11 @@ h2 {
   padding: 10px 20px;
   border: 1px solid #c7c7c7;
   font-size: 18px;
-  font-family: 'SFUIDisplayRegular'; }
+  font-family: 'SFUIDisplay-Regular'; }
   .button-line-selected {
     border-color: #2085e1;
     box-shadow: 0px 0px 0px 1px #2085e1;
-    font-family: 'SFUIDisplaySemiBold'; }
+    font-family: 'SFUIDisplay-Semibold'; }
 
 .button-white {
   padding: 15px 60px;
@@ -280,7 +280,7 @@ h2 {
 
 .modal-call__title, .modal-employee__title {
   font-size: 20px;
-  font-family: 'SFUIDisplayHeavy';
+  font-family: 'SFUIDisplay-Heavy';
   margin-bottom: 30px; }
 
 .modal-video {
@@ -317,7 +317,7 @@ h2 {
     font-size: 22px;
     position: absolute;
     padding-left: 10px;
-    font-family: 'SFUIDisplayRegular'; }
+    font-family: 'SFUIDisplay-Regular'; }
   .begin-item {
     display: flex;
     align-items: center;
@@ -339,7 +339,7 @@ h2 {
   .calculator-value {
     color: #2085e1;
     font-size: 16px;
-    font-family: 'SFUIDisplayBold'; }
+    font-family: 'SFUIDisplay-Bold'; }
     .calculator-value input {
       padding: 0;
       text-align: center;
@@ -353,7 +353,7 @@ h2 {
   border-bottom: 1px solid #cccccc;
   padding: 0 0 2px 12px;
   width: 200px;
-  font-family: 'SFUIDisplayBold';
+  font-family: 'SFUIDisplay-Bold';
   color: #2085e1;
   font-size: 18px;
   background: url("../images/selector_arrow.jpg") right 10px center no-repeat; }
@@ -370,7 +370,7 @@ h2 {
     background-color: #fff;
     box-shadow: -5px 10px 50px rgba(173, 173, 173, 0.3); }
     .friends-block__title {
-      font-family: 'SFUIDisplayBold';
+      font-family: 'SFUIDisplay-Bold';
       font-size: 35px;
       line-height: normal;
       margin-bottom: 30px; }
@@ -383,7 +383,7 @@ h2 {
   /* background: url("../images/profitable_bg.jpg") center/cover no-repeat;  */
 }
   .profitable-percent {
-    font-family: 'SFUIDisplayHeavy';
+    font-family: 'SFUIDisplay-Heavy';
     color: #fff;
     text-shadow: -5px 5px 40px rgba(93, 93, 93, 0.35);
     font-size: 150px;
@@ -465,7 +465,7 @@ h2 {
   .certificates-link {
     display: inline-block;
     color: #2085e1;
-    font-family: 'SFUIDisplayBold';
+    font-family: 'SFUIDisplay-Bold';
     cursor: pointer;
     background: url("../images/certificates/link.png") right center no-repeat;
     padding-right: 20px; }
@@ -487,12 +487,12 @@ h2 {
     position: relative;
     margin-bottom: 20px;
     text-align:center;
-    font-family: 'SFUIDisplayBold'; }
+    font-family: 'SFUIDisplay-Bold'; }
     .scheme-item__number {
       font-size: 110px;
       color: #fff;
       text-shadow: 0px 10px 30px rgba(166, 173, 182, 0.58);
-      font-family: 'SFUIDisplayHeavy';
+      font-family: 'SFUIDisplay-Heavy';
       line-height: 1; }
 
 .discounts {
@@ -597,7 +597,7 @@ h2 {
 .calc-block {
   padding: 30px 20px 50px 20px; }
   .calc-block__title {
-    font-family: 'SFUIDisplayBold';
+    font-family: 'SFUIDisplay-Bold';
     font-size: 35px;
     line-height: normal;
     margin-bottom: 30px; }
