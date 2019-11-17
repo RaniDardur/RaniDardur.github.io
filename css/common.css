@@ -992,6 +992,11 @@ h2 {
   } 
   .item{
     width:100% !important;
-  } 
+  }
+  .owl-item,
+  .item,
+  .owl-stage{
+    height: 100% !important;
+  }
 }
 
