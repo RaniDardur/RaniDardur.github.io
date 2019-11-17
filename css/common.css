@@ -995,7 +995,8 @@ h2 {
   }
   .owl-item,
   .item,
-  .owl-stage{
+  .owl-stage,
+  .owl-lazy{
     height: 100% !important;
   }
 }
