@@ -119,7 +119,7 @@ h2 {
   color: #c8c8c8; }
 
 @media screen and (min-width: 992px) {
-  .cp {
+.cp {
     cursor: pointer; } }
 
 .button-blue, .button-line, .button-white {
@@ -983,4 +983,11 @@ h2 {
     padding: 50px 20px 0 20px;
   }
 }
-
+@media screen and (min-width: 992px) {
+  .owl-stage-outer .owl-height{
+    height: 400px !important;
+  }
+  .examples_height{
+    width: 400px !important;
+  }
+}
