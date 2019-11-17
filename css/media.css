@@ -232,7 +232,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url("../images/certificates/loop.png") center no-repeat; }
+  background: url("../images/loop.png") center no-repeat; }
 .certificates-image:hover::before {
   display: block;
 }
