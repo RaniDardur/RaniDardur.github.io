@@ -21,7 +21,8 @@
       max-width: 1100px; } }
 body {
   font-family: 'SFUIDisplayRegular';
-  color: #3b3b3b; }
+  color: #3b3b3b;
+}
 input[type='text'] {
   border: none;
   border-bottom: 1px solid #c7c7c7;
@@ -117,10 +118,6 @@ h2 {
 .color-gray2 {
   color: #c8c8c8; }
 
-@media screen and (min-width: 992px) {
-.cp {
-    cursor: pointer; } }
-
 .button-blue, .button-line, .button-white {
   text-align: center;
   display: inline-block;
@@ -151,7 +148,47 @@ h2 {
   .button-blue, .button-line, .button-white {
     cursor: pointer; }
   .button-blue {
-    padding: 15px 60px; } }
+    padding: 15px 60px; }
+  .cp {
+    cursor: pointer;
+    }
+  .button-animation {
+    border: 2px solid #2085e1;
+    padding: 0 50px;
+    color: #3b3b3b; }
+  .button-animation::before {
+    left: -100%; }
+  .button-animation:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent; }
+  .button-animation:hover::before {
+      left: 0; 
+  }
+  .header {
+      padding: 20px 0; 
+    }
+  .header-image {
+      width: 300px; 
+    }
+  .header-phone {
+    font-size: 22px; 
+    }
+  .owl-prev, .owl-next {
+      opacity: 1;
+      width: auto;
+      box-shadow: none;
+      background-color: transparent !important; 
+  }
+  .owl-prev {
+    left: -15px;
+  }
+  .owl-next {
+    right: -15px;
+  }
+
+
+  }
 
 .button-animation {
   display: inline-block;
@@ -174,19 +211,6 @@ h2 {
     transition: left 0.3s; }
   .button-animation span {
     position: relative; }
-  @media screen and (min-width: 992px) {
-    .button-animation {
-      border: 2px solid #2085e1;
-      padding: 0 50px;
-      color: #3b3b3b; }
-      .button-animation::before {
-        left: -100%; }
-      .button-animation:hover {
-        color: #fff;
-        background-color: transparent;
-        border-color: transparent; }
-        .button-animation:hover::before {
-          left: 0; } }
 
 .line-dot {
   position: relative;
@@ -216,14 +240,6 @@ h2 {
     padding: 1px 8px;
     display: inline-block;
     cursor: pointer; }
-  @media screen and (min-width: 992px) {
-    .header {
-      padding: 20px 0; }
-      .header-image {
-          width: 300px; }
-      .header-phone {
-        font-size: 22px; } }
-
 .owl-carousel button {
   outline: none; }
 
@@ -252,24 +268,12 @@ h2 {
   .owl-prev span, .owl-next span {
     font-size: 50px;
     line-height: 0.8; }
-  @media screen and (min-width: 992px) {
-    .owl-prev, .owl-next {
-      opacity: 1;
-      width: auto;
-      box-shadow: none;
-      background-color: transparent !important; } }
 
 .owl-prev {
   left: -5px; }
 
 .owl-next {
   right: -5px; }
-
-@media screen and (min-width: 992px) {
-  .owl-prev {
-    left: -15px; }
-  .owl-next {
-    right: -15px; } }
 
 .modal-content {
   border: none;
