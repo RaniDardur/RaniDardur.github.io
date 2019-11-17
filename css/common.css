@@ -529,7 +529,7 @@ h2 {
     .order {
       margin: 100px 0; }
       .order-form {
-        padding: 70px 50px 50px 90px; }
+        padding: 52px 50px 50px 30px }
       .order .order-carousel {
         width: 470px; }
         .order .order-carousel .owl-dots {
@@ -635,6 +635,12 @@ h2 {
   .certificates-images img {
     margin-left: 20px;
     cursor: pointer; }
+  .certificates h2,
+  .certificates-link,
+  .certificates-image{
+    width: 100%;
+    text-align: center;
+  }
   @media screen and (min-width: 992px) {
     .certificates {
       padding: 100px 0 150px 0; }
