@@ -2018,76 +2018,8 @@
     
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
-        <script src="js/all-scripts.js"></script>
+    <script src="js/all-scripts.js"></script>
     <script src="js/common.js"></script>
-    <script>
-        function YandexSubmitEvents(code) {
-            switch (code) {
-                case 'calc':
-                // Рассчет стоимости ремонта
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'calc'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'call':
-                // Заявка на звонок
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'call'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'smetchik':
-                // Пригласите сметчика сегодня
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'smetchik'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'rasschet':
-                // Получите расчет прямо сейчас
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'rasschet'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'zamershik':
-                // Заявка на вызов замерщика
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'zamershik'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'price':
-                // Заявка на прайс-лист
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'price'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'rassrochka':
-                // Заявка на рассрочку
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'rassrochka'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'design':
-                // Закажите дизайн-проект
-                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
-                    dataLayer.push({'event': 'design'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-                case 'person':
-                // Написать сотруднику
-                    dataLayer.push({'event': 'person'});
-                    fbq('track', 'Lead');
-                    yaCounter52208992.reachGoal('send_form'); return true;
-                break;
-            }  
-        }
-    </script>
     <script>
         var examples = Array();
                 examples.push({
@@ -2666,5 +2598,74 @@
         });
                 Vue.prototype.examples = examples;
     </script>
+    <script>
+        function YandexSubmitEvents(code) {
+            switch (code) {
+                case 'calc':
+                // Рассчет стоимости ремонта
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'calc'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'call':
+                // Заявка на звонок
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'call'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'smetchik':
+                // Пригласите сметчика сегодня
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'smetchik'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'rasschet':
+                // Получите расчет прямо сейчас
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'rasschet'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'zamershik':
+                // Заявка на вызов замерщика
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'zamershik'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'price':
+                // Заявка на прайс-лист
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'price'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'rassrochka':
+                // Заявка на рассрочку
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'rassrochka'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'design':
+                // Закажите дизайн-проект
+                    // gtag('event', 'send_form_event', { 'event_category' : 'send_form_category', 'event_label' : 'send_form_label' });
+                    dataLayer.push({'event': 'design'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+                case 'person':
+                // Написать сотруднику
+                    dataLayer.push({'event': 'person'});
+                    fbq('track', 'Lead');
+                    yaCounter52208992.reachGoal('send_form'); return true;
+                break;
+            }  
+        }
+    </script>
+
 </body>
 </html>
