@@ -61,9 +61,6 @@ select {
 
 h2 {
   font-size: 28px; }
-  @media screen and (min-width: 992px) {
-    h2 {
-      font-size: 35px; } }
 
 .header_logo{
   height:100px;
@@ -72,7 +69,8 @@ h2 {
   margin-left: -60px;
 }
 .lh-2 {
-  line-height: 1.2; }
+  line-height: 1.2;
+}
 
 .ff-sfsm {
   font-family: 'SFUIDisplaySemiBold'; }
