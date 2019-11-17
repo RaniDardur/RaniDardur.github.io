@@ -665,6 +665,7 @@ h2 {
   .scheme-item {
     position: relative;
     margin-bottom: 20px;
+    text-align:center;
     font-family: 'SFUIDisplayBold'; }
     .scheme-item__number {
       font-size: 110px;
