@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'SFUIDisplayRegular';
-  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("fonts/sfuidisplay/SFUIDisplayRegular.ttf") format("truetype"); }
+  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("fonts/SFUIDisplayRegular.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'SFUIDisplaySemiBold';
-  src: local("SFUIDisplaySemiBold"), local("SFUIDisplaySemiBold"), url("fonts/sfuidisplay/SFUIDisplaySemiBold.ttf") format("truetype"); }
+  src: local("SFUIDisplaySemiBold"), local("SFUIDisplaySemiBold"), url("fonts/SFUIDisplaySemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'SFUIDisplayBold';
-  src: local("SFUIDisplayBold"), local("SFUIDisplayBold"), url("fonts/sfuidisplay/SFUIDisplayBold.ttf") format("truetype"); }
+  src: local("SFUIDisplayBold"), local("SFUIDisplayBold"), url("fonts/SFUIDisplayBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'SFUIDisplayHeavy';
-  src: local("SFUIDisplayHeavy"), local("SFUIDisplayHeavy"), url("fonts/sfuidisplay/SFUIDisplayHeavy.ttf") format("truetype"); }
+  src: local("SFUIDisplayHeavy"), local("SFUIDisplayHeavy"), url("fonts/SFUIDisplayHeavy.ttf") format("truetype"); }
 
 @media screen and (min-width: 1200px) {
   .container{
