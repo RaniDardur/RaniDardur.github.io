@@ -985,11 +985,11 @@ h2 {
 }
 @media screen and (max-width: 991px) {
   .owl-height{
-    height: 350px;
+    height: 350px !important;
   }
   .examples_height,
   .item{
-    width: 50%;
+    width: 50% !important;
   } 
 }
 
