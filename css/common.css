@@ -1,26 +1,22 @@
 @font-face {
 font-display: swap;
   font-family: 'SFUIDisplayRegular';
-  font-display:auto;
-  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("fonts/SFUIDisplayRegular.ttf") format("truetype");}
+  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("SFUIDisplayRegular.ttf") format("truetype");}
 
 @font-face {
   font-display: swap;
   font-family: 'SFUIDisplaySemiBold';
-  font-display:auto;
-  src: local("SFUIDisplaySemiBold"), local("SFUIDisplaySemiBold"), url("fonts/SFUIDisplaySemiBold.ttf") format("truetype"); }
+  src: local("SFUIDisplaySemiBold"), local("SFUIDisplaySemiBold"), url("SFUIDisplaySemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-display: swap;
   font-family: 'SFUIDisplayBold';
-  font-display:auto;
-  src: local("SFUIDisplayBold"), local("SFUIDisplayBold"), url("fonts/SFUIDisplayBold.ttf") format("truetype"); }
+  src: local("SFUIDisplayBold"), local("SFUIDisplayBold"), url("SFUIDisplayBold.ttf") format("truetype"); }
 
 @font-face {
   font-display: swap;
   font-family: 'SFUIDisplayHeavy';
-  font-display:auto;
-  src: local("SFUIDisplayHeavy"), local("SFUIDisplayHeavy"), url("fonts/SFUIDisplayHeavy.ttf") format("truetype"); }
+  src: local("SFUIDisplayHeavy"), local("SFUIDisplayHeavy"), url("SFUIDisplayHeavy.ttf") format("truetype"); }
 
 body {
   font-family: 'SFUIDisplayRegular';
