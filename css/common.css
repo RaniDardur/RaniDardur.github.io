@@ -1007,7 +1007,7 @@ h2 {
       top: 41%;
   }
 }
-@media screen and (min-width: 991px) {
+@media screen and (max-width:768px) {
   .owl-height,
   .owl-item,
   .item,
