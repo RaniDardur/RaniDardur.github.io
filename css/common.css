@@ -1013,9 +1013,9 @@ h2 {
   .item,
   .owl-stage,
   .owl-lazy{
-    height:auto;
+    height:auto !important;
   }
-  .examples_height{
-    width:100%;
-  } 
+  .examples_height {
+      width: 100% !important;
+  }
 }
