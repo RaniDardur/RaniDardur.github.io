@@ -551,7 +551,7 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url("../images/reviews/play.png") center no-repeat; }
+    background: url("../images/play.png") center no-repeat; }
   .reviews-video img {
     margin: auto;
     cursor: pointer; }
