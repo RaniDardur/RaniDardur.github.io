@@ -991,26 +991,26 @@ h2 {
   }
 }
 @media screen and (max-width: 991px) {
-  .owl-height{
+  .examples .owl-height{
     height:330px !important;
   }
-  .examples_height{
+  .examples .examples_height{
     width: 50% !important;
   } 
-  .item{
+  .examples .item{
     width:100% !important;
   }
-  .owl-item,
-  .item,
-  .owl-stage,
-  .owl-lazy{
+  .examples .owl-item,
+  .examples .item,
+  .examples .owl-stage,
+  .examples .owl-lazy{
     height: 100% !important;
   }
-  .examples-carousel .owl-dots {
+  .examples .examples-carousel .owl-dots {
     margin-top: 20px;
   }
-  .examples-carousel .owl-prev,
-  .examples-carousel .owl-next{
+  .examples .examples-carousel .owl-prev,
+  .examples .examples-carousel .owl-next{
       top: 41%;
   }
 }
