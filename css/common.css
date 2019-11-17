@@ -1,46 +1,21 @@
 @font-face {
-font-family: 'fontd4550c5e326a628ac8ef82e9f2703484';
-    
-    src:    url('https://nomail.com.ua/files/eot/d4550c5e326a628ac8ef82e9f2703484.eot?#iefix') format('embedded-opentype'),
-            url('https://nomail.com.ua/files/woff/d4550c5e326a628ac8ef82e9f2703484.woff') format('woff'),
-            url('https://nomail.com.ua/files/woff2/d4550c5e326a628ac8ef82e9f2703484.woff2') format('woff2');
-}
-
-@font-face { font-family: 'SFUIDisplay-Regular';  src: local('SFUIDisplay-Regular'), url('https://nomail.com.ua/files/woff/d4550c5e326a628ac8ef82e9f2703484.woff') format('woff'); }
+  font-family: 'SFUIDisplayRegular';
+  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("fonts/SFUIDisplayRegular.ttf") format("truetype"); }
 
 @font-face {
-font-family: 'font10a14e64c8f94a4270c05aa42114e0f2';
-    
-    src:    url('https://nomail.com.ua/files/eot/10a14e64c8f94a4270c05aa42114e0f2.eot?#iefix') format('embedded-opentype'),
-            url('https://nomail.com.ua/files/woff/10a14e64c8f94a4270c05aa42114e0f2.woff') format('woff'),
-            url('https://nomail.com.ua/files/woff2/10a14e64c8f94a4270c05aa42114e0f2.woff2') format('woff2');
-}
-
-@font-face { font-family: 'SFUIDisplay-Semibold';  src: local('SFUIDisplay-Semibold'), url('https://nomail.com.ua/files/woff/10a14e64c8f94a4270c05aa42114e0f2.woff') format('woff'); }
+  font-family: 'SFUIDisplaySemiBold';
+  src: local("SFUIDisplaySemiBold"), local("SFUIDisplaySemiBold"), url("fonts/SFUIDisplaySemiBold.ttf") format("truetype"); }
 
 @font-face {
-font-family: 'font7e427ee9b99fcefb1560e6757a2d853e';
-    
-    src:    url('https://nomail.com.ua/files/eot/7e427ee9b99fcefb1560e6757a2d853e.eot?#iefix') format('embedded-opentype'),
-            url('https://nomail.com.ua/files/woff/7e427ee9b99fcefb1560e6757a2d853e.woff') format('woff'),
-            url('https://nomail.com.ua/files/woff2/7e427ee9b99fcefb1560e6757a2d853e.woff2') format('woff2');
-}
-
-@font-face { font-family: 'SFUIDisplay-Bold';  src: local('SFUIDisplay-Bold'), url('https://nomail.com.ua/files/woff/7e427ee9b99fcefb1560e6757a2d853e.woff') format('woff'); }
+  font-family: 'SFUIDisplayBold';
+  src: local("SFUIDisplayBold"), local("SFUIDisplayBold"), url("fonts/SFUIDisplayBold.ttf") format("truetype"); }
 
 @font-face {
-font-family: 'font62eba988a1f81214f9334b407164fad9';
-    
-    src:    url('https://nomail.com.ua/files/eot/62eba988a1f81214f9334b407164fad9.eot?#iefix') format('embedded-opentype'),
-            url('https://nomail.com.ua/files/woff/62eba988a1f81214f9334b407164fad9.woff') format('woff'),
-            url('https://nomail.com.ua/files/woff2/62eba988a1f81214f9334b407164fad9.woff2') format('woff2');
-}
-
-@font-face { font-family: 'SFUIDisplay-Heavy';  src: local('SFUIDisplay-Heavy'), url('https://nomail.com.ua/files/woff/62eba988a1f81214f9334b407164fad9.woff') format('woff'); }
-
+  font-family: 'SFUIDisplayHeavy';
+  src: local("SFUIDisplayHeavy"), local("SFUIDisplayHeavy"), url("fonts/SFUIDisplayHeavy.ttf") format("truetype"); }
 
 body {
-  font-family: 'SFUIDisplay-Regular';
+  font-family: 'SFUIDisplayRegular';
   color: #3b3b3b;
 }
 img.wp-smiley,
@@ -75,7 +50,7 @@ textarea {
 
 select {
   width: 100%;
-  font-family: 'SFUIDisplay-Bold';
+  font-family: 'SFUIDisplayBold';
   color: #2085e1;
   font-size: 16px;
   border: none;
@@ -98,13 +73,13 @@ h2 {
 }
 
 .ff-sfsm {
-  font-family: 'SFUIDisplay-Semibold'; }
+  font-family: 'SFUIDisplaySemiBold'; }
 
 .ff-sfb {
-  font-family: 'SFUIDisplay-Bold'; }
+  font-family: 'SFUIDisplayBold'; }
 
 .ff-sfh {
-  font-family: 'SFUIDisplay-Heavy'; }
+  font-family: 'SFUIDisplayHeavy'; }
 
 .fs-12 {
   font-size: 12px; }
@@ -151,7 +126,7 @@ h2 {
 .button-blue, .button-line, .button-white {
   text-align: center;
   display: inline-block;
-  font-family: 'SFUIDisplay-Semibold'; }
+  font-family: 'SFUIDisplaySemiBold'; }
 
 .button-blue {
   padding: 15px 20px;
@@ -164,11 +139,11 @@ h2 {
   padding: 10px 20px;
   border: 1px solid #c7c7c7;
   font-size: 18px;
-  font-family: 'SFUIDisplay-Regular'; }
+  font-family: 'SFUIDisplayRegular'; }
   .button-line-selected {
     border-color: #2085e1;
     box-shadow: 0px 0px 0px 1px #2085e1;
-    font-family: 'SFUIDisplay-Semibold'; }
+    font-family: 'SFUIDisplaySemiBold'; }
 
 .button-white {
   padding: 15px 60px;
@@ -280,7 +255,7 @@ h2 {
 
 .modal-call__title, .modal-employee__title {
   font-size: 20px;
-  font-family: 'SFUIDisplay-Heavy';
+  font-family: 'SFUIDisplayHeavy';
   margin-bottom: 30px; }
 
 .modal-video {
@@ -317,7 +292,7 @@ h2 {
     font-size: 22px;
     position: absolute;
     padding-left: 10px;
-    font-family: 'SFUIDisplay-Regular'; }
+    font-family: 'SFUIDisplayRegular'; }
   .begin-item {
     display: flex;
     align-items: center;
@@ -339,7 +314,7 @@ h2 {
   .calculator-value {
     color: #2085e1;
     font-size: 16px;
-    font-family: 'SFUIDisplay-Bold'; }
+    font-family: 'SFUIDisplayBold'; }
     .calculator-value input {
       padding: 0;
       text-align: center;
@@ -353,7 +328,7 @@ h2 {
   border-bottom: 1px solid #cccccc;
   padding: 0 0 2px 12px;
   width: 200px;
-  font-family: 'SFUIDisplay-Bold';
+  font-family: 'SFUIDisplayBold';
   color: #2085e1;
   font-size: 18px;
   background: url("../images/selector_arrow.jpg") right 10px center no-repeat; }
@@ -370,7 +345,7 @@ h2 {
     background-color: #fff;
     box-shadow: -5px 10px 50px rgba(173, 173, 173, 0.3); }
     .friends-block__title {
-      font-family: 'SFUIDisplay-Bold';
+      font-family: 'SFUIDisplayBold';
       font-size: 35px;
       line-height: normal;
       margin-bottom: 30px; }
@@ -383,7 +358,7 @@ h2 {
   /* background: url("../images/profitable_bg.jpg") center/cover no-repeat;  */
 }
   .profitable-percent {
-    font-family: 'SFUIDisplay-Heavy';
+    font-family: 'SFUIDisplayHeavy';
     color: #fff;
     text-shadow: -5px 5px 40px rgba(93, 93, 93, 0.35);
     font-size: 150px;
@@ -465,7 +440,7 @@ h2 {
   .certificates-link {
     display: inline-block;
     color: #2085e1;
-    font-family: 'SFUIDisplay-Bold';
+    font-family: 'SFUIDisplayBold';
     cursor: pointer;
     background: url("../images/certificates/link.png") right center no-repeat;
     padding-right: 20px; }
@@ -487,12 +462,12 @@ h2 {
     position: relative;
     margin-bottom: 20px;
     text-align:center;
-    font-family: 'SFUIDisplay-Bold'; }
+    font-family: 'SFUIDisplayBold'; }
     .scheme-item__number {
       font-size: 110px;
       color: #fff;
       text-shadow: 0px 10px 30px rgba(166, 173, 182, 0.58);
-      font-family: 'SFUIDisplay-Heavy';
+      font-family: 'SFUIDisplayHeavy';
       line-height: 1; }
 
 .discounts {
@@ -597,7 +572,7 @@ h2 {
 .calc-block {
   padding: 30px 20px 50px 20px; }
   .calc-block__title {
-    font-family: 'SFUIDisplay-Bold';
+    font-family: 'SFUIDisplayBold';
     font-size: 35px;
     line-height: normal;
     margin-bottom: 30px; }
