@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="images/logo4.png" rel="shortcut icon" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="css/common.css"/>
-    <title>СК Небо</title>
+    <title>СтройИнвест</title>
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -1279,62 +1278,64 @@
                                 достоверность отзыва. Наши заказчики об этом осведомлены.</p>
                             </div>
                         </div>
-                        <div class="owl-carousel reviews-insta-carousel mb-5">
+                        <div class="owl-carousel reviews-insta-carousel mb-5" id="reviews-insta">
                             <!-- <div class="item" v-for="(item, index) in 29">
                                 <img class="owl-lazy"
                                 @click="modalCarouselInstaOpen(index)"
                                 :data-src="'/reviews/insta/small/' + item + '.jpg'"/>
                             </div>  -->
                                                         <!-- style="width:" -->
-                                <div class="item big"
-                                :style="getReviewInstaWidth(true)"
-                                @click="modalCarouselInstaOpen(0)">
-                                    <img class="owl-lazy" data-src="images/uploads/2019/11/1.jpg"/>
+                                <div class="owl-lazy__big">
+                                    <div class="item big"
+                                        :style="getReviewInstaWidth(true)"
+                                        @click="modalCarouselInstaOpen(0)">
+                                        <img class="owl-lazy" data-src="images/uploads/2019/11/1.jpg"/>
+                                    </div>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item item2"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(1)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(2)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/2.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(3)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/3.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(4)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/4.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(5)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/5.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(6)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/6.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(7)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/7-2.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(8)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/8-2.jpg"/>
@@ -1345,26 +1346,26 @@
                                 @click="modalCarouselInstaOpen(9)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/9-1.jpg"/>
                                 </div>
-                                                        <!-- style="width:" -->
-                                <div class="item "
+                                                       <!-- style="width:" -->
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(10)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/10-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(11)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/11-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(12)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/12-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="ite"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(13)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/13.jpg"/>
@@ -1376,91 +1377,91 @@
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/14-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(15)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/15-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(16)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/16-1.jpg"/>
                                 </div>
-                                                        <!-- style="width:" -->
-                                <div class="item "
+                                                       <!-- style="width:" -->
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(17)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/17-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(18)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/18-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(19)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/19-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(20)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/20-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(21)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/21-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(22)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/22-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(23)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/23.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(24)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/24-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(25)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/25-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(26)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/26-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(27)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/27-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(28)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/28-1.jpg"/>
                                 </div>
                                                         <!-- style="width:" -->
-                                <div class="item "
+                                <div class="item"
                                 :style="getReviewInstaWidth(false)"
                                 @click="modalCarouselInstaOpen(29)">
                                     <img class="owl-lazy" data-src="images/uploads/2019/10/29-1.jpg"/>
@@ -1477,32 +1478,32 @@
                                     :data-src="'/reviews/video/' + (index + 1) + '.jpg'" alt=""/>
                                 </div>
                             </div> -->
-                                                            <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/DbOR3Gzk288')">
+                                <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/DbOR3Gzk288')">
                                     <div class="reviews-video">
                                         <img class="owl-lazy" data-src="images/uploads/2019/10/1-1.jpg" alt=""/>
                                     </div>
-                                </div>
-                                                            <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/7hgzjs0fOrI')">
+                                </div>    
+                                <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/7hgzjs0fOrI')">
                                     <div class="reviews-video">
                                         <img class="owl-lazy" data-src="images/uploads/2019/10/2-1.jpg" alt=""/>
                                     </div>
                                 </div>
-                                                            <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/0aAWITPx26M')">
+                                <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/0aAWITPx26M')">
                                     <div class="reviews-video">
                                         <img class="owl-lazy" data-src="images/uploads/2019/10/3-1.jpg" alt=""/>
                                     </div>
                                 </div>
-                                                            <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/Y3_TAroPk4A')">
+                                <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/Y3_TAroPk4A')">
                                     <div class="reviews-video">
                                         <img class="owl-lazy" data-src="images/uploads/2019/10/4-1.jpg" alt=""/>
                                     </div>
                                 </div>
-                                                            <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/twEWrB_X3B4')">
+                                <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/twEWrB_X3B4')">
                                     <div class="reviews-video">
                                         <img class="owl-lazy" data-src="images/uploads/2019/10/5-1.jpg" alt=""/>
                                     </div>
                                 </div>
-                                                            <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/xrAirDo-tc4')">
+                                <div class="item" @click="modalVideoOpen('https://www.youtube.com/embed/xrAirDo-tc4')">
                                     <div class="reviews-video">
                                         <img class="owl-lazy" data-src="images/uploads/2019/10/6-1.jpg" alt=""/>
                                     </div>

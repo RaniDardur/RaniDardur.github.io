@@ -19,7 +19,6 @@
     max-width: 1220px; }
     .container-mini {
       max-width: 1100px; } }
-
 body {
   font-family: 'SFUIDisplayRegular';
   color: #3b3b3b; }
@@ -164,7 +163,7 @@ h2 {
   transition: all 0.6s;
   color: #fff;
   text-align: center;
-  background-color: #fff; }
+  background-color: #fff;}
   .button-animation::before {
     content: "";
     position: absolute;
@@ -475,7 +474,8 @@ h2 {
     color: #fff;
     text-shadow: -5px 5px 40px rgba(93, 93, 93, 0.35);
     font-size: 150px;
-    line-height: 1.1; }
+    line-height: 1.1;
+    text-align: center; }
   .profitable-item {
     font-size: 24px;
     margin-bottom: 10px;
@@ -761,24 +761,31 @@ h2 {
   position: relative; }
   .reviews-insta-carousel .owl-stage-outer {
     padding: 50px 0; }
-  .reviews-insta-carousel .owl-item{
-    width: 600px !important;
-  }
   .reviews-insta-carousel .owl-item img {
     margin: auto;
     /* box-shadow: 0px 0px 25px rgba(141, 141, 141, 0.5); */
     box-shadow: 0px 0px 20px rgba(141, 141, 141, 0.5);
-    border-radius: 12px; }
+    border-radius: 12px;}
     .reviews-insta-carousel .item.big img{
       width: 100% !important;
-      margin-left: 40px !important;
+      margin-left: 50px;
     }
+    #reviews-insta .owl-item .owl-lazy .item,
+    #reviews-insta .owl-item .item {
+      height:100% !important;
+    }
+    .reviews-insta-carousel .item img{
+        width: 100%;
+        height: 100%;
+    }
+    
     @media screen and (min-width: 992px) {
       .reviews-insta-carousel .item.big img{
-        width: auto !important;
+        width:auto !important;
+        height:auto !important;
       }
     }
-
+    
   .reviews-insta-carousel .owl-dots {
     margin-top: -10px; }
   .reviews-video::after {
@@ -1015,9 +1022,42 @@ h2 {
   .examples .examples-carousel .owl-next{
       top: 41%;
   }
-}
-@media screen and (max-width:768px) {
-  .examples .examples_height{
-    width:100% !important;
+  .button-animation{
+      width: 50% !important;
+      margin: 0% 25%;
   }
+  .owl-lazy__big .item{
+    display: none;
+  }
+  .item2{
+    margin-left: -340px;
+  }
+}
+@media screen and (max-width:767px) {
+    .examples .examples_height{
+      width:100% !important;
+    }
+    #reviews-insta .item .owl-lazy {
+      height: 100%;
+    }
+    #reviews-insta .owl-lazy__big .owl-item{
+      width: 450px !important;
+      height: 400px !important;
+    }
+    #reviews-insta .owl-item .item{
+      width:100%;
+    }
+    .item2 {
+      margin-left: -130px;
+    }
+    #reviews-insta .owl-item{
+      width:200px;
+    }
+    .profitable .button-animation{
+      width:100% !important;
+      margin:0;
+    }
+}
+@media screen and (max-width:700px) {
+
 }
