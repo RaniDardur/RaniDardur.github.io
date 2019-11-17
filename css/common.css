@@ -1,17 +1,21 @@
 @font-face {
   font-family: 'SFUIDisplayRegular';
-  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("fonts/SFUIDisplayRegular.ttf") format("truetype"); }
+  font-display:auto;
+  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("fonts/SFUIDisplayRegular.ttf") format("truetype");}
 
 @font-face {
   font-family: 'SFUIDisplaySemiBold';
+  font-display:auto;
   src: local("SFUIDisplaySemiBold"), local("SFUIDisplaySemiBold"), url("fonts/SFUIDisplaySemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'SFUIDisplayBold';
+  font-display:auto;
   src: local("SFUIDisplayBold"), local("SFUIDisplayBold"), url("fonts/SFUIDisplayBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'SFUIDisplayHeavy';
+  font-display:auto;
   src: local("SFUIDisplayHeavy"), local("SFUIDisplayHeavy"), url("fonts/SFUIDisplayHeavy.ttf") format("truetype"); }
 
 body {
