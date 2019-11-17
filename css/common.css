@@ -771,7 +771,7 @@ h2 {
     border-radius: 12px; }
     .reviews-insta-carousel .item.big img{
       width: 100% !important;
-      margin-left: 40px;
+      margin-left: 40px !important;
     }
     @media screen and (min-width: 992px) {
       .reviews-insta-carousel .item.big img{
