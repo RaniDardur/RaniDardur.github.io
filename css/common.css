@@ -1008,14 +1008,7 @@ h2 {
   }
 }
 @media screen and (max-width:768px) {
-  .owl-height,
-  .owl-item,
-  .item,
-  .owl-stage,
-  .owl-lazy{
-    height:auto !important;
-  }
   .examples_height {
-      width: 100% !important;
+    width: 100% !important;
   }
 }
