@@ -186,7 +186,45 @@ h2 {
   .owl-next {
     right: -15px;
   }
+  .modal-carousel .owl-item {
+      padding: 0 30px; 
+  }
+  .modal-carousel span {
+      color: #fff; 
+  }
+  .modal-close {
+    width: 70px;
+    height: 70px;
+    cursor: pointer; 
+    z-index: 1000;
+  }
+  .modal-body {
+    /* padding: 130px;  */
+  }
+  .modal:not(#modalCarouselInsta) .modal-body {
+    padding: 130px;
+  }
 
+  .modal-call {
+    background: #fff url("../images/modal_call.jpg") right bottom no-repeat; }
+    .modal-call__title {
+      font-size: 28px;
+      margin-bottom: 50px;
+      width: 500px; }
+    .modal-call__form {
+      width: 350px; }
+  .modal-employee {
+    background: #fff url("../images/modal_employee.jpg") right bottom no-repeat; }
+    .modal-employee__title {
+      font-size: 28px;
+      margin-bottom: 50px; }
+    .modal-employee__form {
+      width: 450px; 
+    }
+  .begin {
+      /* background: url("../images/begin_bg.jpg") center top no-repeat; */
+      display: flex;
+      align-items: center; }
 
   }
 
@@ -321,42 +359,8 @@ h2 {
     color: #fff; }
   .modal-carousel .owl-dots {
     margin-top: 0; }
-  @media screen and (min-width: 992px) {
-    .modal-carousel .owl-item {
-      padding: 0 30px; }
-    .modal-carousel span {
-      color: #fff; } }
 
-@media screen and (min-width: 992px) {
-  .modal-close {
-    width: 70px;
-    height: 70px;
-    cursor: pointer; 
-    z-index: 1000;
-  }
-  .modal-body {
-    /* padding: 130px;  */
-  }
-  .modal:not(#modalCarouselInsta) .modal-body {
-    padding: 130px;
-  }
 
-  .modal-call {
-    background: #fff url("../images/modal_call.jpg") right bottom no-repeat; }
-    .modal-call__title {
-      font-size: 28px;
-      margin-bottom: 50px;
-      width: 500px; }
-    .modal-call__form {
-      width: 350px; }
-  .modal-employee {
-    background: #fff url("../images/modal_employee.jpg") right bottom no-repeat; }
-    .modal-employee__title {
-      font-size: 28px;
-      margin-bottom: 50px; }
-    .modal-employee__form {
-      width: 450px; } 
-}
 
 .begin {
   padding: 20px 0;
@@ -381,11 +385,7 @@ h2 {
       justify-content: center; }
     .begin-item__text {
       margin-left: -12px; }
-  @media screen and (min-width: 992px) {
-    .begin {
-      /* background: url("../images/begin_bg.jpg") center top no-repeat; */
-      display: flex;
-      align-items: center; } }
+  
   @media screen and (min-width: 1200px) {
     .begin {
       min-height: 770px; } }
