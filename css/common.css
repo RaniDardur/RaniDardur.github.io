@@ -985,15 +985,8 @@ h2 {
 }
 @media screen and (max-width: 991px) {
   .owl-height{
-    height: 400px !important;
+    
   }
-  .examples_height,
-  .owl-stage,
-  .owl-item,
-  .item,
-  .owl-lazy{
-    width: 400px !important;
-    height: 100%;
-  }
+ 
 }
 
