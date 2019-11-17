@@ -1008,7 +1008,7 @@ h2 {
   }
 }
 @media screen and (max-width:768px) {
-  .examples_height {
+  .examples .examples_height{
     width:100% !important;
   }
 }
