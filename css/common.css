@@ -65,7 +65,13 @@ select {
 
 h2 {
   font-size: 28px; }
-
+.bg{
+  background:url(../images/bg-city.jpg) no-repeat top center / cover;
+}
+.color-white{
+  color:white;
+}
+.begin-item__text{}
 .header_logo{
   height:100px;
 }
@@ -189,14 +195,18 @@ h2 {
     background-color: #4f4f4f; }
 
 .header {
-  padding: 10px 0; }
+  padding: 10px 0;}
   .header-image {
       width: 300px; }
   .header-phone {
-    font-size: 16px; }
+    font-size: 16px;}
+    .header-phone a{
+    color:white;
+    }
   .header-link {
     margin: 0 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white;}
   .header-button {
     background-color: #2085e1;
     color: #fff;
@@ -300,7 +310,7 @@ h2 {
   .begin-item {
     display: flex;
     align-items: center;
-    background-color: rgba(236, 236, 236, 0.3); }
+    background-color: rgba(255, 255, 255, 0.8); }
     .begin-item__image {
       background-color: #f2f2f2;
       width: 82px;

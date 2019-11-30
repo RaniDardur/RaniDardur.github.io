@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="wrapper" id="app">
+        <div class="bg">
         <div class="header">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between flex-columnG flex-md-rowG header_logo">
@@ -27,9 +28,9 @@
                         <div class="header-link" @click="scrollTo('order')">Дизайн</div>
                     </div>
                     <div class="mt-3G mt-md-0G text-center text-md-right">
-                        <div class="fs-12 color-gray1">без выходных 8:00 - 22:00</div>
+                        <div class="fs-12 color-gray1">По будням с 9:00 до 18:00</div>
                         <div class="ff-sfsm my-1 my-md-0 header-phone">
-                            <a href="tel:+74951045553" class="color-black">+7 (495) 104-55-53</a>
+                            <a href="tel:+74951045553">+7 (495) 297-97-29</a>
                         </div>
                         <div 
                             class="header-button"
@@ -170,15 +171,15 @@
                         <!-- ================================== begin ================================== -->
                                 <div class="begin" 
                 v-init="calcPriceShow=false" 
-                style="background-image: url('images/begin_bg.jpg')"
+                style="background-image: url('')"
                 v-show="!formData.sent">
                     <div class="container">
                                                 <div class="mb-3 text-center d-md-none">
                             <div class="ff-sfh fs-20 mb-2">
-                                Ремонт квартир от <span class="color-blue">2 490</span> руб./м<sup>2</sup>
+                                Ремонт квартир от <span class="color-blue">2 999</span> руб./м<sup>2</sup>
                             </div>
                             <div><div>Ремонт квартир</div>
-<div>от <span class="color-blue">2 490</span><span class="begin-m2">руб./м<sup>2</sup></span></div>
+<div>от <span class="color-blue">2 999</span><span class="begin-m2">руб./м<sup>2</sup></span></div>
 </div>
                         </div>
                         <div class="row flex-column-reverse flex-md-row">
@@ -189,14 +190,12 @@
                                         от <span class="color-blue">2 490</span>
                                         <span class="begin-m2">руб./м<sup>2</sup></span>
                                     </div> -->
-                                    <div>Ремонт квартир</div>
-<div>от <span class="color-blue">2 490</span><span class="begin-m2">руб./м<sup>2</sup></span></div>
+                                    <div class="color-white">Ремонт квартир</div>
+                                    <div class="color-white">от <span class="color-blue">2 999</span><span class="begin-m2">руб./м<sup>2</sup></span>
+                                    </div>
                                 </div>
-                                <div class="ff-sfsm fs-24 my-4 my-lg-5 d-none d-md-block">
-                                    <!-- Сделаем ремонт в обозначенный<br/>
-                                    срок или вернем деньги -->
-                                    <p>Сделаем ремонт в обозначенный<br />
-срок или вернем деньги</p>
+                                <div class="ff-sfsm fs-24 my-4 my-lg-5 d-none d-md-block color-white">
+                                    <p>Не выполняем ремонт в срок?<br/>Возвращаем деньги</p>
                                 </div>
                                 <div class="row">
                                                                         <div class="col-lg-6 mb-4">
@@ -312,6 +311,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <!-- ================================== .begin ================================== -->
@@ -444,8 +444,7 @@
 <div class="mb-1 line-dot color-gray1">Монтаж натяжного потолка</div>
                                     </div>
                                     <div class="ff-sfh fs-28">
-                                        <!-- от 2490 за м<sup>2</sup> -->
-                                        <p>от 2490 за м<sup>2</sup></p>
+                                        <p>от 2.990 за м<sup>2</sup></p>
                                     </div>
                                     <div class="py-3">
                                         <div class="button-animation w-100 prices-remont__button" @click="modalOpen('zamershik')">
@@ -465,8 +464,7 @@
 <div class="mb-1 line-dot color-gray1">Разводка электрики</div>
                                     </div>
                                     <div class="ff-sfh fs-28">
-                                        <!-- от 2490 за м<sup>2</sup> -->
-                                        <p>от 4990 за м<sup>2</sup></p>
+                                        <p>от 5.990 за м<sup>2</sup></p>
                                     </div>
                                     <div class="py-3">
                                         <div class="button-animation w-100 prices-remont__button" @click="modalOpen('zamershik')">
@@ -488,8 +486,7 @@
 <div class="mb-1 line-dot color-gray1">Эксклюзивные технические решения</div>
                                     </div>
                                     <div class="ff-sfh fs-28">
-                                        <!-- от 2490 за м<sup>2</sup> -->
-                                        <p>от 6990 за м<sup>2</sup></p>
+                                        <p>от 7.990 за м<sup>2</sup></p>
                                     </div>
                                     <div class="py-3">
                                         <div class="button-animation w-100 prices-remont__button" @click="modalOpen('zamershik')">
