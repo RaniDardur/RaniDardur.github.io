@@ -1,22 +1,3 @@
-@font-face {
-font-display: swap;
-  font-family: 'SFUIDisplayRegular';
-  src: local("SFUIDisplayRegular"), local("SFUIDisplayRegular"), url("SFUIDisplayRegular.ttf") format("truetype");}
-
-@font-face {
-  font-display: swap;
-  font-family: 'SFUIDisplaySemiBold';
-  src: local("SFUIDisplaySemiBold"), local("SFUIDisplaySemiBold"), url("SFUIDisplaySemiBold.ttf") format("truetype"); }
-
-@font-face {
-  font-display: swap;
-  font-family: 'SFUIDisplayBold';
-  src: local("SFUIDisplayBold"), local("SFUIDisplayBold"), url("SFUIDisplayBold.ttf") format("truetype"); }
-
-@font-face {
-  font-display: swap;
-  font-family: 'SFUIDisplayHeavy';
-  src: local("SFUIDisplayHeavy"), local("SFUIDisplayHeavy"), url("SFUIDisplayHeavy.ttf") format("truetype"); }
 
 body {
   font-family: 'SFUIDisplayRegular';
