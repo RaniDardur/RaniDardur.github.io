@@ -198,7 +198,7 @@
                                     <p>Не выполняем ремонт в срок?<br/>Возвращаем деньги</p>
                                 </div>
                                 <div class="row">
-                                                                        <div class="col-lg-6 mb-4">
+                                        <div class="col-lg-6 mb-4">
                                         <div class="begin-item">
                                             <div class="begin-item__image">
                                                 <img src="images/begin_1.png" alt=""/>
@@ -359,66 +359,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- ================================== .form_smetchik ================================== -->
-
-                                <!-- ================================== prices ================================== -->
-                <!-- <div class="prices" v-show="!formData.sent">
-                    <div class="container">
-                        <h2 class="ff-sfh mb-4">
-                            Ценовая политика<br/>
-                            фиксированна и неизменна
-                        </h2>
-                        <div class="d-none d-md-flex mb-5">
-                            <div class="mr-3">
-                                <div 
-                                @click="pricesType = 'complex'"
-                                class="button-line"
-                                :class="{'button-line-selected': pricesType == 'complex'}">Комплексные услуги</div>
-                            </div>
-                            <div>
-                                <div 
-                                @click="pricesType = 'another'"
-                                class="button-line"
-                                :class="{'button-line-selected': pricesType == 'another'}"
-                                >Цены на отдельные виды работ</div>
-                            </div>
-                        </div>
-                        <div class="row" v-if="pricesType == 'complex'">
-                            <div class="prices-remont col-md-6 col-lg-3 mb-4" v-for="remont in prices.complex">
-                                <h4 class="mb-4" v-html="remont.title"></h4>
-                                <div class="prices-remont__list mb-3">
-                                    <div 
-                                    class="mb-1 line-dot color-gray1"
-                                    v-for="item in remont.items"
-                                    v-html="item"></div>
-                                </div>
-                                <div v-html="remont.price"></div>
-                                <div class="py-3">
-                                    <div class="button-animation w-100 prices-remont__button" @click="modalOpen('zamershik')">
-                                        <span>Вызвать замерщика</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" v-else>
-                            <div class="col-md-6 col-lg-3 mb-4" v-for="another in prices.another">
-                                <div class="fs-18" v-html="another.title"></div>
-                                <div class="ff-sfh" v-html="another.price"></div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-4">
-                                <div class="button-animation w-100" @click="modalOpen('price')">
-                                    <span>Получить прайс</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="prices" v-show="!formData.sent">
                     <div class="container">
                         <h2 class="ff-sfh mb-4 prices-title">
-                            <!-- Ценовая политика<br/>
-                            фиксированна и неизменна -->
-                            Ценовая политика фиксированна и неизменна                        </h2>
+                            Ценовая политика фиксированна и неизменна </h2>
                         <div class="d-none d-md-flex mb-5">
                             <div class="mr-3">
                                 <div 
@@ -618,10 +562,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ================================== .prices ================================== -->
-
-                                <!-- ================================== rassrochka ================================== -->
-                <div class="profitable" style="background-image: url('images/profitable_bg.jpg')"
+                <div class="profitable" style="background:url('images/steklooboi_131.png') no-repeat top center / cover"
                 v-show="!formData.sent">
                     <div class="container">
                         <h2 class="ff-sfh mb-4 text-center text-md-left">
@@ -653,31 +594,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ================================== .rassrochka ================================== -->
-
-                                <!-- ================================== control ================================== -->
-                <!-- <div class="control">
-                    <div class="container">
-                        <div class="text-center mb-5">
-                            <h2 class="ff-sfh mb-3">Многоуровневый контроль качества</h2>
-                            <div class="color-gray1 fs-14">Ваш объект контролируют:</div>
-                        </div>
-                        <div class="d-lg-flex justify-content-between">
-                            <div 
-                                class="control-item d-flex align-items-center d-lg-block mb-3 mb-lg-0"
-                                v-for="(item, index) in control"
-                            >
-                                <div class="mb-md-2 mr-3 mr-lg-0 control-item__image">
-                                    <img :src="'/control/control_' + (index + 1) + '.jpg'" alt=""/>
-                                </div>
-                                <div>
-                                    <div class="mb-2 ff-sfb fs-18 lh-2" v-html="item.title"></div>
-                                    <div class="color-gray1 fs-14" v-html="item.description"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="control" v-show="!formData.sent">
                     <div class="container">
                         <div class="text-center mb-5">
@@ -687,57 +603,27 @@
                             <div class="color-gray1 fs-14">Ваш объект контролируют:</div>
                         </div>
                         <div class="d-lg-flex justify-content-between">
-                                                            <div class="control-item d-flex align-items-center d-lg-block mb-3 mb-lg-0">
-                                    <div class="mb-md-2 mr-3 mr-lg-0 control-item__image">
-                                        <img src="images/control_1.jpg" alt=""/>
-                                    </div>
-                                    <div>
-                                        <div class="mb-2 ff-sfb fs-18 lh-2">Главный инженер</div>
-                                        <div class="color-gray1 fs-14"><p>Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
-</div>
-                                    </div>
+                            <div class="control-item2">
+                                <p>
+                                    • Составляем смету, помогаем с подбором любых чистовых материалов, мебели, дверей, окон, кондиционеров.
+                                </p> <br>
+                                <p>
+                                    • Проверяем качество работ на всех объектах и независимо решаем спорные ситуации. 
+                                </p> <br>
+                                <p>
+                                    • Контролируем слаженную работу всех сотрудников на Вашем объекте.
+                                </p>
+                            </div>
+                            <div class="control-item d-flex align-items-center d-lg-block mb-3 mb-lg-0">
+                                <div class="mb-md-2 mr-3 mr-lg-0 control-item__image">
+                                    <img src="images/control_5.jpg" alt=""/>
                                 </div>
-                                                            <div class="control-item d-flex align-items-center d-lg-block mb-3 mb-lg-0">
-                                    <div class="mb-md-2 mr-3 mr-lg-0 control-item__image">
-                                        <img src="images/control_2.jpg" alt=""/>
-                                    </div>
-                                    <div>
-                                        <div class="mb-2 ff-sfb fs-18 lh-2">Отдел технического контроля</div>
-                                        <div class="color-gray1 fs-14"><p>Проверяет качество работ на всех объектах и независимо решает спорные ситуации</p>
-</div>
-                                    </div>
+                                <div>
+                                    <div class="mb-2 ff-sfb fs-18 lh-2">Онлайн камеры</div>
+                                    <div class="color-gray1 fs-14"><p>Онлайн контроль Вашего объекта 24 часа, 7 дней в неделю</p></div>
                                 </div>
-                                                            <div class="control-item d-flex align-items-center d-lg-block mb-3 mb-lg-0">
-                                    <div class="mb-md-2 mr-3 mr-lg-0 control-item__image">
-                                        <img src="images/control_3.jpg" alt=""/>
-                                    </div>
-                                    <div>
-                                        <div class="mb-2 ff-sfb fs-18 lh-2">Прораб</div>
-                                        <div class="color-gray1 fs-14"><p>Контролирует слаженную работу всех сотрудников на Вашем объекте</p>
-</div>
-                                    </div>
-                                </div>
-                                                            <div class="control-item d-flex align-items-center d-lg-block mb-3 mb-lg-0">
-                                    <div class="mb-md-2 mr-3 mr-lg-0 control-item__image">
-                                        <img src="images/control_4.jpg" alt=""/>
-                                    </div>
-                                    <div>
-                                        <div class="mb-2 ff-sfb fs-18 lh-2">Персональный менеджер объекта</div>
-                                        <div class="color-gray1 fs-14"><p>Составляет смету, помогает с подбором любых чистовых материалов, мебели, дверей, окон, кондиционеров</p>
-</div>
-                                    </div>
-                                </div>
-                                                            <div class="control-item d-flex align-items-center d-lg-block mb-3 mb-lg-0">
-                                    <div class="mb-md-2 mr-3 mr-lg-0 control-item__image">
-                                        <img src="images/control_5.jpg" alt=""/>
-                                    </div>
-                                    <div>
-                                        <div class="mb-2 ff-sfb fs-18 lh-2">Онлайн камеры</div>
-                                        <div class="color-gray1 fs-14"><p>Онлайн контроль Вашего объекта 24 часа, 7 дней в неделю</p>
-</div>
-                                    </div>
-                                </div>
-                                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- ================================== .control ================================== -->

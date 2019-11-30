@@ -51,7 +51,6 @@ textarea {
   outline: none;
   padding: 15px;
   width: 100%; }
-
 select {
   width: 100%;
   font-family: 'SFUIDisplayBold';
@@ -62,7 +61,13 @@ select {
   border-bottom: 1px solid #c7c7c7;
   padding: 3px 8px 5px 8px;
   outline: none; }
-
+.calculator select,
+.calculator .button-animation{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.calculator .slider{
+  background-color: #2085e1;
+}
 h2 {
   font-size: 28px; }
 .bg{
@@ -323,7 +328,7 @@ h2 {
  
 
 .calculator {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 30px; }
   .calculator-value {
     color: #2085e1;
@@ -368,6 +373,7 @@ h2 {
   margin: 40px 0; }
 
 .profitable {
+  color:white;
   padding: 40px 0;
   /* background: url("../images/profitable_bg.jpg") center/cover no-repeat;  */
 }

@@ -166,7 +166,6 @@ h2 {
 .control-item__image {
   display: flex;
   align-items: center;
-  height: 235px;
 }
 .control-item__image img {
   width: auto;
