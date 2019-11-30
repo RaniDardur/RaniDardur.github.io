@@ -63,135 +63,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="sendok" v-if="formData.sent">
-            <div class="container">
-                
-                <div class="row" 
-                v-if="formData.id == 'call' || formData.id == 'calc' || formData.id == 'rassrochka' ||
-                formData.id == 'smetchik' || formData.id == 'rasschet' ||
-                formData.id == 'zamershik' || formData.id == 'price'">
-                    <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
-                        <div class="pl-0 pl-md-5" v-if="formData.id != 'calc'">  
-                            <h2 class="mb-3 ff-sfh">Благодарим за обращение!</h2>
-                            <div>
-                                <div class="mb-3" v-if="isWorkTime">
-                                    Наш специалист перезвонит Вам, чтобы дать конультацию по ремонту и ответить на Ваши вопросы.
-                                </div>    
-                                <div class="mb-3" v-if="!isWorkTime">
-                                    Наш специалист перезвонит Вам <b><u>в рабочее время</u></b>, чтобы дать конультацию по ремонту и ответить на Ваши вопросы.
-                                </div> 
-                                <div class="mb-3">
-                                    Также Вы сможете заказать консультацию инженера-сметчика - он ответит на все вопросы, 
-                                    проведет замеры, составит точную смету и подарит брошюру с практическими советами по ремонту.
-                                </div> 
-                                <div>
-                                    Его консультация бесплатная и не обязывает вас к ремонту.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pl-0 pl-md-5" v-if="formData.id == 'calc' && calcPriceShow">
-                            <div v-if="priceResult > 0">
-                                <h2 class="mb-3 ff-sfh">
-                                    Стоимость ремонта составит 
-                                    от <span class="color-blue">{{priceResult.toLocaleString()}} руб.</span>
-                                </h2>
-                                <div class="mb-4 color-gray1 fs-14">
-                                    *Это ориетировочная стоимость.<br/> 
-                                    Точные расчеты можно составить только при выезде на объект.
-                                </div>
-                                <div class="mb-4 ff-sfsm">
-                                    <div class="d-flex" v-if="datesResult">
-                                        <div>Срок ремонта:</div>
-                                        <div class="color-blue ml-2 ff-sfb">{{datesResult}}</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                Наш специалист перезвонит вам, чтобы сориентировать по стоимости точнее. 
-                                Также вы сможете заказать консультацию инженера-сметчика - он ответит на все вопросы, 
-                                проведет замеры, составит точную смету и подарит брошюру с практическими советами по ремонту. 
-                                Его консультация бесплатная и не обязывает вас к ремонту.
-                            </div>
-                        </div>
-                        <div class="pl-0 pl-md-5" v-if="formData.id == 'calc' && !calcPriceShow">
-                            <div v-if="priceResult > 0">
-                                <h4 class="mb-3 ff-sfh">
-                                    <div class="color-blue mb-2">Спасибо! Заявка успешно отправлена!</div>
-                                    <div v-if="isWorkTime">
-                                        Наш специалист перезвонит Вам<br/>
-                                        в ближайшее время.
-                                    </div>
-                                    <div v-if="!isWorkTime">
-                                        Наш специалист перезвонит Вам<br/>
-                                        <u>в рабочее время.</u>
-                                    </div>
-                                </h4>
-                            </div>
-                            <div class="mb-4">
-                                <div class="sendok-line">Рассчитаем примерную стоимость ремонта и ответим на все интересующие Вас вопросы.</div> 
-                                <div class="sendok-line">Бесплатно назначим выезд замерщика.</div>
-                                <div class="sendok-line">Инженер-сметчик произведет замеры и составит бесплатно точную смету объекта.</div> 
-                                <div class="sendok-line">Проконсультируем по материалам, этапам ремонта и подскажем на чем можно сэкономить без ущерба качеству.</div>
-                            </div>
-                            <div class="ff-sfsm">
-                                Выезд замерщика осуществляется 
-                                <span class="color-blue">за наш счет<br/>и не обязывает Вас к ремонту.</span>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center justify-content-center text-center">
-                        <div>
-                            <img src="images/sendok_1.png" alt=""class="mb-3"/>
-                            <div class="fs-14 color-gray1">Руководитель сметно-договорного отдела:</div>
-                            <div class="ff-sfb">Добролюбов Антон Александрович</div>  
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" 
-                v-if="formData.id == 'design'">
-                    <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
-                        <div class="pl-0 pl-md-5">  
-                            <h2 class="mb-3 ff-sfh">Благодарим за обращение!</h2>
-                            <div>
-                                Наш специалист перезвонит Вам, чтобы дать конультацию по ремонту и дизайну, а также назначить вам бесплатную встречу с нашим дизайнером.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center justify-content-center text-center">
-                        <div>
-                            <img src="images/sendok_2.png" alt=""class="mb-3"/>
-                            <div class="fs-14 color-gray1">Руководитель отдела дизайна:</div>
-                            <div class="ff-sfb">Екатерина Нам</div>  
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex align-items-center justify-content-center"
-                v-if="formData.id == 'person'">
-                    <img src="images/sendok_3.png" alt="">
-                    <div class="ml-5">
-                        <h2 class="mb-3 ff-sfh">Благодарим за обращение!</h2>
-                        <div v-if="isWorkTime">
-                            Мы ознакомимся с Вашим письмом и в ближайшее время с<br/>
-                            Вами свяжется ответственный сотрудник.
-                        </div>
-                        <div v-if="!isWorkTime">
-                            Мы ознакомимся с Вашим письмом и <b><u>в рабочее время</u></b> с<br/>
-                            Вами свяжется ответственный сотрудник.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        
-                        <!-- ================================== begin ================================== -->
-                                <div class="begin" 
+        <div class="begin" 
                 v-init="calcPriceShow=false" 
                 style="background-image: url('')"
                 v-show="!formData.sent">
@@ -336,6 +208,129 @@
                     </div>
                     </div>
                 </div>
+                <div class="sendok" v-if="formData.sent">
+            <div class="container">
+                
+                <div class="row" 
+                v-if="formData.id == 'call' || formData.id == 'calc' || formData.id == 'rassrochka' ||
+                formData.id == 'smetchik' || formData.id == 'rasschet' ||
+                formData.id == 'zamershik' || formData.id == 'price'">
+                    <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
+                        <div class="pl-0 pl-md-5" v-if="formData.id != 'calc'">  
+                            <h2 class="mb-3 ff-sfh">Благодарим за обращение!</h2>
+                            <div>
+                                <div class="mb-3" v-if="isWorkTime">
+                                    Наш специалист перезвонит Вам, чтобы дать конультацию по ремонту и ответить на Ваши вопросы.
+                                </div>    
+                                <div class="mb-3" v-if="!isWorkTime">
+                                    Наш специалист перезвонит Вам <b><u>в рабочее время</u></b>, чтобы дать конультацию по ремонту и ответить на Ваши вопросы.
+                                </div> 
+                                <div class="mb-3">
+                                    Также Вы сможете заказать консультацию инженера-сметчика - он ответит на все вопросы, 
+                                    проведет замеры, составит точную смету и подарит брошюру с практическими советами по ремонту.
+                                </div> 
+                                <div>
+                                    Его консультация бесплатная и не обязывает вас к ремонту.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pl-0 pl-md-5" v-if="formData.id == 'calc' && calcPriceShow">
+                            <div v-if="priceResult > 0">
+                                <h2 class="mb-3 ff-sfh">
+                                    Стоимость ремонта составит 
+                                    от <span class="color-blue">{{priceResult.toLocaleString()}} руб.</span>
+                                </h2>
+                                <div class="mb-4 color-gray1 fs-14">
+                                    *Это ориетировочная стоимость.<br/> 
+                                    Точные расчеты можно составить только при выезде на объект.
+                                </div>
+                                <div class="mb-4 ff-sfsm">
+                                    <div class="d-flex" v-if="datesResult">
+                                        <div>Срок ремонта:</div>
+                                        <div class="color-blue ml-2 ff-sfb">{{datesResult}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                Наш специалист перезвонит вам, чтобы сориентировать по стоимости точнее. 
+                                Также вы сможете заказать консультацию инженера-сметчика - он ответит на все вопросы, 
+                                проведет замеры, составит точную смету и подарит брошюру с практическими советами по ремонту. 
+                                Его консультация бесплатная и не обязывает вас к ремонту.
+                            </div>
+                        </div>
+                        <div class="pl-0 pl-md-5" v-if="formData.id == 'calc' && !calcPriceShow">
+                            <div v-if="priceResult > 0">
+                                <h4 class="mb-3 ff-sfh">
+                                    <div class="color-blue mb-2">Спасибо! Заявка успешно отправлена!</div>
+                                    <div v-if="isWorkTime">
+                                        Наш специалист перезвонит Вам<br/>
+                                        в ближайшее время.
+                                    </div>
+                                    <div v-if="!isWorkTime">
+                                        Наш специалист перезвонит Вам<br/>
+                                        <u>в рабочее время.</u>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div class="mb-4">
+                                <div class="sendok-line">Рассчитаем примерную стоимость ремонта и ответим на все интересующие Вас вопросы.</div> 
+                                <div class="sendok-line">Бесплатно назначим выезд замерщика.</div>
+                                <div class="sendok-line">Инженер-сметчик произведет замеры и составит бесплатно точную смету объекта.</div> 
+                                <div class="sendok-line">Проконсультируем по материалам, этапам ремонта и подскажем на чем можно сэкономить без ущерба качеству.</div>
+                            </div>
+                            <div class="ff-sfsm">
+                                Выезд замерщика осуществляется 
+                                <span class="color-blue">за наш счет<br/>и не обязывает Вас к ремонту.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center text-center">
+                        <div>
+                            <img src="images/sendok_1.png" alt=""class="mb-3"/>
+                            <div class="fs-14 color-gray1">Руководитель сметно-договорного отдела:</div>
+                            <div class="ff-sfb">Добролюбов Антон Александрович</div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" 
+                v-if="formData.id == 'design'">
+                    <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
+                        <div class="pl-0 pl-md-5">  
+                            <h2 class="mb-3 ff-sfh">Благодарим за обращение!</h2>
+                            <div>
+                                Наш специалист перезвонит Вам, чтобы дать конультацию по ремонту и дизайну, а также назначить вам бесплатную встречу с нашим дизайнером.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center text-center">
+                        <div>
+                            <img src="images/sendok_2.png" alt=""class="mb-3"/>
+                            <div class="fs-14 color-gray1">Руководитель отдела дизайна:</div>
+                            <div class="ff-sfb">Екатерина Нам</div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center"
+                v-if="formData.id == 'person'">
+                    <img src="images/sendok_3.png" alt="">
+                    <div class="ml-5">
+                        <h2 class="mb-3 ff-sfh">Благодарим за обращение!</h2>
+                        <div v-if="isWorkTime">
+                            Мы ознакомимся с Вашим письмом и в ближайшее время с<br/>
+                            Вами свяжется ответственный сотрудник.
+                        </div>
+                        <div v-if="!isWorkTime">
+                            Мы ознакомимся с Вашим письмом и <b><u>в рабочее время</u></b> с<br/>
+                            Вами свяжется ответственный сотрудник.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
                 <!-- ================================== .begin ================================== -->
                 
                                 <!-- ================================== form_smetchik ================================== -->
