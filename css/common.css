@@ -581,8 +581,9 @@ button.owl-dot.active{
 
 
 .map {
-  background: url("../images/map.jpg") center left -860px no-repeat;
-  min-height: 300px; }
+  width: 100%;
+  min-height: 300px; 
+}
 
 .footer {
   padding: 30px 0; }

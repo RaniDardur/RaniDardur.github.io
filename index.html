@@ -1460,7 +1460,9 @@
                 <!-- ================================== .form_calc ================================== -->
 
                                 <!-- ================================== map ================================== -->
-                <div class="map" v-show="!formData.sent"></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d874.9104976169857!2d37.681678415497856!3d55.88376162503156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53136cf366917%3A0x1cc63025e5fb7096!2z0KLQsNC50L3QuNC90YHQutCw0Y8g0YPQuy4sIDExINC60L7RgNC_0YPRgSAxINGB0YLRgNC-0LXQvdC40LUgMSwg0JzQvtGB0LrQstCwLCAxMjkzNDU!5e0!3m2!1sru!2sru!4v1575220050684!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
                 <!-- ================================== .map ================================== -->
 
                 
@@ -1632,21 +1634,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="modal fade" id="modalCarouselCertificates">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content modal-carousel">
-                    <div class="modal-close" data-dismiss="modal">&times;</div>
-                    <div class="modal-body py-3">
-                        <div class="owl-carousel">
-                            <div class="item" v-for="item in certificates">
-                                <img :src="'/' + item"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
     </div>
     
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
