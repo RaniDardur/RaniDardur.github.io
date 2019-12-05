@@ -199,6 +199,9 @@ h2 {
     padding: 1px 8px;
     display: inline-block;
     cursor: pointer; }
+.item.owl-lazy{
+  width:470px !important;
+}
 .owl-carousel button {
   outline: none; }
 
