@@ -785,7 +785,8 @@
                             <div class="examples_height">
                                 <h2 class="mb-4 ff-sfh text-center text-md-left">
                                     <!-- Примеры наших работ -->
-                                    Примеры наших работ                                </h2>
+                                    Примеры наших работ
+                                </h2>
                                 <div class="examples-carousel">
                                     <div class="owl-carousel">
                                         <div class="item"
@@ -794,7 +795,6 @@
                                             :data-src="'images/examples_' + ( index + 1 ) + '.jpg'"
                                             alt="">
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -802,9 +802,6 @@
                                 <div class="fs-18 ff-sfb" v-html="examplesCurrent.title"></div>
                                 <div class="my-4">
                                     <div class="ff-sfb mb-2">Работы:</div>
-                                    <!-- <div class="mb-1 fs-14" 
-                                    v-for="item in examplesCurrent.items" 
-                                    v-html="item"></div> -->
                                     <div v-html="examplesCurrent.works"></div>
                                 </div>
                                 <div class="fs-14">
@@ -819,67 +816,6 @@
                         </div>
                     </div>
                 </div> 
-                <!--
-                <div class="examples" v-show="!formData.sent">
-                    <div class="container position-relative">
-                        <div class="d-md-flex justify-content-between">
-                            <div>
-                                <h2 class="mb-4 ff-sfh text-center text-md-left">Примеры наших работ</h2>
-                                <div class="examples-carousel">
-                                    <div class="owl-carousel">
-                                        <div class="item"
-                                        v-for="(item, index) in examples">
-                                            <img class="owl-lazy"
-                                            :data-src="'https://sknebo.ru/images/examples/examples_' + ( index + 1 ) + '.jpg'"
-                                            alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="examples-block">
-                                <div class="fs-18 ff-sfb" v-html="examplesCurrent.title"></div>
-                                <div class="my-4">
-                                    <div class="ff-sfb mb-2">Работы:</div>
-                                    <div class="mb-1 fs-14" 
-                                    v-for="item in examplesCurrent.items" 
-                                    v-html="item"></div>
-                                </div>
-                                <div class="fs-14">
-                                    <div class="mb-2" v-if="examplesCurrent.dates">
-                                        <span class="ff-sfb">Срок:</span>
-                                        <span v-html="examplesCurrent.dates"></span>
-                                    </div>
-                                    <span class="ff-sfb">Стоимость работ:</span>
-                                    <span v-html="examplesCurrent.price"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <!-- ================================== .examples ================================== -->
-
-                                <!-- ================================== principles ================================== -->
-                                <!-- <div class="principles" v-show="!formData.sent">
-                    <div class="container">
-                        <h2 class="text-center mb-5 ff-sfh">Принципы нашей работы</h2>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4 mb-3 mb-md-5" v-for="(item, index) in principles">
-                                <div class="d-flex align-items-center principles-item">
-                                    <div class="principles-item__image">
-                                        <img :src="'/principles/principles_' + (index + 1) + '.png'" alt=""/>
-                                    </div>
-                                    <div v-html="item"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center ff-sfb">
-                            Все это позволяет нам удерживать лидирующие позиции на рынке<br/> 
-                            Москвы. Нет ни одной компании готовой предоставить подобные<br/> 
-                            гарантии и отчетность по свои услугам.
-                        </div>
-                    </div>
-                </div> -->
                 <div class="principles" v-show="!formData.sent">
                     <div class="container">
                         <h2 class="text-center mb-5 ff-sfh">
@@ -1588,202 +1524,7 @@
 `,
             imageUrl: 'images/examples_6.jpg'
         });
-                examples.push({
-            title: `<p>Косметический ремонт<br />
-вторички 52 м<sup>2</sup></p>
-`,dates: '48 дней',
-            price: '201 500 рублей',works: `<div class="mb-1 fs-14">&#8212; Демонтаж всех покрытий</div>
-<div class="mb-1 fs-14">&#8212; Выравнивание пола</div>
-<div class="mb-1 fs-14">&#8212; Монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; Оклейка стен обоями</div>
-<div class="mb-1 fs-14">&#8212; Монтаж натяжного потолка</div>
-<div class="mb-1 fs-14">&#8212; Установка электроприборов</div>
-`,
-            imageUrl: 'images/examples_7.jpg'
-        });
-                examples.push({
-            title: `<p>Косметический ремонт комнаты 18 м<sup>2</sup></p>
-`,dates: '10 дней',
-            price: '52 950 рублей',works: `<div class="mb-1 fs-14">&#8212; демонтаж настенных и напольных покрытий</div>
-<div class="mb-1 fs-14">&#8212; демонтаж сантехники</div>
-<div class="mb-1 fs-14">&#8212; выравнивание пола</div>
-<div class="mb-1 fs-14">&#8212; шпаклевка стен</div>
-<div class="mb-1 fs-14">&#8212; шпакевка потолка под окраску</div>
-<div class="mb-1 fs-14">&#8212; поклейка обоев(с подбором)</div>
-<div class="mb-1 fs-14">&#8212; окраска потолка</div>
-<div class="mb-1 fs-14">&#8212; установка механизмов электроточек</div>
-<div class="mb-1 fs-14">&#8212; монтаж сантехнки</div>
-`,
-            imageUrl: 'images/examples_8.jpg'
-        });
-                examples.push({
-            title: `<p>Капитальный Ремонт в Хостеле 96 м<sup>2</sup></p>
-`,dates: '3 месяца 20 дней',
-            price: '576 820 рублей',works: `<div class="mb-1 fs-14">&#8212; Демонтаж старых покрытий</div>
-<div class="mb-1 fs-14">&#8212; Выравнивание пола</div>
-<div class="mb-1 fs-14">&#8212; Частичное выравнивание стен</div>
-<div class="mb-1 fs-14">&#8212; Окраска стен</div>
-<div class="mb-1 fs-14">&#8212; Оклейка стен обоями</div>
-<div class="mb-1 fs-14">&#8212; Монтаж натяжного потолка</div>
-<div class="mb-1 fs-14">&#8212; Установка электроприборов</div>
-<div class="mb-1 fs-14">&#8212; Установка сантехники</div>
-`,
-            imageUrl: 'images/examples_9.jpg'
-        });
-                examples.push({
-            title: `<p>Капитальный ремонт ванной комнаты и санузла 7 м<sup>2</sup></p>
-`,dates: '14 дней',
-            price: '98 630 рублей',works: `<div class="mb-1 fs-14">&#8212; Демонтаж старых покрытий</div>
-<div class="mb-1 fs-14">&#8212; Демонтаж ацеидной кабины</div>
-<div class="mb-1 fs-14">&#8212; Выравнивание пола и стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; Укладка напольной и настенной плитки</div>
-<div class="mb-1 fs-14">&#8212; Разводка сантехнических труб</div>
-<div class="mb-1 fs-14">&#8212; Установка сантехнических и электроприборов</div>
-<div class="mb-1 fs-14">&#8212; Монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_10.jpg'
-        });
-                examples.push({
-            title: `<p>Капитальный ремонт ванной комнаты и санузла 12 м<sup>2</sup></p>
-`,dates: '14 дней',
-            price: '128 630 рублей',works: `<div class="mb-1 fs-14">&#8212; Демонтаж старых покрытий</div>
-<div class="mb-1 fs-14">&#8212; Демонтаж ацеидной кабины</div>
-<div class="mb-1 fs-14">&#8212; Выравнивание пола и стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; Укладка напольной и настенной плитки</div>
-<div class="mb-1 fs-14">&#8212; Разводка сантехнических труб</div>
-<div class="mb-1 fs-14">&#8212; Установка сантехнических и электроприборов</div>
-<div class="mb-1 fs-14">&#8212; Монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_11.jpg'
-        });
-                examples.push({
-            title: `<p>Капитальный ремонт квартиры</p>
-`,dates: '30 дней',
-            price: '450 700 рублей',works: `<div class="mb-1 fs-14">&#8212; устройство стяжки по маякам</div>
-<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; прокладка труб водоснабжения и канализации</div>
-<div class="mb-1 fs-14">&#8212; выравнивание и шпаклёвка стен и потолка</div>
-<div class="mb-1 fs-14">&#8212; штробление и прокладка кабеля</div>
-<div class="mb-1 fs-14">&#8212; установка розеток</div>
-<div class="mb-1 fs-14">&#8212; покраска стен и потолка</div>
-<div class="mb-1 fs-14">&#8212; укладка керамогранита</div>
-<div class="mb-1 fs-14">&#8212; укладка паркетной доски</div>
-<div class="mb-1 fs-14">&#8212; установка сантехники</div>
-`,
-            imageUrl: 'images/examples_12.jpg'
-        });
-                examples.push({
-            title: `<p>Новостройка 2-ух комнатная<br />
-56 м2</p>
-`,dates: '',
-            price: '450 тыс рублей',works: `<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; выравнивание стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; устройство стяжки пола</div>
-<div class="mb-1 fs-14">&#8212; устройство звукоизоляции</div>
-<div class="mb-1 fs-14">&#8212; разводка коммуникаций</div>
-<div class="mb-1 fs-14">&#8212; монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; окраска стен</div>
-<div class="mb-1 fs-14">&#8212; укладка плитки</div>
-<div class="mb-1 fs-14">&#8212; монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_13.jpg'
-        });
-                examples.push({
-            title: `<p>Новостройка 2-ух комнатная<br />
-56 м2</p>
-`,dates: '',
-            price: '450 тыс рублей',works: `<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; выравнивание стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; устройство стяжки пола</div>
-<div class="mb-1 fs-14">&#8212; устройство звукоизоляции</div>
-<div class="mb-1 fs-14">&#8212; разводка коммуникаций</div>
-<div class="mb-1 fs-14">&#8212; монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; окраска стен</div>
-<div class="mb-1 fs-14">&#8212; укладка плитки</div>
-<div class="mb-1 fs-14">&#8212; монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_14.jpg'
-        });
-                examples.push({
-            title: `<p>Новостройка 2-ух комнатная<br />
-56 м2</p>
-`,dates: '',
-            price: '450 тыс рублей',works: `<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; выравнивание стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; устройство стяжки пола</div>
-<div class="mb-1 fs-14">&#8212; устройство звукоизоляции</div>
-<div class="mb-1 fs-14">&#8212; разводка коммуникаций</div>
-<div class="mb-1 fs-14">&#8212; монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; окраска стен</div>
-<div class="mb-1 fs-14">&#8212; укладка плитки</div>
-<div class="mb-1 fs-14">&#8212; монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_15.jpg'
-        });
-                examples.push({
-            title: `<p>Новостройка 2-ух комнатная<br />
-56 м2</p>
-`,dates: '',
-            price: '450 тыс рублей',works: `<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; выравнивание стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; устройство стяжки пола</div>
-<div class="mb-1 fs-14">&#8212; устройство звукоизоляции</div>
-<div class="mb-1 fs-14">&#8212; разводка коммуникаций</div>
-<div class="mb-1 fs-14">&#8212; монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; окраска стен</div>
-<div class="mb-1 fs-14">&#8212; укладка плитки</div>
-<div class="mb-1 fs-14">&#8212; монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_16.jpg'
-        });
-                examples.push({
-            title: `<p>Новостройка 2-ух комнатная<br />
-56 м2</p>
-`,dates: '',
-            price: '450 тыс рублей',works: `<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; выравнивание стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; устройство стяжки пола</div>
-<div class="mb-1 fs-14">&#8212; устройство звукоизоляции</div>
-<div class="mb-1 fs-14">&#8212; разводка коммуникаций</div>
-<div class="mb-1 fs-14">&#8212; монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; окраска стен</div>
-<div class="mb-1 fs-14">&#8212; укладка плитки</div>
-<div class="mb-1 fs-14">&#8212; монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_17.jpg'
-        });
-                examples.push({
-            title: `<p>Новостройка 2-ух комнатная<br />
-56 м2</p>
-`,dates: '',
-            price: '450 тыс рублей',works: `<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; выравнивание стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; устройство стяжки пола</div>
-<div class="mb-1 fs-14">&#8212; устройство звукоизоляции</div>
-<div class="mb-1 fs-14">&#8212; разводка коммуникаций</div>
-<div class="mb-1 fs-14">&#8212; монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; окраска стен</div>
-<div class="mb-1 fs-14">&#8212; укладка плитки</div>
-<div class="mb-1 fs-14">&#8212; монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_18.jpg'
-        });
-                examples.push({
-            title: `<p>Новостройка 2-ух комнатная<br />
-56 м2</p>
-`,dates: '',
-            price: '450 тыс рублей',works: `<div class="mb-1 fs-14">&#8212; возведение перегородок</div>
-<div class="mb-1 fs-14">&#8212; выравнивание стен по маякам</div>
-<div class="mb-1 fs-14">&#8212; устройство стяжки пола</div>
-<div class="mb-1 fs-14">&#8212; устройство звукоизоляции</div>
-<div class="mb-1 fs-14">&#8212; разводка коммуникаций</div>
-<div class="mb-1 fs-14">&#8212; монтаж ламината</div>
-<div class="mb-1 fs-14">&#8212; окраска стен</div>
-<div class="mb-1 fs-14">&#8212; укладка плитки</div>
-<div class="mb-1 fs-14">&#8212; монтаж натяжного потолка</div>
-`,
-            imageUrl: 'images/examples_19.jpg'
-        });
+        
             Vue.prototype.examples = examples;
     </script>
     <script>
