@@ -1,11 +1,5 @@
-/*
-https://www.remontexpress.ru/
-https://sknebo.ru/
-http://newsite.sknebo.ru/
-*/
 Vue.directive('init', {
   bind: function(el, binding /*, vnode*/) {
-    // console.log(binding.value); //# This line is optional, of course.
   }
 });
 new Vue({
@@ -215,117 +209,7 @@ new Vue({
       });
       return title;
     },
-    sendForm(formId) {
 
-      // isWorkTime
-      var date = new Date();
-      var hours = date.getHours();
-      this.isWorkTime = hours > 8 && hours < 22 ? true : false;
-      // this.isWorkTime = false;
-
-      var phone = this.formData.phone;
-      var errorText = '';
-
-      var phoneInt = parseInt(phone.replace(/\D+/g,""));
-      var phoneParts = phoneInt ? phoneInt.toString().slice(1).split("") : Array();
-      if(phoneParts.length < 10) {
-        errorText = 'Необходимо заполнить поле "телефон"';
-      } else {
-        if(phoneParts[0] == 7 || phoneParts[0] == 8) {
-          errorText = 'Первая цифра кода оператора не должна быть "7" или "8"';
-        }
-        if(this.getUniq(phoneParts).length == 1) {
-          errorText = 'Введен некорректный номер';
-        }
-      }
-
-      if(!errorText) {
-        this.formData.id = formId;
-        var sendData = {
-          form: this.forms[formId],
-          phone: this.formData.phone,
-        }
-        if(formId == 'calc') {
-          sendData.vp = this.getSelectTitle('vp');
-          sendData.vr = this.getSelectTitle('vr');
-          sendData.tn = this.getSelectTitle('tn');
-          sendData.area = this.calcModels.area;
-          sendData.calcDates = this.datesResult;
-          sendData.calcPrice = this.priceResult;
-        } else {
-          sendData.name = this.formData.name;
-        }
-        if (formId == 'person') {
-          sendData.person = this.formData.person;
-          sendData.message = this.formData.message;
-        } else {
-          this.formData.person = '';
-          this.formData.message = '';
-        }
-
-        // var url = window.location.href;
-        // var parts = url.split('?');
-        // if(parts[1]) {
-        //   sendData.urlparams = parts[1];
-        // }
-        if(this.utmSourceName){
-          sendData.utmsource = this.utmSourceName;
-        }
-
-        /* send calltouch */
-        try {
-          var fio = '', phone = '', mail = '', comment = formId;
-          if (sendData.name){ fio = sendData.name; }
-          if (sendData.person){ fio = sendData.person; }
-          if (sendData.phone){ phone = sendData.phone; }
-          var ct_site_id = '27849';
-          var sub = formId;
-          if (sendData.form){ sub = sendData.form; }
-          var ct_data = {             
-            fio: fio,
-            phoneNumber: phone,
-            email: mail,
-            subject: sub,
-            comment: comment,
-            sessionId: window.call_value 
-          };
-          $.ajax({  
-            url: 'https://api-node9.calltouch.ru/calls-service/RestAPI/requests/'+ct_site_id+'/register/', 
-            dataType: 'json', type: 'POST', data: ct_data
-          });
-        } catch(e) { }
-        /* send calltouch */
-    
-        if(!this.formData.sent) {
-          axios({
-            method: 'POST',
-            headers: { 
-              // 'Content-Type': 'multipart/form-data'
-              'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            // url: 'http://mgbgadm.beget.tech/wp-content/themes/sknebo/resources/php/mailsend.php',
-            // url: 'https://sknebo.ru/resources/php/mailsend.php',
-            url: 'https://sknebo.ru/wp-content/themes/sknebo/resources/php/mailsend.php',
-            data: sendData
-          })
-          .then((response) => {
-            // console.log(response);
-            YandexSubmitEvents(formId);
-            $('.modal').modal('hide');
-            this.formData.sent = true;
-            setTimeout(function(){
-              $('html, body').animate({scrollTop: $('.header').offset().top - 50}, 700);
-            },200);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-        }
-
-      } else {
-        alert(errorText);
-      }
-    },
     modalCarouselCertificatesOpen(ind) {
       $('#modalCarouselCertificates').modal();
       setTimeout(function(){
@@ -357,17 +241,6 @@ new Vue({
         $('#modalCarouselInsta').find('.modal-close').fadeIn();
       },500);
     },
-
-    getReviewInstaWidth(twoCols) {
-      var winWidth = window.innerWidth;
-      if(winWidth && winWidth > 992) {
-        return {
-          width: twoCols ? '600px' : '298px',
-        }
-      }else{
-        return {}
-      }
-    }
   },
   mounted() {
 
@@ -412,80 +285,6 @@ new Vue({
       nav: true,
     });
 
-    var winWidth = window.innerWidth;
-    $('.reviews-insta-carousel').owlCarousel({
-      dots: true,
-      // loop: true,
-      items: 4,
-      lazyLoad:true,
-      // autoplay: true,
-      autoplayTimeout: 6000,
-      nav: true,
-      autoHeight: true,
-      responsive:{
-        0: {
-            items: 1,
-        },
-        700: {
-          items: 2
-        },
-        1200: {
-            items: 4
-        },
-      },
-
-      autoWidth: winWidth && winWidth > 992 ? true : false
-      // autoWidth: true
-    });
-    $('.reviews-video-carousel').owlCarousel({
-      dots: true,
-      loop: true,
-      items: 3,
-      lazyLoad:true,
-      autoplay: true,
-      autoplayTimeout: 7000,
-      nav: true,
-      autoHeight: true,
-      responsive:{
-        0: {
-            items: 1,
-        },
-        1200: {
-            items: 3
-        },
-      }
-    });
-
-    // $('.phone,.phoneCalc').blur(()=>{
-    //   $('.phone,.phoneCalc').val(this.formData.phone);
-    // });
-
-    $(".phone-masked").inputmask({"mask": "+7 (999) 999-99-99"});
-    $('.phone-masked').each((index, element)=>{
-      $(element).blur(()=>{
-        this.formData.phone = $(element).val();
-      });
-    });
-
-    $('#modalVideo').on('hidden.bs.modal', function (e) {
-      $('#modalVideo iframe').attr('src', '');
-    })
-
-    var urlParams = new URLSearchParams(window.location.search);
-    var utmSourceCode = urlParams.get('utm_source');
-    
-    if(utmSourceCode){
-      var utmSourceName = this.utmSources[utmSourceCode]
-      // console.log(utmSourceName);
-      this.utmSourceName = utmSourceName
-    }
-    
-    var show = urlParams.get('show');
-    if(show){
-      setTimeout(function(){
-        $('html, body').animate({scrollTop: $('.' + show).offset().top - 50}, 700);
-      },1000);
-    }
-
+  
   }
 })
