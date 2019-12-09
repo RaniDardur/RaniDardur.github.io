@@ -250,7 +250,7 @@
   bottom: 0;
   left: 0;
   width: 50%;
-  background-color: #f2f3f7; }
+  background-color: #f2f2f2;}
 
 .examples-carousel img {
   border-radius: 10px;
@@ -259,8 +259,9 @@
   margin-top: 0;
   padding: 50px 50px 50px 100px;
   flex: 0 0 450px;
-  background-color: #fff;
-  box-shadow: 0px 0px 50px rgba(173, 173, 173, 0.44); }
+  background-color:#f2f2f2;
+  box-shadow: 0px 0px 50px rgba(173, 173, 173, 0.44);
+}
 .principles {
   margin: 100px 0; 
 }
@@ -281,6 +282,10 @@
 .certificates-image:hover::before {
   display: block;
 }
+.masters img{
+  height: 300px;
+  margin-left: 80px;
+}
 .scheme {
   padding: 100px 0; }
 .scheme-container {
@@ -291,7 +296,7 @@
   left: 100px;
   height: 10px;
   width: 800px;
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.1); }
 .scheme-container::before {
   top: 140px; }
 .scheme-container::after {
@@ -307,7 +312,8 @@
   padding: 100px 0 70px 0; }
 .discounts-slider {
   padding: 50px 60px 30px 60px;
-  width: 700px; }
+  width: 700px;
+background-color: #f2f2f2;}
 .discounts-item {
   display: flex;
   align-items: center; }
