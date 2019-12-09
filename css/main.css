@@ -104,9 +104,6 @@ header{
     max-width: 900px !important;
 }
 
-#modalCarouselCertificates .owl-item .item img {
-    width:90% !important;
-}
 sup{
     top: -.5em;
 }
@@ -722,3 +719,6 @@ right: -40px; }
   .modal-carousel .owl-dots {
     margin-top: 0; }
 
+#modalCarouselCertificates .owl-item .item img {
+    width:90% !important;
+}
