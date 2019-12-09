@@ -100,6 +100,9 @@ header{
 	font-size:24px;
 	line-height:36px; 
 }
+.modal-dialog {
+    max-width: 900px !important;
+}
 sup{
     top: -.5em;
 }
@@ -171,6 +174,16 @@ sup{
     top: -10px;
 }
 
+.close{
+  width: 100px;
+  margin-left: 800px;
+}
+.close span{
+  float: right;
+  font-size: 50px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
 /* --- Форма отправки  --- */
 input[type='text'] {
     border: none;
@@ -191,7 +204,7 @@ input[type='text'].user_phone {
     position: relative;
     line-height: 50px;
     border: 2px solid #2085e1;
-    padding: 0 50px;
+    padding: 0 30px;
     color: #3b3b3b;
     cursor: pointer;
     overflow: hidden;
@@ -218,23 +231,38 @@ input[type='text'].user_phone {
 .button-animation:hover{
 	color:white;
 }
-.fields_none{
+.fields_none,
+.fields_none1,
+.fields_none2,
+.fields_none3{
   display:none !important;
 }
-.note{
+.note,
+.note1,
+.note2,
+.note3{
   padding:0px;
   color: #626262;
   display:none;
 }
-.note i{
+.note i,
+.note1 i,
+.note2 i,
+.note3 i{
   color: green;
   font-size:100px;
 }
-.note h2{
+.note h2
+.note1 h2,
+.note2 h2,
+.note3 h2{
   font-size: 20px;
   padding: 4px;
 }
-.note p{
+.note p,
+.note1 p,
+.note2 p,
+.note3 p{
   font-size: 17px;
 }
 
@@ -653,9 +681,11 @@ right: -40px; }
   top: 0;
   right: 0;
   z-index: 1; }
-
+.modal-title {
+    margin-bottom: 20px;
+}
 .modal-body {
-  padding: 30px; }
+  padding:0px 30px 30px 30px; }
 
 .modal-call__title, .modal-employee__title {
   font-size: 20px;

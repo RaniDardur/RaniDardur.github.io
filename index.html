@@ -220,9 +220,9 @@
 							</div>
 							<div class="fields text-center">
 								<form class="form" id="form" name="form">
-									<input type="text" class="form-field name" name="name" placeholder="Имя">
-									<input type="text" class="form-field user_phone" name="user_phone" placeholder="Телефон">
-									<button class="form-button button-animation">Пригласить</button>
+									<input type="text" class="form-field" name="name" placeholder="Ваше имя">
+									<input type="text" class="form-field" name="user_email" placeholder="+7 (___) ___-__-__">
+									<button class="form-button button-animation"><span class="text-button">Заказать сейчас</span></button>
 								</form>
 							</div>
 						</div>
@@ -269,7 +269,7 @@
 									<span class="bold">от 2.990 за м<sup>2</sup></span>
 								</div>
 								<div class="block-services__btn">
-									<button class="button-animation">Вызвать замерщика</button>
+									<button class="button-animation" data-toggle="modal" data-target="#myModal">Вызвать замерщика</button>
 								</div>
 							</div>
 						</div>
@@ -293,7 +293,7 @@
 									<span class="bold">от 5.990 за м<sup>2</sup></span>
 								</div>
 								<div class="block-services__btn">
-									<button class="button-animation">Вызвать замерщика</button>
+									<button class="button-animation" data-toggle="modal" data-target="#myModal">Вызвать замерщика</button>
 								</div>
 							</div>
 						</div>
@@ -319,7 +319,7 @@
 									<span class="bold">от 7.990 за м<sup>2</sup></span>
 								</div>
 								<div class="block-services__btn">
-									<button class="button-animation">Вызвать замерщика</button>
+									<button class="button-animation" data-toggle="modal" data-target="#myModal">Вызвать замерщика</button>
 								</div>
 							</div>
 						</div>
@@ -340,7 +340,7 @@
 									<span class="bold">Цена согласно прайсу, все оптовые скидки в подарок</span>
 								</div>
 								<div class="block-services__btn">
-									<button class="button-animation">Вызвать замерщика</button>
+									<button class="button-animation" data-toggle="modal" data-target="#myModal">Вызвать замерщика</button>
 								</div>
 							</div>
 						</div>
@@ -468,7 +468,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="block-price__btn">
-								<button class="button-animation">Получить прайс</button>
+								<button class="button-animation" data-toggle="modal" data-target="#price-Modal">Получить прайс</button>
 							</div>
 						</div>
 					</div>
@@ -551,17 +551,17 @@
 			                        <div class="line-dot">Скидка на ремонт при заказе дизайна</div>
 			                        <div class="line-dot">Экономия бюджета и времени</div>
 			                    </div>
-			                   	<div class="form-container2">
-									<div class="note text-center">
+			            		<div class="form-container1">
+									<div class="note1 text-center">
 										<i class="fas fa-check"></i>
 										<h2>Спасибо за заявку</h2>
 										<p>Ожидайте!В течение нескольких минут вам прийдет ответ на почту</p>
 									</div>
-									<div class="fields text-center">
-										<form class="form" id="form2" name="form">
-											<input type="text" class="form-field name" name="name" placeholder="Имя">
-											<input type="text" class="form-field user_phone" name="user_phone" placeholder="Телефон">
-											<button class="form-button button-animation">Пригласить</button>
+									<div class="fields1">
+										<form class="form1" id="form1" name="form1">
+											<input type="text" class="form-field" name="name1" placeholder="Ваше имя">
+											<input type="text" class="form-field" name="user_email1" placeholder="+7 (___) ___-__-__">
+											<button class="form-button1 button-animation"><span class="text-button">Отправить</span></button>
 										</form>
 									</div>
 								</div>
@@ -974,17 +974,17 @@
                         	</div>
 						</div>
 						<div class="col-md-4">
-							<div class="form-container">
-								<div class="note text-center">
+							<div class="form-container2">
+								<div class="note2 text-center">
 									<i class="fas fa-check"></i>
 									<h2>Спасибо за заявку</h2>
 									<p>Ожидайте!В течение нескольких минут вам прийдет ответ на почту</p>
 								</div>
-								<div class="fields text-center">
-									<form class="form" id="form3" name="form">
-									<input type="text" class="form-field name" name="name" placeholder="Имя">
-									<input type="text" class="form-field user_phone" name="user_phone" placeholder="Телефон">
-									<button class="form-button button-animation">Пригласить</button>
+								<div class="fields2">
+									<form class="form2" id="form2" name="form2">
+										<input type="text" class="form-field" name="name2" placeholder="Ваше имя">
+										<input type="text" class="form-field" name="user_email2" placeholder="+7 (___) ___-__-__">
+										<button class="form-button2 button-animation"><span class="text-button">Отправить</span></button>
 									</form>
 								</div>
 							</div>
@@ -1068,7 +1068,36 @@
         </div>
 	    </div>
 	</div>
-    <script src="js/jquery-3.4.1.min.js"></script>	
+	<!-- Модальное окно -->  
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+	        </button>
+	      	<div class="modal-body">
+		       	<h4 class="modal-title" id="myModalLabel">
+		       		Вызвать замерщика
+		       	</h4>
+		      	<div class="form-container3">
+					<div class="note3 text-center">
+						<i class="fas fa-check"></i>
+						<h2>Спасибо за заявку</h2>
+						<p>Ожидайте!В течение нескольких минут вам прийдет ответ на почту</p>
+					</div>
+					<div class="fields3">
+						<form class="form3" id="form3" name="form3">
+							<input type="text" class="form-field" name="name3" placeholder="Ваше имя">
+							<input type="text" class="form-field" name="user_email3" placeholder="+7 (___) ___-__-__">
+							<button class="form-button3 button-animation"><span class="text-button">Отправить</span></button>
+						</form>
+					</div>
+				</div>
+	      	</div>
+	    </div>
+  	</div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
@@ -1179,6 +1208,10 @@
             Vue.prototype.examples = examples;
     </script>
 	<script src="js/common.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src="js/send.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script>
 		document.getElementById('source1').onclick = function source1 (){
 		document.getElementById('source2').classList.remove('source_active');

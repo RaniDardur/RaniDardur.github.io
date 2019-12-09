@@ -206,10 +206,6 @@
 .modal-body {
   /* padding: 130px;  */
 }
-.modal:not(#modalCarouselInsta) .modal-body {
-  padding: 130px;
-}
-
 .modal-call {
   background: #fff url("../images/modal_call.jpg") right bottom no-repeat; }
 .modal-call__title {
