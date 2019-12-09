@@ -103,6 +103,10 @@ header{
 .modal-dialog {
     max-width: 900px !important;
 }
+
+#modalCarouselCertificates .owl-item img {
+    width:90% !important;
+}
 sup{
     top: -.5em;
 }
