@@ -684,6 +684,9 @@ right: -40px; }
 .modal-title {
     margin-bottom: 20px;
 }
+#modalCall .modal-body{
+  padding:50px;
+}
 .modal-body {
   padding:0px 30px 30px 30px; }
 

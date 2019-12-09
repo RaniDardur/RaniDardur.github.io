@@ -1,3 +1,4 @@
+
 Vue.directive('init', {
   bind: function(el, binding /*, vnode*/) {
   }
