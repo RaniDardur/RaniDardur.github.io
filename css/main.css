@@ -161,6 +161,7 @@ sup{
   position: relative;
   z-index: 100;
   padding: 80px 88px;
+      margin-top: -50px;
 }
 .invite,
 .getcalculation{
@@ -325,6 +326,9 @@ input[type='text'].user_phone {
 .button-animation:hover{
   color:white;
 }
+#invite .button-animation {
+    padding: 0 20px;
+}
 .fields_none,
 .fields_none1,
 .fields_none2,
@@ -399,7 +403,7 @@ input[type='text'].user_phone {
 
 .block-services__title{
   padding:0px 0px 19px 0px;
-    font-size:19px;
+    font-size: 17px;
   font-family: 'SFUIDisplayRegular';
 }
 .block-services__item li{
@@ -691,7 +695,7 @@ position: relative;
 z-index: 10;
 background: url("../images/discounts_bg.jpg") center no-repeat; }
 .discounts-slider {
-background-color: #fff;
+background-color: #f2f2f2;
 padding: 30px;
 box-shadow: 0px 15px 60px rgba(180, 181, 187, 0.5); }
 .discounts-item {

@@ -53,6 +53,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .scheme-container::before, .scheme-container::after {
+    width: 600px;
+  }
   #app{
     overflow: hidden;
   }
