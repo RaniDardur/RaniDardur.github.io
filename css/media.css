@@ -111,6 +111,9 @@
   .copyright div:last-child{
     display: none;
   }
+  #our_examples{
+  	color:white;
+  }
 }
 @media screen and (max-width:768px) {
   .logo{
