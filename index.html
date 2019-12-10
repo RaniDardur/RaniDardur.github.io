@@ -90,7 +90,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 col-lg-8">
+					<div class="col-md-12 col-lg-6">
 						<div class="main">
 							<h1 class="main__title">
 								Ремонт квартир <br>
@@ -187,6 +187,74 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-0 col-lg-6">
+	                    <div class="calculator">
+	                        <div class="bold">
+	                            Рассчитайте стоимость ремонта
+	                        </div>
+	                        <div class="row mb-4">
+	                            <div class="col-lg-6 mb-2 mb-lg-0">Что нужно отремонтировать</div>
+	                            <div class="col-lg-6 d-flex align-items-end">
+	                                <select v-model="calcModels.select.vp">    
+	                                    <option v-for="item in calcDictionary.vp" :value="item.code">{{item.title}}</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="row mb-4">
+	                            <div class="col-lg-6 mb-2 mb-lg-0">Вид ремонта</div>
+	                            <div class="col-lg-6">
+	                                <select v-model="calcModels.select.vr">    
+	                                    <option v-for="item in calcDictionary.vr" :value="item.code">{{item.title}}</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="row mb-4">
+	                            <div class="col-lg-6 mb-2 mb-lg-0">Тип помещения</div>
+	                            <div class="col-lg-6">
+	                                <select v-model="calcModels.select.tn">    
+	                                    <option v-for="item in calcDictionary.tn" :value="item.code">{{item.title}}</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="row mb-4">
+	                            <div class="col-xl-5 mb-2 mb-xl-0">Площадь помещения</div>
+	                            <div class="col-xl-7">
+	                                <div class="form-row">
+	                                    <div class="col-5 col-lg-4 calculator-value text-center d-flex">
+	                                        <input type="text" 
+	                                        @keypress="onlyNumber" 
+	                                        v-model="calcModels.area"/>
+	                                        <div>
+	                                            <span>м<sup><small>2</small></sup></span>
+	                                        </div>
+	                                    </div>
+	                                    <div class="col pl-2">
+	                                        <input type="range" min="1" max="200" v-model="calcModels.area" class="slider w-100">
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="row mb-4">
+	                            <div class="col-md-6 mb-2 mb-lg-0">Срок работ</div>
+	                            <div class="col-md-6 calculator-value">{{datesResult}}</div>
+	                        </div>   
+	                        <hr class="my-4 d-none d-lg-block"/>  
+	                        <div class="form-container4">
+								<div class="note4 text-center">
+									<i class="fas fa-check"></i>
+									<h2>Спасибо за заявку</h2>
+									<p>Ожидайте!В течение нескольких минут вам прийдет ответ на почту</p>
+								</div>
+								<div class="fields4">
+									<form class="form4" id="form4" name="form4">
+										<input type="text" class="form-field" name="name4" placeholder="Ваше имя">
+										<input type="text" class="form-field" name="user_email4" placeholder="+7 (___) ___-__-__">
+										<button class="form-button4 button-animation"><span class="text-button">Отправить</span></button>
+									</form>
+								</div>
+							</div>
+				        </div>
+                     </div>
 				</div>
 			</div>
 		</header>

@@ -73,6 +73,9 @@
     padding: 90px 180px 90px 110px;
     box-shadow: -5px 10px 50px rgba(173, 173, 173, 0.3);
   }
+  .invite__text{
+        margin-bottom: 15px;
+  }
   .block-services__price-last {
     margin-top: 15px;
   }
@@ -155,6 +158,11 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .calculator {
+padding: 50px 60px;
+    margin-bottom: 20px;
+  width: 550px;
+  float: right; }
 .menu {
  margin-top:20px;
 }

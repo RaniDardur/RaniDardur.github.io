@@ -131,9 +131,9 @@ sup{
     background-color: rgba(255, 255, 255, 0.8);
     color:black;
     float: left;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 42%;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    width: 46%;
 }
 
 .begin-item__image {
@@ -189,6 +189,93 @@ sup{
   padding-right: 30px;
   padding-top: 10px;
 }
+/* --- Канкулятор  --- */
+textarea {
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  width: 100%; }
+select {
+  width: 100%;
+  font-family: 'SFUIDisplayBold';
+  color: #2085e1;
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 3px 8px 5px 8px;
+  outline: none; }
+
+.calculator select,
+.calculator .button-animation{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.calculator .slider{
+  background-color: #2085e1;
+}
+.calculator .bold{
+   font-size: 26px;
+  padding-bottom: 20px;
+}
+.calculator {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px; }
+  .calculator-value {
+    color: #2085e1;
+    font-size: 16px;
+    font-family: 'SFUIDisplayBold'; }
+    .calculator-value input {
+      padding: 0;
+      text-align: center;
+      border: none;
+      color: #2085e1;
+      background-color: #d3d3d36e;
+      border-radius: 5px;
+      margin-right: -8px;}
+      .slider {
+  width: 130px;
+  height: 3px;
+  background-color: #2085e1; }
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  height: 3px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */ }
+
+/* Mouse-over effects */
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 15px;
+  /* Set a specific slider handle width */
+  height: 15px;
+  /* Slider handle height */
+  background: #2085e1;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+  border-radius: 50%; }
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  /* Set a specific slider handle width */
+  height: 15px;
+  /* Slider handle height */
+  background: #2085e1;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+  border-radius: 50%; }
+
 /* --- Форма отправки  --- */
 input[type='text'] {
     border: none;
@@ -241,13 +328,15 @@ input[type='text'].user_phone {
 .fields_none,
 .fields_none1,
 .fields_none2,
-.fields_none3{
+.fields_none3,
+.fields_none4{
   display:none !important;
 }
 .note,
 .note1,
 .note2,
-.note3{
+.note3,
+.note4{
   padding:0px;
   color: #626262;
   display:none;
@@ -255,21 +344,24 @@ input[type='text'].user_phone {
 .note i,
 .note1 i,
 .note2 i,
-.note3 i{
+.note3 i,
+.note4 i{
   color: green;
   font-size:100px;
 }
 .note h2
 .note1 h2,
 .note2 h2,
-.note3 h2{
+.note3 h2,
+.note4 h2{
   font-size: 20px;
   padding: 4px;
 }
 .note p,
 .note1 p,
 .note2 p,
-.note3 p{
+.note3 p,
+.note4 p{
   font-size: 17px;
 }
 

@@ -75,3 +75,22 @@ $(document).ready(function() {
 			return false;
 		});
 	});
+	$(document).ready(function() {
+		$('#form4').submit(function() {
+			if (document.form4.name4.value == '' || document.form4.user_email4.value == '' ) {
+				valid = false;
+				return valid;
+			}
+			$.ajax({
+				type: "POST",
+				url: "mail.php",
+				data: $(this).serialize()
+			}).done(function() {
+				$('.fields4').addClass('fields_none');
+				$('.note4').fadeIn(1000);
+				$(this).find('input').val('');
+				$('#form4').trigger('reset');
+			});
+			return false;
+		});
+	});
