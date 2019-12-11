@@ -347,6 +347,10 @@ input[type='text'].user_phone {
   color: #626262;
   display:none;
 }
+.fields5{
+  width: 50%;
+  margin-bottom: 40px;
+}
 .note i,
 .note1 i,
 .note2 i,
