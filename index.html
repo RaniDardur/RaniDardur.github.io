@@ -1095,23 +1095,20 @@
                         <div class="modal-call__title">
                             Перезвоним в течение 3-х минут, бесплатно проконсультируем
                         </div>
-                        <div class="modal-call__form"> 
-                            <div class="mb-3">
-                                <input type="text" placeholder="Имя" class="name" 
-                                v-model="formData.name"/>
-                            </div>
-                            <div class="mb-5">
-                                <input type="text" placeholder="Телефон" class="phone phone-masked"/>
-                            </div>
-                            <div class="mb-4">
-                                <!-- <div class="button-blue w-100"
-                                @click="sendForm('call')">Получить консультацию</div> -->
-                                <div class="button-animation w-100" @click="sendForm('call')">
-                                    <span>Отправить</span>
-                                </div>
-
-                            </div>
-                        </div>
+                        <div class="form-container3">
+							<div class="note3 text-center">
+								<i class="fas fa-check"></i>
+								<h2>Спасибо за заявку</h2>
+								<p>Ожидайте!В течение нескольких минут вам прийдет ответ на почту</p>
+							</div>
+							<div class="fields3">
+								<form class="form3" id="form3" name="form3">
+									<input type="text" class="form-field" name="name3" placeholder="Ваше имя">
+									<input type="text" class="form-field" name="user_email3" placeholder="+7 (___) ___-__-__">
+									<button class="form-button3 button-animation"><span class="text-button">Отправить</span></button>
+								</form>
+							</div>
+						</div>
                         <div class="color-gray2 fs-14">
                             Я даю согласие на обработку
                             <a href="https://ranidardur.github.io/docs/policy.pdf" class="color-gray2" target="_blank"><u>персональных данных</u></a>
