@@ -333,14 +333,16 @@ input[type='text'].user_phone {
 .fields_none1,
 .fields_none2,
 .fields_none3,
-.fields_none4{
+.fields_none4,
+.fields_none5{
   display:none !important;
 }
 .note,
 .note1,
 .note2,
 .note3,
-.note4{
+.note4,
+.note5{
   padding:0px;
   color: #626262;
   display:none;
@@ -349,7 +351,8 @@ input[type='text'].user_phone {
 .note1 i,
 .note2 i,
 .note3 i,
-.note4 i{
+.note4 i,
+.note5 i{
   color: green;
   font-size:100px;
 }
@@ -357,7 +360,8 @@ input[type='text'].user_phone {
 .note1 h2,
 .note2 h2,
 .note3 h2,
-.note4 h2{
+.note4 h2,
+.note5 h2{
   font-size: 20px;
   padding: 4px;
 }
@@ -365,7 +369,8 @@ input[type='text'].user_phone {
 .note1 p,
 .note2 p,
 .note3 p,
-.note4 p{
+.note4 p,
+.note5 p{
   font-size: 17px;
 }
 

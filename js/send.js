@@ -94,3 +94,23 @@ $(document).ready(function() {
 			return false;
 		});
 	});
+
+	$(document).ready(function() {
+		$('#form4').submit(function() {
+			if (document.form5.name5.value == '' || document.form5.user_email5.value == '' ) {
+				valid = false;
+				return valid;
+			}
+			$.ajax({
+				type: "POST",
+				url: "mail.php",
+				data: $(this).serialize()
+			}).done(function() {
+				$('.fields5').addClass('fields_none');
+				$('.note5').fadeIn(1000);
+				$(this).find('input').val('');
+				$('#form5').trigger('reset');
+			});
+			return false;
+		});
+	});
